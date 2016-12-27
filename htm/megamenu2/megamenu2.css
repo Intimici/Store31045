@@ -1,0 +1,227 @@
+/*
+Item Name : CSS3 Mega Drop Down Menu
+Author URI : http://codecanyon.net/user/Pixelworkshop/
+Item URI : http://codecanyon.net/item/css3-mega-drop-down-menu/126387
+Version : 6.2
+*/
+
+.megamenu2_wrapper,
+.megamenu2_wrapper_full {
+	margin:0 auto;
+	display:block;
+	position: relative;
+	z-index:100;
+	font-family: 'Lato', Arial, sans-serif;
+	font-size:13px;
+	font-weight:400;
+	color:#FFFFFF;
+}
+.megamenu2_wrapper {
+	max-width: 1230px;
+}
+.megamenu2_wrapper_full {
+	width: 100%;
+}
+.megamenu2_container {
+	width:100%;
+    margin:0 auto;
+	height:80px;
+}
+.megamenu2_wrapper .megamenu2_container {
+	width:100%;
+}
+.megamenu2_wrapper_full .megamenu2_container {
+	width: 100%;
+	padding: 0 2% 0 2%;
+}
+.megamenu2_container .megamenu2 {
+	list-style:none;
+	margin:0 auto;
+	padding: 0;
+}
+.megamenu2 > li {
+	float:left;
+	position:relative;
+	padding:0 2.32%;
+	border:none;
+}
+.megamenu2 li.menuitem_fullwidth {
+	position: relative !important;
+	float:left;
+	height:80px;
+}
+.megamenu2 > li > a {
+	outline:0;
+	text-decoration:none;
+	display:block;
+}
+.megamenu2 > li .menuitem_drop {
+	padding-right:27px;
+}
+.megamenu2 > li.menuitem_nodrop > a {
+	padding-bottom:10px;
+}
+
+/* Right aligned menu item */
+
+.megamenu2 > li.menuitem_right {
+	float:right;
+	right:0;
+	margin-right:0;
+}
+
+/* Drop Downs Containers */
+.megamenu2 .dropdown_1column, 
+.megamenu2 .dropdown_2columns, 
+.megamenu2 .dropdown_3columns, 
+.megamenu2 .dropdown_4columns,
+.megamenu2 .dropdown_5columns,
+.megamenu2 .dropdown_fullwidth {
+	margin:0;
+	display:none;
+	position:absolute;
+	top:80px;
+	left:0px;
+}
+
+/* Drop Downs Sizes */
+.megamenu2 .dropdown_1column  {width:150px;padding:0 12px 12px 12px;}
+.megamenu2 .dropdown_2columns {width:330px;padding:0 11px 11px 11px;}
+.megamenu2 .dropdown_3columns {width:415px;padding:0px 8px 12px 12px;}
+.megamenu2 .dropdown_4columns {width:600px;padding:0px 5px 12px 12px;}
+.megamenu2 .dropdown_5columns {width:755px;padding:0px 2px 12px 12px;}
+.megamenu2 .dropdown_fullwidth {width:960px;padding:0px 0 10px 10px;top:47px;}
+.megamenu2_wrapper_full .megamenu2 .dropdown_fullwidth {left:50%;margin-left:-481px;}
+.megamenu2_wrapper .dropdown_right,
+.megamenu2_wrapper_full .dropdown_right {left:auto;right:-1px;}
+.megamenu2_wrapper .megamenu2 li.menuitem_right .dropdown_fullwidth {left:auto;right:8px;}
+.megamenu2_wrapper_full .megamenu2 li.menuitem_right > .dropdown_fullwidth {top:41px;}
+
+/* Showing Drop Down on Mouse Hover */
+.megamenu2 li:hover > div {
+	display: block;
+}
+
+/* Columns Sizes */
+.megamenu2 .col_one_sixth,
+.megamenu2 .col_one_fifth,
+.megamenu2 .col_one_quarter,
+.megamenu2 .col_one_third,
+.megamenu2 .col_two_fifths,
+.megamenu2 .col_half,
+.megamenu2 .col_three_fifths,
+.megamenu2 .col_two_thirds,
+.megamenu2 .col_three_quarters,
+.megamenu2 .col_four_fifths,
+.megamenu2 .col_five_sixths,
+.megamenu2 .col_full {float: left; margin-left: 25px;}
+.megamenu2 .col_one_sixth {width:14%;}
+.megamenu2 .col_one_fifth {width:20%;}
+.megamenu2 .col_one_quarter {width:22%;}
+.megamenu2 .col_one_third {width:31%;}
+.megamenu2 .col_half {width:46%;}
+.megamenu2 .col_full {width:100%;}
+
+/* Use the firstcolumn class for the first element of a new row of content */
+.megamenu2 .firstcolumn {
+	margin-left: 0;
+	clear: left;
+}
+
+
+/* Content Styling  */
+.megamenu2 p,
+.megamenu2 ul,
+.megamenu2 li,
+.megamenu2 h2,
+.megamenu2 h3 {font-family: 'Lato', Arial, sans-serif;text-align:left;color:#a83b8d;}
+.megamenu2 p {margin:0;margin-bottom:18px;}
+.megamenu2 .strong {font-weight:700;}
+.megamenu2 .italic {font-style:italic;}
+.megamenu2 h2, 
+.megamenu2 h3 {margin-top:7px;}
+.megamenu2 h2 {font-size:20px;margin-bottom:18px;padding-bottom:11px;}
+.megamenu2 h3 {font-size:18px;margin-bottom:5px;padding-bottom:5px;color:#a83b8d;}
+.megamenu2 h3 a {color:#a83b8d;}
+.megamenu2 li a {text-decoration:none;}
+.megamenu2 .pusher {margin-top:10px;}
+
+
+/* Box styles */
+.megamenu2 li .black_box,
+.megamenu2 li .dark_grey_box {
+	margin: -8px 0 18px 0;
+	color: #f7f7f7;
+    padding:8px 12px;
+}
+
+/* Standard lists styles */
+.megamenu2 li ul {
+	list-style:none;
+	padding:0;
+	margin:0 0 12px 0;
+}
+.megamenu2 li ul li {
+	font-size:12px;
+	line-height:18px;
+	position:relative;
+	padding:0;
+	margin:0;
+	float:left;
+	text-align:left;
+	width:100%;
+}
+.megamenu2 li ul li a {
+	padding:0;
+}
+
+/* Greybox lists styles */
+.megamenu2 li .greybox li {
+	margin:0 0 4px 0;
+	padding:4px 6% 4px 6%;
+	width:88%;
+}
+
+/* Other lists styles */
+.megamenu2 li .plus li {
+	margin:0 0 4px 0;
+	padding:0 0 0 20px;
+	float: left;
+}
+
+
+/* Light Theme  */
+.megamenu2_light_theme .megamenu2_container > ul > li:hover,
+.megamenu2_light_theme .megamenu2_container .megamenu2 > li.active,
+.megamenu2_light_theme .megamenu2_container > ul > li.menuitem_nodrop:hover {background-color:#a83b8d;}
+.megamenu2_light_theme .megamenu2_container > ul > li > a {color:#FFFFFF;}
+.megamenu2_light_theme .megamenu2_container > ul > li:hover > a {color:#FFFFFF;}
+.megamenu2_light_theme ul li .menuitem_drop,
+.megamenu2_vertical_left .megamenu2_light_theme ul li .menuitem_drop,
+.megamenu2_vertical_right .megamenu2_light_theme ul li .menuitem_drop,
+.megamenu2_light_theme .megamenu2 > li > div,
+.megamenu2_light_theme ul .levels li ul {
+	border:1px solid #e0e0e0;
+	border-bottom-left-radius:5px;
+	-moz-border-bottom-left-radius: 5px;
+    border-bottom-right-radius:5px;
+	-moz-border-bottom-right-radius: 5px;
+	background-color:#FFFFFF;
+	}
+.megamenu2_light_theme ul h2, 
+.megamenu2_light_theme ul h3 {border-bottom:1px solid #e0e0e0;color:#b9519f;}
+
+/* Black */
+.megamenu2_dark_theme .megamenu2_black li div a {color:#CCC;}
+.megamenu2_dark_theme .megamenu2_black li div a:hover {color:#EEE;}
+.megamenu2_dark_theme .megamenu2_black li ul li a:hover {color:#EEE;}
+.megamenu2_light_theme .megamenu2_black li div a {color:#444;}
+.megamenu2_light_theme .megamenu2_black li div a:hover {color:#b9519f;}
+.megamenu2_light_theme .megamenu2_black li ul li a:hover {color:#b9519f;}
+.megamenu2_light_theme .megamenu2_black h3 a {color:#a83b8d !important;}
+
+/* No left & right borders if full width menu bar */
+.megamenu2_wrapper_full .megamenu2_container {
+	border-left:none;
+	border-right:none;
+}
