@@ -1,0 +1,52 @@
+<style>
+#idChkCompletionIntFC {padding:0 auto; margin:0 auto; width:96% !important; min-width:200px;}
+#EstNomePagto{color:#292929;font-weight:bold;}
+#PassosCompra,.idTxtPrintFC{display:none;}
+#idCheckoutFC #idChkCol1FC, #idCheckoutFC #idChkCol2FC, #idCheckoutFC #idChkCol3FC {width:99% !important}
+#idTxtPaymentMethodFC {color:#5f5f5f; font-size:14px !important; font-family: 'Lato', Arial, sans-serif !important;}
+#idChkTxtTimeCompletionFC {margin-bottom:20px;}
+#idChkTxtTimeCompletionFC p {color:#5f5f5f; font-size:14px !important; font-family: 'Lato', Arial, sans-serif !important;}
+.idTxtTrackConfFC {margin-top:5px;}
+.idTxtContactConfFC {margin-top:10px;}
+.idTxtThanksConfFC {margin-top:15px;}
+#idChkTxtPedConfirmadoFC{margin-top:20px;margin-bottom:10px;background-color:#e0e0e0;padding:5px;border:1px solid #dedede;text-align:center;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; font-weight:700 !important;}
+#idChkOrderNumberFC {font-size:24px !important; font-weight:700 !important; color:#078e07 !important;}
+
+
+@media only screen and (max-width: 568px) {
+#idChkCompletionIntFC {margin:0 auto; width:94% !important;}
+}
+
+@media only screen and (max-width: 414px) {
+#idChkCompletionIntFC {margin:0 auto; width:92% !important;}
+}
+
+@media only screen and (max-width: 375px) {
+#idChkCompletionIntFC {margin:0 auto; width:88% !important;}
+#idCheckoutFC .EstChkNomeCampo {font-size:14px !important;}
+}
+
+@media only screen and (max-width: 320px) {
+#idChkCompletionIntFC {margin:0 auto; width:92% !important;}
+}
+</style>
+<script type="text/javascript">
+if(FC$.Page!="Checkout"){
+  var iFormaPagto="<IDFormaPagamento>";
+  
+  if(iFormaPagto=="3"){ //Cartão de crédito
+    var sFormaPagto="<FormaPagamento> (<TipoCartao>)"
+    setTimeout("document.getElementById('idDadosPagtoTitFC').innerHTML='<td class=EstTabTopo colspan=2 align=center>Forma de Pagamento</td>';",100); //Altera titulo da parte inferior dos dados para pagamento
+    }
+    else{
+    var sFormaPagto="<FormaPagamento>"
+    setTimeout("document.getElementById('idDadosPagtoTitFC').style.display='none';",100); //Altera titulo da parte inferior dos dados para pagamento
+  }
+  
+  var sDadosPagto="<br><br><table width=97% align=center class=EstTabPedido><tr height=25><td class=EstTabPedidoTit align=center>Dados para Pagamento</td></tr><tr><td align=center><br><span id=EstNomePagto>"+ sFormaPagto +"</span><br><br>"+ document.getElementById('idDadosPagtoFC').innerHTML +"</td></tr></table>"; //Instruções e botão para pagamento
+  var sBannerEbit="";  //Banner do e-bit
+  
+  setTimeout("document.getElementById('idDadosPagtoFC').innerHTML='';",10); //Remove da parte inferior os dados para pagamento
+  setTimeout("document.getElementById('idTopoConfirmacaoFC').innerHTML=sDadosPagto+sBannerEbit+'<br><br><span class=Titulos>Informações do seu pedido:</span>';",10);  //Insere no topo da página de pedido confirmado as instruções para pagamento + banner do ebit
+}
+</script>
