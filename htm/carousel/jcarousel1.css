@@ -1,0 +1,138 @@
+.jcarousel-wrapper1 {
+    margin:0 auto;
+    position: relative;
+}
+
+/** Carousel **/
+
+.jcarousel1 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.jcarousel1 ul {
+    width: 32000px;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel1 li {
+    width:268px !important;
+	float: left;
+    margin-left:15px; margin-right:30px;
+}
+
+.jcarousel1 img {
+    display: block;
+    max-width: 100%;
+	margin:0 auto;
+	vertical-align: middle;
+}
+
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev1 {
+    position: absolute;
+	margin-top:-425px;
+	margin-left:1190px;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    background: url('https://www.intimici.com.br/lojas/00031045/images/Seta1.png') left top no-repeat scroll;
+}
+
+.jcarousel-control-next1 {
+    position: absolute;
+	margin-top:-425px;
+	margin-right:16px;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    background: url('https://www.intimici.com.br/lojas/00031045/images/Seta2.png') left top no-repeat scroll;
+}
+
+.jcarousel-control-prev1 {
+    left: 0px;
+}
+
+.jcarousel-control-next1 {
+    right: 0px;
+}
+
+@media only screen and (max-width: 1260px) {
+.jcarousel-wrapper1 {max-width:1230px;}	
+.jcarousel-control-prev1 {margin-left:1173px;}
+.jcarousel-control-next1 {margin-right:3px;}
+.jcarousel1 li {width: 264px !important;margin-left: 8px;margin-right: 40px;}
+}
+
+@media only screen and (max-width: 1024px) {
+.jcarousel-wrapper1 {max-width:994px;}	
+.jcarousel-control-prev1 {margin-left:940px;}
+.jcarousel-control-next1 {margin-right:0px;}
+.jcarousel1 li {width: 211px !important;margin-left: 0;margin-right: 42px;}
+}
+
+@media only screen and (max-width: 800px) {
+.jcarousel-wrapper1 {max-width:770px;}	
+.jcarousel-control-prev1 {margin-left:718px;}
+.jcarousel1 li {width: 353px !important;}
+}
+
+@media only screen and (max-width: 768px) {
+.jcarousel-wrapper1 {max-width:738px;}
+.jcarousel-control-prev1 {margin-left:684px;}
+.jcarousel1 li {width: 337px !important;}
+}
+
+@media only screen and (max-width: 736px) {
+.jcarousel-wrapper1 {max-width:706px;}
+.jcarousel-control-prev1 {margin-left:652px;}
+.jcarousel1 li {width: 321px !important;}
+}
+
+@media only screen and (max-width: 667px) {
+.jcarousel-wrapper1 {max-width:637px;}
+.jcarousel-control-prev1 {margin-left:583px;}
+.jcarousel1 li {width: 286px !important;}
+}
+
+@media only screen and (max-width: 640px) {
+.jcarousel-wrapper1 {max-width:610px;}
+.jcarousel-control-prev1 {margin-left:556px;}
+.jcarousel1 li {width: 273px !important;}
+}
+
+@media only screen and (max-width: 568px) {
+.jcarousel-wrapper1 {max-width:538px;}	
+.jcarousel-control-prev1 {margin-left:484px;}
+.jcarousel1 li {width: 237px !important;}
+}
+
+@media only screen and (max-width: 414px) {
+.jcarousel-wrapper1 {max-width:384px;}	
+.jcarousel-control-prev1 {margin-left:330px;}
+.jcarousel1 li {width: 362px !important;}
+}
+
+@media only screen and (max-width: 375px) {
+.jcarousel-wrapper1 {max-width:345px;}
+.jcarousel-control-prev1 {margin-left:290px;}
+.jcarousel1 li {width: 323px !important;}
+}
+
+@media only screen and (max-width: 360px) {
+.jcarousel-wrapper1 {max-width:330px;}
+.jcarousel-control-prev1 {margin-left:276px;}
+.jcarousel1 li {width: 308px !important;}
+}
+
+@media only screen and (max-width: 320px) {
+.jcarousel-wrapper1 {max-width:290px;}
+.jcarousel-control-prev1 {margin-left:236px;}
+.jcarousel1 li {width: 268px !important;}
+}
