@@ -1,0 +1,1887 @@
+/* Estilo - Intimici - Outubro/2016 */
+
+/* Reset */
+* {margin:0;padding:0}
+table {border-collapse:collapse;border-spacing:0}
+fieldset,img,abbr,acronym,fieldset-img,table { border:0 none}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block}
+body {font-size:14px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;margin:0;padding:0; background-color:#efefef;}
+p {font-size:14px;font-family: 'Lato', Arial, sans-serif;font-weight: 400}
+TH {font-size:14px;font-family: 'Lato', Arial, sans-serif;font-weight: 400}
+TD {font-size:14px;font-family: 'Lato', Arial, sans-serif;font-weight: 400}
+h2 {font-size:18px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;}
+h4 {font-size:16px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;line-height:10px;}
+
+/* Estilos Tamanho Site */
+.ext {clear:both; float:none}
+.int {margin: 0 auto; position:relative; max-width:1260px; }
+#TabSite {max-width:1260px;margin: 0px auto}
+#idFCContent {max-width:1230px; margin:0px auto; padding-top:15px;}
+
+/* Grid Site */
+#topobg {background:url('https://www.intimici.com.br/lojas/00031045/images/Fundo_Topo.png') repeat-x center top scroll;background-color:#ffffff;margin: 0px auto}
+#topo   {max-width:1230px;height:171px;position:relative;margin:0 auto;}
+#topo1  {width: 72.3%; float:left; height: 26px;padding-top:10px; }
+#topo2  {width: 27.6%; float:left; height: 26px;padding-top:10px;}
+#topo2b {display:none;}
+#topo2c {display:none;}
+#topo3  {width: 32%; float:left; margin-top:25px;}
+#topo41  {width: 22%; float:left; margin-top:29px;}
+#topo42  {display:none;}
+#topo5  {width: 46%; float:left; margin-top:29px;}
+#topo6  {width: 54%; float:left; margin-top:12px;}
+#topo7  {width: 13.9%; float:left; margin-top:10px;}
+#topo7b  {display:none}
+#topo7c  {display:none}
+#vitrine1 {width:100%; height:100%; max-width:1230px; min-width:320px; margin:20px auto 0 auto;}
+#produto3 {width:100%; float:left; overflow:hidden;}
+#prodamp0 {display:none;}
+#prodamp1 img {max-width:1000px; padding-top:20px;}
+
+/* topo menu fixo */
+.intF {margin: 0 auto; position:relative; max-width:1230px; }
+#topoF {
+	width:100%;
+	height:60px;
+	position: fixed;
+	background-color:#FFFFFF;
+	border-bottom:1px solid #a83b8d;
+	top:-120px;
+	left:0px;
+	padding-top:10px;
+	z-index:300;
+	box-shadow:0px 5px 5px rgba(64, 64, 65, 0.60);
+	-moz-box-shadow:0px 5px 5px rgba(64, 64, 65, 0.50);
+	-webkit-box-shadow:0px 5px 5px rgba(64, 64, 65, 0.50);
+	}
+#topo8  {width: 17.3%; float:left; margin-top:2px;}
+#topo8  img {height:50px;}
+#topo9  {width: 12%; float:left; margin-top:7px;}
+#topo9 a {font-size:14px;font-family: 'Lato', Arial, sans-serif;color:#b9519f; text-decoration:none;}
+#topo10 {width: 12%; float:left; margin-top:7px;}
+#topo10 a {font-size:14px;font-family: 'Lato', Arial, sans-serif;color:#b9519f; text-decoration:none;}
+#topo11 {width: 16%; float:left; margin-top:7px;}
+#topo11 a {font-size:14px;font-family: 'Lato', Arial, sans-serif;color:#b9519f; text-decoration:none;}
+#topo12 {width: 40%; float:left; margin-top:7px;}
+#topo13 {width: 2.6%; float:left; margin-top:7px;}
+#topo14 {display:none}
+
+/* Logotipo */
+.logoSVG {text-align:left; margin-left:10px;}
+.logoSVG img {height:85px;}
+
+/*  Menu Topo */
+.MenuTopo0 {font-size:12px;font-family: 'Lato', Arial, sans-serif;color:#ffffff;text-decoration:none;}
+.MenuTopo0 b {font-weight:700;}
+.MenuTopo0 a {color:#ffffff;text-decoration:none;}
+.MenuTopo02 {font-size:12px;font-family: 'Lato', Arial, sans-serif;color:#ffffff;text-decoration:none;}
+.MenuTopo02:visited {color:#ffffff}
+.MenuTopo02:active {color:#ffffff}
+.MenuTopo02:hover {color:#b9519f}
+.MenuTopo02 a {color:#ffffff;text-decoration:none;}
+.MenuTopo1 {font-size:12px;font-family: 'Lato', Arial, sans-serif;color:#6f6f6f;text-decoration:none;}
+.MenuTopo1 b {font-weight:700;}
+.MenuTopo1 a {color:#6f6f6f;text-decoration:none;}
+.MenuTopo2 {font-size:12px;font-family: 'Lato', Arial, sans-serif;color:#6f6f6f;}
+.MenuTopo2:visited {color:#6f6f6f}
+.MenuTopo2:active {color:#6f6f6f}
+.MenuTopo2:hover {color:#b9519f}
+.MenuTopo2 a {color:#6f6f6f}
+.MenuTopo3 {font-size:14px;font-family: 'Lato', Arial, sans-serif;color:#b9519f; text-decoration:none; margin-left:8px;} 
+
+/* Vitrine */
+#slides {display: none}
+.slidesjs-slide img {width:100%; height:100%;}
+.slidesjs-navigation {display: none}
+.slidesjs-play {display:none !important}
+.slidesjs-stop {display:none !important}
+.slidesjs-pagination {margin: -25px 8px 0 0px;float: right;list-style: none; z-index:100; position:relative;}
+.slidesjs-pagination li {float: left; margin: 0 5px 0 0;}
+.slidesjs-pagination li a {
+  display: block;
+  width: 15px;
+  height: 0;
+  padding-top: 15px;
+  background-image: url('https://www.intimici.com.br/lojas/00031045/images/pagination.png');
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+}
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {background-position: 0 -15px}
+.slidesjs-pagination li a:hover {background-position: 0 -30px}
+#slides a:link,
+#slides a:visited {color:#e3e3e3}
+#slides a:hover,
+#slides a:active {color:#b9519f}
+.navbar {
+  overflow: hidden
+}
+
+/* Faixa Chamadas Home */
+#faixa_home {width:100%;max-width:1230px;overflow:hidden;margin:20px auto 5px auto;}
+.faixa1, .faixa2, .faixa3 {width:25.6%; height:101px; float:left;}
+.faixa4 {width:23.1%; height:101px; float:left;}
+
+/* Banners Peq */
+.banner1peq {display:none; width:100%; float:left; margin-top:15px;}
+.banner2peq {width:96%; float:left; margin-left:25px;}
+
+/* Botoes User */
+#botoes_user {width:100%; max-width:395px; height:30px; float:left}
+#botoes_user_peq {display:none; width:93px; height:33px; float:left; margin-top:-2px;}
+#espaco {width:70px; height:1px;}
+
+/* Carrinho */
+.carrinho-topo {width:170px; float:left; margin-top:-4px;}
+.carrinho-topo .icon {width:27%; height:38px; float:left; overflow:hidden; background:url('https://www.intimici.com.br/lojas/00031045/images/Carrinho.svg') no-repeat left top scroll; text-align:center;}
+.carrinho-topo .sacola {width:73%; height:38px; float:left; overflow:hidden; font-size:16px;font-family: 'Lato', Arial, sans-serif;color:#b9519f; font-weight:700; text-decoration:none; text-transform:uppercase; letter-spacing:-0.06px; padding-top:3px;}
+.carrinho-topo .valor_cesta {font-size:11px; font-weight:normal; text-transform:none; color:#6f6f6f; margin-top:-2px;}
+.carrinho-topo a {text-decoration:none}
+
+/* Busca */
+.busca {width:87.4%; height:32px; position:relative; float:left; background-color:#FFFFFF;border:1px solid #dddddd;border-radius: 5px; -moz-border-radius: 5px;} 
+.busca fieldset {padding:0 86px 0 10px; background: url('https://www.intimici.com.br/lojas/00031045/images/Busca.svg') no-repeat right top scroll;}
+.busca .campo-busca {font-family: 'Lato', Arial, sans-serif; font-size:16px; font-weight:400; display: inline-block;vertical-align: baseline; height:31px; margin:1px 0 0 0; color:#6f6f6f; width:100%; border:none}
+.busca .campo-busca:focus {color:#000000}
+.busca .bt-buscar {width:76px; height:32px; border:none; cursor:pointer; position:absolute; right:0; top:0; text-indent:-999px; font-size:0; background:none}
+
+/* Menu Responsive*/
+.content{margin:0px auto -4px auto; padding:0px; max-width:1260px; min-width:220px;}
+.megamenu{margin: 0 0 0 0;}
+.megamenu h4{margin-top: 0;}
+.megamenu .adress label{float: left; width: 100%;}
+
+/* Conteudo */
+.tab_container {margin:0; padding: 0; width:100%; max-width:1260px; float:left}
+.tab_marcas {max-width:1230px; height:112px; text-align:center; overflow:hidden; float:left; margin:0 auto 30px 15px; background-color:#FFFFFF; border-bottom:3px solid #d9d9d9;}
+
+#Destaques {width:100%; max-width:1230px; height:30px; margin:29px 0 0 15px; background:url('https://www.intimici.com.br/lojas/00031045/images/Fundo_TitDestaques.png') repeat-x left top scroll; float:left;}
+#Destaques .TitulosDest {color:#a83b8d;font-size:22px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;text-decoration:none;}
+
+#MaisVendidos {width:100%; max-width:1230px; height:30px; margin:40px 0 0 15px; background:url('https://www.intimici.com.br/lojas/00031045/images/Fundo_TitDestaques.png') repeat-x left top scroll; float:left;}
+#MaisVendidos .TitulosDest {width:93.5%; float:left; color:#a83b8d;font-size:22px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;text-decoration:none;}
+#MaisVendidos .BotMaisDet  {width:6.5%;float: left;margin-top: 3px;}
+
+#GrandesMarcas {width:100%; max-width:1230px; height:30px; margin:10px 0 0 15px; background:url('https://www.intimici.com.br/lojas/00031045/images/Fundo_TitDestaques.png') repeat-x left top scroll; float:left;}
+#GrandesMarcas .TitulosDest {color:#a83b8d;font-size:22px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;text-decoration:none;}
+
+#Ofertas {width:100%; max-width:1230px; height:30px; margin:10px 0 0 15px; background:url('https://www.intimici.com.br/lojas/00031045/images/Fundo_TitDestaques.png') repeat-x left top scroll; float:left;}
+#Ofertas .TitulosDest {width:93.5%; float:left; color:#a83b8d;font-size:22px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;text-decoration:none;}
+#Ofertas .BotMaisDet  {width:6.5%;float: left;margin-top: 3px;}
+
+#Parc_Bloco1 {width:78.4%; float:left;}
+#Parc_Bloco1 .EstTabTopo {background:#dddddd;color:#404041;font-size:18px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;padding:4px 0 4px 4px;}
+#Parc_Bloco2 {width:18%; float:left; margin-top:20px; margin-left:20px; border:1px solid #d4d4d4; border-radius: 5px; -moz-border-radius: 5px; background-color:#FFFFFF; padding:10px; }
+#Parc_Bloco2 .EstTabTopo {background:#dddddd;color:#404041;font-size:16px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;padding:4px 0 4px 4px;}
+#Parc_Bloco2 b {color:#404041;}
+
+/* Produtos Home Carousel */
+#ProdDestHomeC {margin:10px 0 30px 0; padding:0 10px; height:356px; float:left; position:relative; text-align:center; background-color:#ffffff;}
+#ProdDestHomeC {border:1px solid #d4d4d4;}
+#ProdDestHomeC:visited {border:1px solid #d4d4d4;}
+#ProdDestHomeC:active {border:1px solid #d4d4d4;}
+#ProdDestHomeC:hover {
+	border:1px solid #b9519f;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f7e6f3));
+	background: -webkit-linear-gradient(top, #ffffff, #f7e6f3);
+	background: -moz-linear-gradient(top, #ffffff, #f7e6f3);
+	background: -o-linear-gradient(top, #ffffff, #f7e6f3);
+	background: -ms-linear-gradient(top, #ffffff, #f7e6f3);
+	background: linear-gradient(top, #ffffff, #f7e6f3);
+	}
+#ProdDestHomeC .ProdCat {float:left; margin-top:2px; text-align:left}
+#ProdDestHomeC .ProdEspiar {float:left; margin-top:2px; text-align:right}
+#ProdDestHomeC .ProdVejaMais {float:left; margin-top:2px; text-align:right}
+#ProdDestHomeC .EstNomeCatCapa {background:url('https://www.intimici.com.br/lojas/00031045/images/Fundo_NomeCat.png') no-repeat left center scroll; padding-left:11px;font-size:12px;color:#b9519f;text-decoration:none;}
+#ProdDestHomeC .BotLancProdOut { position:absolute; width:74px; height:24px; right:6px;top:6px;}
+#ProdDestHomeC .BotLancProdOut img { margin:0 !important}
+
+/* Produtos Home */
+#ProdDestHome {margin:10px 0 30px 0; padding:0 10px; height:356px; float:left; position:relative; text-align:center; background-color:#ffffff;}
+#ProdDestHome {border:1px solid #d4d4d4;}
+#ProdDestHome:visited {border:1px solid #d4d4d4;}
+#ProdDestHome:active {border:1px solid #d4d4d4;}
+#ProdDestHome:hover {
+	border:1px solid #b9519f;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f7e6f3));
+	background: -webkit-linear-gradient(top, #ffffff, #f7e6f3);
+	background: -moz-linear-gradient(top, #ffffff, #f7e6f3);
+	background: -o-linear-gradient(top, #ffffff, #f7e6f3);
+	background: -ms-linear-gradient(top, #ffffff, #f7e6f3);
+	background: linear-gradient(top, #ffffff, #f7e6f3);
+	}
+#ProdDestHome .ProdCat {float:left; margin-top:2px; text-align:left}
+#ProdDestHome .ProdEspiar {float:left; margin-top:2px; text-align:right}
+#ProdDestHome .ProdVejaMais {float:left; margin-top:2px; text-align:right}
+#ProdDestHome .EstNomeCatCapa {background:url('https://www.intimici.com.br/lojas/00031045/images/Fundo_NomeCat.png') no-repeat left center scroll; padding-left:11px;font-size:12px;color:#b9519f;text-decoration:none;}
+#ProdDestHome .BotLancProdOut { position:absolute; width:74px; height:24px; right:6px;top:6px;}
+#ProdDestHome .BotLancProdOut img { margin:0 !important}
+
+/* Produtos Home Lançamentos */
+#ProdDestLanc {margin-top:20px; padding:0 10px; height:356px; float:left; position:relative; text-align:center; background-color:#ffffff;}
+#ProdDestLanc {border:1px solid #d4d4d4;}
+#ProdDestLanc:visited {border:1px solid #d4d4d4;}
+#ProdDestLanc:active {border:1px solid #d4d4d4;}
+#ProdDestLanc:hover {
+	border:1px solid #b9519f;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f7e6f3));
+	background: -webkit-linear-gradient(top, #ffffff, #f7e6f3);
+	background: -moz-linear-gradient(top, #ffffff, #f7e6f3);
+	background: -o-linear-gradient(top, #ffffff, #f7e6f3);
+	background: -ms-linear-gradient(top, #ffffff, #f7e6f3);
+	background: linear-gradient(top, #ffffff, #f7e6f3);
+	}
+#ProdDestLanc .ProdCat {float:left; margin-top:2px; text-align:left}
+#ProdDestLanc .ProdEspiar {float:left; margin-top:2px; text-align:right}
+#ProdDestLanc .ProdVejaMais {float:left; margin-top:2px; text-align:right}
+#ProdDestLanc .EstNomeCatCapa {background:url('https://www.intimici.com.br/lojas/00031045/images/Fundo_NomeCat.png') no-repeat left center scroll; padding-left:11px;font-size:12px;color:#b9519f;text-decoration:none;}
+#ProdDestLanc .BotLancProdOut { position:absolute; width:74px; height:24px; right:6px;top:6px;}
+#ProdDestLanc .BotLancProdOut img { margin:0 !important}
+
+/* Produtos Home Big Lançamentos */
+#BlocoLanc1  {width:47.8%; float:left; margin-left:15px; margin-top:10px;}
+#BlocoLanc2  {width:49.8%; float:left; margin-left:0; margin-top:10px;}
+#Lancamentos {width:100%; height:30px; float:left;}
+#Lancamentos .TitulosDest {width:86.7%; float:left; color:#a83b8d;font-size:22px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;text-decoration:none;}
+#Lancamentos .BotMaisDet  {width:13.3%;float: left;margin-top: 3px;}
+#ProdBigLanc {padding-bottom:10px; width:100%; float:left; position:relative; overflow:hidden; border-top:1px solid #d4d4d4; border-bottom:1px solid #d4d4d4;}
+#ProdBigLanc:visited {border-bottom:1px solid #d4d4d4;}
+#ProdBigLanc:active {border-bottom:1px solid #d4d4d4;}
+#ProdBigLanc:hover {border-bottom:1px solid #b9519f;}
+#ProdBigLanc .Limg {background-color:#ffffff; padding-top:5px; margin-bottom:12px; text-align:center; width:100%; float:left;}
+#ProdBigLanc .Limg img {height:470px;}
+#ProdBigLanc .Lname  a {font-size:23px; font-family: 'Lato', Arial, sans-serif; font-weight:400; color:#1f1f1f; text-decoration:none; line-height:23px; width:100%; float:left;}
+#ProdBigLanc .Lname  a:visited {color:#1f1f1f;}
+#ProdBigLanc .Lname  a:active {color:#1f1f1f;}
+#ProdBigLanc .Lname  a:hover  {color:#a83b8d;}
+#ProdBigLanc .Ldescr {font-size:14px; font-family: 'Lato', Arial, sans-serif; font-weight:400; color:#5f5f5f; margin-top:14px; width:100%; float:left;}
+#ProdBigLanc .Lprice {margin-top:5px; width:100%; float:left;}
+#ProdBigLanc .Lparc  {width:100%; float:left;}
+
+/* Produtos Listagem Categorias */
+#ProdDestLista {margin:10px 0 30px 0; padding:0 10px; height: 360px; float:left; position:relative; text-align:center; background-color:#ffffff;}
+#ProdDestLista {border:1px solid #d4d4d4;}
+#ProdDestLista:visited {border:1px solid #d4d4d4;}
+#ProdDestLista:active {border:1px solid #d4d4d4;}
+#ProdDestLista:hover {border:1px solid #b9519f;}
+#ProdDestLista .ProdCat {float:left; margin-top:2px; text-align:left}
+#ProdDestLista .ProdEspiar {float:left; margin-top:2px; text-align:right}
+#ProdDestLista .ProdVejaMais {float:left; margin-top:2px; text-align:right}
+#ProdDestLista .EstNomeCat {background:url('https://www.intimici.com.br/lojas/00031045/images/Fundo_NomeCat.png') no-repeat left center scroll; padding-left:11px;font-size:12px;color:#b9519f;text-decoration:none;}
+#ProdDestLista .BotLancProd { position:absolute; width:74px; height:24px; right:6px;top:6px;}
+#ProdDestLista .BotLancProd img { margin:0 !important}
+
+.iten-prod-menu {width:100%; float:left;}
+.iten-prod-menu a {display:block; text-decoration:none;text-align:center;background:#ffffff;border:1px solid #d4d4d4; border-radius: 3px; -moz-border-radius: 3px; padding:5px;}
+.iten-prod-menu a.ativo, .iten-prod-menu a:hover {border: 1px solid #b9519f;}
+.iten-prod-menu span {display:block;}
+.iten-prod-menu img.EstImgFC {width:150px; height:auto;}
+.iten-prod-menu .name {font-family: 'Lato', Arial, sans-serif; font-size:13px; color:#5f5f5f; font-weight:400; text-align:center; margin-top:3px;}
+.iten-prod-menu .price {text-align:center; margin-top:3px;}
+.iten-prod-menu .parcelas {text-align:center;}
+
+/* Botões Lançamentos */
+.BotLancProd {width:74px; height:24px; background:url('https://www.intimici.com.br/lojas/00031045/images/StarLaunch2.svg') no-repeat left top scroll;}
+.BotLancProdOut {width:74px; height:24px; background:url('https://www.intimici.com.br/lojas/00031045/images/StarLaunch2.svg') no-repeat left top scroll;}
+
+/* Estilos Comuns */
+.Titulos {color:#404041;font-size:22px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;text-decoration:none;}
+.TitulosProd {color:#404041;font-size:20px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;text-decoration:none; margin-top:25px; float:left; width:100%;}
+.TitulosProdCat {color:#404041;font-size:16px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;text-decoration:none; text-transform:uppercase;}
+.TitulosFinalizar {color:#FFFFFF;font-size:22px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;text-decoration:none; padding-top:6px;}
+.TitulosNatal {color:#a83b8d;font-size:22px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;text-decoration:none;}
+.smSelect {border:1px solid #e3e3e3;background-color:#FFFFFF;font-size:12px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;color:#5f5f5f;}
+.smSelect2 {border:1px solid #e3e3e3;font-size:14px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;color:#5f5f5f;height:24px;width:95%;}
+.pqText {font-size:11px; font-family: Arial, Helvetica, sans-serif;}
+.pqText2 {font-family: Arial, Helvetica, sans-serif; font-size:10px; color:#cccccc;}
+.smText {font-size:11px;font-family: Arial, Helvetica, sans-serif;color:#5f5f5f}
+.mntext {font-size:12px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;color:#5f5f5f}
+.mntext a {font-size:12px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;color:#5f5f5f;text-decoration:none;}
+.mdtxt {font-size:16px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;color:#b9519f;}
+.lgtxt {font-size:22px;color:#078e07;font-family: 'Lato', Arial, sans-serif;font-weight: 400;text-decoration:none}
+.lgtxt2 {font-size:16px; color:#404041; font-family: 'Lato', Arial, sans-serif;font-weight: 700;text-decoration:none}
+
+/* Estilos Home */
+.EstNomeProdCapa {font-family: 'Lato', Arial, sans-serif;font-weight:400;font-size:14px;color:#5f5f5f;text-decoration:none;line-height:12px;}
+.EstNomeProdCapa:visited {color:#5f5f5f}
+.EstNomeProdCapa:active {color:#5f5f5f}
+.EstNomeProdCapa:hover {color:#b9519f}
+.EstDescrProdCapa {font-size:14px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;color:#5f5f5f;}
+.EstAdicProdCapa {font-size:14px;font-family: 'Lato', Arial, sans-serif;font-weight: 400}
+.AdicNomeCapa {font-size:12px;font-family: 'Lato', Arial, sans-serif;font-weight: 400}
+.AdicItemCapa {font-size:12px;font-family: 'Lato', Arial, sans-serif;font-weight: bold}
+.EstPrecoProdCapa {color:#8d161a;font-size:16px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;}
+
+/* Estilos Barra */
+.EstTitSecao {font-size:16px;color:#5f5f5f;font-family: 'Lato', Arial, sans-serif;font-weight: 400;text-transform: uppercase;}
+.EstNomeProdBarra {font-size:16px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;color:#5f5f5f;}
+.EstPrecoProdBarra {font-size:16px;color:#8d161a; font-family: 'Lato', Arial, sans-serif;font-weight: 400;}
+.EstLinhaBarra {display:none}
+.EstLinhaBarraExt{display:none}
+
+/*  Estilos Formulários BOTÕES e INPUTs TEXT */
+.InputText {border:#e3e3e3 1px solid; border-radius: 3px; -moz-border-radius: 3px; background-color:#FFFFFF;font-family: 'Lato', Arial, sans-serif;font-weight: 400; font-size:14px; color:#5f5f5f; width: 100%;}
+.InputTextNews {border:none; border-radius: 3px; -moz-border-radius: 3px; background-color:#FFFFFF;font-family: 'Lato', Arial, sans-serif;font-weight: 400; font-size:16px; color:#5f5f5f; height: 37px; padding-left:2%; width:92%;}
+.inputButton {display: table;width: 100%;text-align: center;padding: 10px;box-sizing: border-box;}
+/* InputButton {font-size:16px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;color:#FFFFFF;text-transform:uppercase;background-color:#b9519f;border:#b9519f 1px solid; border-radius:3px; -moz-border-radius:3px;padding:2px;} */
+.inputsContainer input[type="text"], .inputsContainer input[type="email"], .inputsContainer input[type="password"], .inputsContainer textarea, .inputsContainer select{width: 100%; float: left; height: 30px; box-sizing: border-box; border:#e3e3e3 1px solid; padding:4px 5px; font-family: 'Lato', Arial, sans-serif;font-weight: 400; font-size:14px; color:#5f5f5f;border-radius: 3px; -moz-border-radius: 3px;}
+.inputsContainer textarea{height: 100px; font-family: 'Lato', Arial, sans-serif;font-weight: 400; font-size:14px; color:#5f5f5f; border:#e3e3e3 1px solid;border-radius: 3px; -moz-border-radius: 3px;}
+.buttonForm {font-size:16px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;color:#ffffff;text-transform:uppercase;background-color:#a83b8d;border:none;height:37px; padding:0}
+#Mensagem {font-family: 'Lato', Arial, sans-serif;font-weight: 400; font-size:14px; color:#5f5f5f; height:100px; border:#e3e3e3 1px solid;}
+#Comentarios {font-family: 'Lato', Arial, sans-serif;font-weight: 400; font-size:14px; color:#5f5f5f; height:100px; border:#e3e3e3 1px solid;}
+.BotComprar {display:none; color:#FFF}
+
+/*  Estilos CATEGORIA */
+.EstCatLista li {list-style:none;}
+.EstCatNome {color:#ffffff;font-size:16px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;text-decoration:none;}
+.EstCatNome:visited {color:#ffffff}
+.EstCatNome:active {color:#ffffff}
+.EstCatNome:hover {color:#7e49a4}
+.EstCatDescr {color:#5f5f5f;font-size:16px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;text-decoration:none}
+.EstCatList {font-family: 'Lato', Arial, sans-serif;font-weight: 400;}
+.EstCatListLink {font-family: 'Lato', Arial, sans-serif;font-weight: 400;}
+.EstCatListLink:hover {text-decoration: underline;}	
+.SubMenu {font-size:14px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;color:#5f5f5f;text-decoration:none;}
+.SubMenu:visited {color:#5f5f5f}
+.SubMenu:active {color:#5f5f5f}
+.SubMenu:hover {color:#b9519f;}
+
+/* Remove LeftBar em algumas paginas */
+.FCHome .left-bar, .ProductDet .left-bar, .ProductAmp .left-bar, .FCCustom .left-bar, .FCFreight .left-bar, .FCCheckoutSteps .left-bar, .FCPayment .left-bar, .FCContact .left-bar, .FCCart .left-bar, .FCRegister .left-bar, .FCNews .left-bar, .FCHelp .left-bar, .FCTrack .left-bar, .FCNewsletter .left-bar, .FCRecommend .left-bar, .FCAdvancedSearch .left-bar, .FCRateProd .left-bar {display:none !important;}
+
+/* Aside LeftBar - BarraEsquerda.htm */
+.left-bar {display: block; width:17%; margin:0 25px 0 15px; float:left; overflow:hidden; position: relative;}
+.ajustaLista {width:79.5%; float: left; overflow:hidden; position: relative;}
+
+/* Estilos Refinamento de busca Barra Esquerda */
+#idPagProdTop {width:89%;margin-left:1px; padding:10px 0 10px 10px;}
+.EstExibeFiltrosFC {width:100%; min-height: 40px; margin-top:18px; position: relative;}
+.EstTabFiltros {background-color: #FFFFFF; border: 1px solid #dddddd}
+.EstTabFiltros tr td, .EstTabFiltros ul, .EstTabFiltros a {font-family: 'Lato', Arial, sans-serif;font-weight: 400; font-size:14px !important;}
+.EstTitFiltroFC {width: 100%; height: auto; position: relative; font-weight:700; background-color:#404041}
+.EstTitFiltroFC b {display: block; padding: 5px 0 5px 10px; font-size: 16px !important; color: #FFFFFF; font-weight:700;}
+.EstListaFiltroFC {width:94%; min-height: 30px; position: relative; display: block; padding:3px 0 6px 6px;}
+.EstListaFiltroFC ul {padding: 5px; position: relative; display: block;}
+#idPathSearchSaleFC {text-transform:uppercase;}
+#idPathSearchNewFC {text-transform:uppercase;}
+#idSelPathCatQtFC, #idSelAdic1QtFC, #idSelAdic2QtFC, #idSelAdic3QtFC, #OrderProd {font-family: 'Lato', Arial, sans-serif;font-weight: 400; font-size:14px !important;border:1px solid #dddddd;background-color:#FFFFFF;color:#5f5f5f;height:22px;width:100%;}
+#idUlPathCatQtFC a,#idUlAdic1QtFC a,#idUlAdic2QtFC a,#idUlAdic3QtFC a {text-decoration:none; color:#5f5f5f;}
+#idUlPathCatQtFC a:hover,#idUlAdic1QtFC a:hover,#idUlAdic2QtFC a:hover,#idUlAdic3QtFC a:hover {color:#b9519f}
+#idUlPathCatQtFC li,#idUlAdic1QtFC li,#idUlAdic2QtFC li,#idUlAdic3QtFC li {font-family: 'Lato', Arial, sans-serif;font-weight: 400; font-size:12px !important;list-style-type:none;  margin:5px 5px 3px 0px; }
+#idUlPathSearchFC {width:100%;}
+#idUlPathSearchFC li {display: block !important; width: 180px !important; padding: 3px 10px 0px 0px !important; margin: 0px !important}
+#idUlPathSearchFC .pad {height:1px !important; background:#FFF !important; color:#FFF !important}
+#idUlPathSearchFC .Adic1Name {display:none}
+#idUlPathSearchFC .Adic2Name {display:none}
+#idUlPathSearchFC .Adic3Name {display:none}
+#idLinkAdvancedSearchFC {font-family: 'Lato', Arial, sans-serif;font-weight: 700; font-size:14px !important; color:#404041; text-decoration:none; text-transform:uppercase; display:block; padding:6px 0px 8px 10px; border-top:1px dotted #dddddd;}
+#idLinkAdvancedSearchFC:hover{color:#b9519f;}
+#idPathSearchTextEmptyFC, #idPathSearchTextInputFC, #idPathSearchOKFC {display:none}
+#idUlPathSearchCatFC a {color:#000000; font-weight:700;}
+
+/* Lista de Produto - Julho/2016 */
+#idImagemTopoCatFC {width:100%; max-width:916px; float:left; margin-bottom:10px;}
+.ProductList #idTxtIntroFoundProdsFC {margin:8px 0;width: 100%;min-height:20px;}
+.ProductList #idFoundFC b {font-size:16px;}
+
+/* Video YouTube - 22/08/2016 */
+.VideoProd {float:left; width:100%; margin-top:10px;}
+.VideoProdP {display:none;float:left; width:100%; margin-top:15px;}
+
+/* Estilo do Cross Selling */
+#idProdCrossFC {width:100%; float:left; overflow:hidden}
+#idEstLinhaProdCrossFC {display:none;}
+#idTitProdCrossFC {display:none;}
+#idListProdCrossFC li {float:left; overflow:hidden; width:18.3%; height:260px; margin:0px 9px; text-align:center}
+#idListProdCrossFC .FCPrice {color:#b9519f; font-weight:700; font-size:14px;}
+.EstNameProdCross {color:#5f5f5f; font-size:13px; font-family: 'Lato', Arial, sans-serif; font-weight:400;}
+.EstNameProdCross a {color:#5f5f5f}
+.EstFotoProdCross {width:190px;}
+.EstDescrProdCross, .EstCatProdCross, .EstRefProdCross {display:none;} 
+
+/*  Estilo Opiniões de Produtos */
+.EstOpiniaoLinha {color:#dddddd;height:1px;width:100%;max-width:1260px;}
+#idTabListaOpFC {font-weight:400;width:100%;max-width:1260px;}
+#idTabListaOpFC hr {border:1px solid #efefef; margin-top:10px; height:1px;}
+#idTabListaOpFC hr.EstOpiniaoLinha {border-top:1px solid #dddddd; border-bottom:1px solid #efefef; margin-top:15px; margin-bottom:7px; height:1px;}
+#idTabListaOpFC #idCommentsClickFC {height:30px; margin-bottom:10px;}
+#idTabListaOpFC .EstOpiniaoNome {line-height:16px; text-transform:capitalize;}
+#idTabListaOpFC .EstOpiniaoLocal {text-transform:capitalize;}
+.NotaOpiniaoCheio {width:17px !important;height:16px !important;background-image: url('https://www.intimici.com.br/lojas/00031045/images/StarOn.svg') !important;}
+.NotaOpiniaoMeio  {width:17px !important;height:16px !important;background-image: url('https://www.intimici.com.br/lojas/00031045/images/StarHalf.svg') !important;}
+.NotaOpiniaoVazio {width:17px !important;height:16px !important;background-image: url('https://www.intimici.com.br/lojas/00031045/images/StarOff.svg') !important;}
+
+/* Estilo de Títulos de Tabela CADASTRO DE CLIENTES, AJUDA, CONFIRMAÇÃO DO PEDIDO */
+.EstTabTopo {background:#dddddd;color:#565656;font-size:16px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;padding:4px;}
+.EstTabAjuda {background:#dddddd;color:#404041;font-size:18px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;padding:6px 0 6px 8px;}
+.EstTabTam {background:#dddddd;color:#480f04;font-size:14px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;}
+.EstTabQuadro {font-size:16px;font-family: 'Lato', Arial, sans-serif;font-weight: 400; color:#5f5f5f;}
+.EstNomeCampo {color:#5f5f5f;font-size:14px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;}
+
+/* Estilos Contato */
+#FCFormContainer #Nome, #Email, #Mensagem, #NomeAmigo, #EmailAmigo, #Comentarios {font-family: 'Lato', Arial, sans-serif;font-weight: 400; font-size:14px; color:#5f5f5f;}
+#FCFormContainer #Enviar {font-size:18px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;color:#ffffff;text-transform:uppercase;background-color:#a83b8d !important;}
+.EstDivCorRequired {padding: 6px; width: 1px; float: left;}
+.EstTxtRequired {font-family: 'Lato', Arial, sans-serif;font-weight: 400; font-size:12px; color:#5f5f5f;}
+
+/* Login */
+#idChkLoginIntFC {width:100%}
+#idChkEmailLoginFC {margin:0 !important; text-align:left !important;}
+#idTabLoginFC {width:100% !important;}
+#idTabLoginFC #Email {font-size: 14px !important; width: 210px;padding:3px;}
+#idTabLoginFC #SenhaAtual {font-size: 14px !important;}
+#idIdentifyFC #idDivLinkContinueFC {margin:0 !important; padding:0 !important}
+.EstChkDiv {border: 1px solid #DEDEDE;border-radius:0 !important; padding:10px 15px 15px 15px !important; margin-top:10px !important}
+#idTxtYourPasswordFC, #idTxtNoPasswordFC {font-size:12px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;text-decoration:none;}
+
+/* Cadastro */
+#idTabRegisterFC {width:100%}
+#idTabRegisterFC .smText {font-size:14px; font-family: 'Lato', Arial, sans-serif;}
+#idRegisterExtFC {width:100%; margin: 0px auto; padding:0;}
+#idRegisterExtFC .EstTabTopo {background:#dddddd;color:#565656;font-size:16px;font-family: 'Lato', Arial, sans-serif;font-weight: 700; padding:4px;}
+#idRegisterExtFC .EstNomeCampo {text-align:left !important}
+#idRegisterExtFC #idTabBotPreviousNextFC {margin-top:10px !important;}
+#idTxtCPFFC, #idTxtCEP1FC, #idTxtPhoneFC, #idTxtNascFC, #idTableLembreteFC, #idTxtLembreteFC .smtext {font-family:Arial, Helvetica, sans-serif !important; font-size:11px !important}
+td.smtext label {font-size:12px; font-family: 'Lato', Arial, sans-serif;color:#5f5f5f}
+.FCLabelForm {font-weight:bold; font-family: 'Lato', Arial, sans-serif; padding:0 0 10px 0; margin-top:0px;}
+.BotVerMais {display:none} 
+#idRegisterFC {width:100%}
+#idRegisterFC .InputText {height:26px !important; font-size:14px !important; font-family: 'Lato', Arial, sans-serif !important; padding-left:3px; border-radius: 3px; -moz-border-radius: 3px;}
+#idRegisterFC #P2Pais, #idRegisterFC #P2SexoFeminino {width:105px !important; height:26px !important; font-size:14px !important; font-family: 'Lato', Arial, sans-serif !important; padding-left:3px;border-radius: 3px; -moz-border-radius: 3px;}
+#idRegisterFC #P2CPF, #idRegisterFC #P2CEP, #idRegisterFC #P2PCEP, #idRegisterFC #P2EnderecoNum, #idRegisterFC #P2EnderecoCompl, #idRegisterFC #P2Telefone, #idRegisterFC #P2Celular, #idRegisterFC #P2DataNasc, #idRegisterFC #P2NomeLocal, #idRegisterFC #P2PCEP, #idRegisterFC #P2PTelefone, #idRegisterFC #P2SenhaCli, #idRegisterFC #P2SenhaCliConfirma {width:105px !important; font-family: 'Lato', Arial, sans-serif !important;}
+#idRegisterFC #P2Mensagem {max-width:96% !important; height:100px !important;}
+#idChkFreightFC #idTxtNomeCEPFC {font-size:13px !important; font-weight:700 !important; font-family: 'Lato', Arial, sans-serif}
+#idChkFreightFC #idTxtCEPFreightFC {font-size:13px !important; font-weight:400 !important; font-family: 'Lato', Arial, sans-serif}
+#idChkFreightFC #idTxtPrecoCEPFC {font-size:13px !important; color:#6f6f6f !important; font-weight:700 !important; font-family: 'Lato', Arial, sans-serif}
+
+/* Estilos do PEDIDO */
+.FCTrack table {width:100%;}
+.FCTrack td {padding:3px; font-family: 'Lato', Arial, sans-serif;}
+.FCTrack .EstNomeCampo {font-size:14px;}
+.FCTrack .EstCampo {font-size:14px;font-weight: 400;}
+.FCTrack #FCFormContainer {margin-top:0px;}
+.FCTrack #idTxtIntroTrackFC {margin:0; font-size:14px; font-weight:400; color:#0FBC0F; font-family: 'Lato', Arial, sans-serif;}
+.FCTrack .OrderNumberTrack {font-size:16px; font-weight:bold; color:#0FBC0F; font-family: 'Lato', Arial, sans-serif;}
+.FCTrack #idTabOrderDeliveryFC {padding-left:20px; width:48%; float:left; overflow:hidden}
+.FCLabelPw {font-size:12px; font-family: 'Lato', Arial, sans-serif;}
+.EstTabPedidoTit {background:#dddddd;color:#565656;font-size:14px !important;font-family: 'Lato', Arial, sans-serif !important;font-weight: 700; border:1px solid #e3e3e3;}
+.EstTabPedidoNome {font-size:14px;font-family: 'Lato', Arial, sans-serif;font-weight: bold;text-decoration:none; color:#5f5f5f}
+.EstTabPedidoNome:visited {color:#5f5f5f}
+.EstTabPedidoNome:active {color:#5f5f5f}
+.EstTabPedidoNome:hover {color:#b9519f;}
+.EstTabPedidoNome a {color:#5f5f5f; text-decoration:none;}
+.EstTabPedido {font-size:14px;background:#FFFFFF;border:1px solid #e3e3e3; font-family: 'Lato', Arial, sans-serif}
+.EstTabPedidoNum {font-size:14px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;background:#FFFFFF;}
+.EstTabPedidoTotal {font-size:14px;color:#5f5f5f; background-color:#dddddd;font-family: 'Lato', Arial, sans-serif;font-weight: bold;}
+.EstTabPedidoFrete {font-size:14px;color:#5f5f5f; background-color:#dddddd;font-family: 'Lato', Arial, sans-serif;font-weight: 400;}
+.EstTabPedidoBot {font-size:14px;font-family: 'Lato', Arial, sans-serif;font-weight: 400}
+.EstTabPedidoRef {font-size:12px;font-family: 'Lato', Arial, sans-serif;font-weight: 400}
+.EstTabPedidoAdicNome {font-size:12px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;}
+.EstTabPedidoAdicItem {font-size:12px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;}
+.EstTextoQtd {font-size:12px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;text-align:right;}
+.EstContinuarComprando{font-size:20px;font-family: 'Lato', Arial, sans-serif !important;font-weight: 700;color:#5f5f5f}
+#idRecoverOrderFC {font-weight:400; font-size:14px !important; color:#FFFFFF; border:none; background-color:#a3a3a3; padding:1px; margin-top:10px !important}
+#idRecoverOrderFC a {font-weight:700; color:#FFFFFF;}
+
+/* Estilos do CARRINHO */
+span.Titulos {display:block; color:#404041;font-size:22px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;text-decoration:none;}
+#TabItens {margin-top:15px; width:100%;}
+#TabItens .FCCartRespTable tbody tr td {border:#e3e3e3 !important;}
+#TabItens #idCartItemsFC {border:1px solid #e3e3e3;}
+#TabItens td.EstTabPedidoTit {font-family: 'Lato', Arial, sans-serif !important; font-size:14px !important; font-weight:700; color:#565656; border-radius:0 !important; background:#e3e3e3 !important; text-align:left !important}
+#TabItens td.EstTabPedidoTotal {border-radius:0 !important; background:none !important;}
+#TabItens td.EstTabPedidoFrete {border-radius:0 !important; background:none !important;}
+#TabItens #idColTotalPedidoVistaFC {border-radius:0 !important; background:#dddddd !important; color:#5f5f5f !important; font-weight:bold !important; font-size:14px !important;}
+#TabItens #idTotalPedidoVistaFC {border-radius:0 !important; background:#dddddd !important; color:#5f5f5f !important; font-weight:bold !important; font-size:14px !important;}
+#TabItens p {font-family: 'Lato', Arial, sans-serif !important}
+#TabItens td {font-family: 'Lato', Arial, sans-serif !important; font-size:14px; padding:8px 4px}
+#TabItens td td {padding:4px !important}
+#idCupomFC + tr + tr td {color:#960 !important; font-weight:bold; font-size:20px}
+#TabItens .FCCartQtyInput {text-align: right; width: 30px; height:14px; font-size:12px; font-family: 'Lato', Arial, sans-serif;border-radius: 3px; -moz-border-radius: 3px;}
+#TabItens input#Cupom {width:140px !important; height:18px; font-size:14px;border-radius: 3px; -moz-border-radius: 3px;}
+#TabItens input[type="text"] {border:1px solid #e3e3e3; border-radius: 3px; -moz-border-radius: 3px; color:#232323; padding:3px;}
+#TabItens #idTxtCupomFC {display:inline-block}
+#TabItens .FCPrice {font-size:14px;color:#565656;}
+#TabItens .FCCartSubtotalsLabel {font-weight:400; color:#565656;}
+#TabItens .FCCartItemsQty {font-weight:400; color:#565656;}
+#TabItens .FCCartItemsPrice .FCPrice {font-weight:bold; color:#565656;}
+#TabItens .FCCartCupomLabel {font-size:12px; font-family: 'Lato', Arial, sans-serif; text-transform:uppercase;}
+#TabCesta p {text-align:center;}
+#TabCesta .idTxtTrackFC, #TabCesta p.EstContinuarComprando, #TabCesta .EstTabPedidoBot,
+#TabCesta .EstTabPedidoRef + .EstTabPedidoAdicNome,
+#TabCesta .EstTabPedidoRef + .EstTabPedidoAdicNome + .EstTabPedidoAdicItem {display:none}
+#TabCesta .EstTabPedidoRef {display:block}
+#TabCesta .FCCartLeftCol {margin-top:-15px;}
+#TabCesta #FCCartButtons {margin-bottom:30px;}
+#TabCesta #FCCartButtons ul li {list-style: none;float: left;width: 33.33% !important;box-sizing: border-box;padding: 0 10px 0 10px;}
+#TabCesta #FCCartRightBuyBut {background-color:#0FBC0F !important; font-family: 'Lato', Arial, sans-serif; font-weight:700;}
+#TabCesta #FCCartBuyBut {background-color:#0FBC0F !important; font-family: 'Lato', Arial, sans-serif; font-weight:700;}
+#TabCesta #FCCartSmallFreightSimulationBut {background-color:#a3a3a3 !important}
+#TabCesta #FCCartFreightSimulationBut {background-color:#a3a3a3 !important; padding: 8px 20px 8px 20px;}
+#TabCesta #FCCartRightFreightSimulationBut {background-color:#a3a3a3 !important}
+.FCCartStillShopping button, .FCCartRecalculate button {font-family: 'Lato', Arial, sans-serif;font-size: 14px;background-color:#a3a3a3 !important;}
+#CestaLinha1 {width:100%; text-align:right; overflow:hidden}
+#CestaLinha2 {width:100%; text-align:right; overflow:hidden} 
+#FCCartRightSubtotalPrice {border-bottom:#e3e3e3 1px solid;}
+.FCCartBuy button {font-size:18px;}
+.FCCartRespTable {border: 2px solid #e3e3e3;}
+.FCCartLeftCol {width:100%;}
+.FCCartRightCol {display:none}
+.FCCartFooter {background-color:#ffffff;}
+
+/* Extreme Custom */ 
+#idCheckoutFC div, #idCheckoutFC p, #idCheckoutFC td, #idCheckoutFC span, #idCheckoutFC em, #idCheckoutFC b, #idCheckoutFC li {font-family: 'Lato', Arial, sans-serif;}
+#idChkTagsCol2FC, #idChkExtCartFC { position:relative !important; top:0 !important}
+#idChkCol1FC, #idChkCol2FC, #idChkCol3FC { display:block; float:left}
+#idChkAllFC { width:100% !important}
+#idCheckoutFC #idChkCol1FC, #idCheckoutFC #idChkCol2FC, #idCheckoutFC #idChkCol3FC { width:32.3% !important; margin:.5% !important}
+#idChkRegisterIntFC, #idChkPaymentIntFC, #idChkFreightIntFC, #idChkCartIntFC {width:92% !important}
+#idCheckoutFC .EstTitCheckoutFC { border-radius:0 !important; text-align:left !important; background:none !important; font-family: 'Lato', Arial, sans-serif !important; font-weight:700 !important; color:#404041 !important; font-size:18px !important; text-transform:uppercase !important; padding:6px 0 !important}
+#idCheckoutFC .EstChkTabTopo {
+	background:#dddddd !important;
+	font-family: 'Lato', Arial, sans-serif !important; font-weight:700 !important;
+	color:#565656 !important;
+	font-size:16px !important;
+	padding:5px !important;
+	border-bottom:10px solid #FFF;
+	border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	}
+.EstTabQuadro td { padding:3px 1% !important; vertical-align:middle !important}
+.EstTabQuadro td td { padding:0 !important}
+#idChkFreightIntFC p {font-size:16px !important; padding:5px 0 !important}
+#idCheckoutFC .EstChkNomeCampo {font-size:14px !important; font-family: 'Lato', Arial, sans-serif !important; width: 32%; padding-right:1% !important;}
+#idCheckoutFC .EstChkValorCampo {font-size:14px !important; font-family: 'Lato', Arial, sans-serif !important;}
+#idCheckoutFC .EstNomePagto { font-size:13px !important; font-family: 'Lato', Arial, sans-serif !important;}
+#idCheckoutFC .EstTabPayment { border-radius:0 !important}
+#idCheckoutFC .EstTabPayment img { margin:6px 0 !important; border-radius:0 !important}
+#idCheckoutFC .EstChkTextoContinuar {font-size: 14px !important; font-weight: 700;color: #078e07;font-family: 'Lato', Arial, sans-serif !important;}
+#idCheckoutFC .BotChkPaymentContinue {
+	background-color: #078e07 !important;
+	border: none !important;
+	font-weight: 700 !important;
+	font-size: 16px !important;
+	font-family: 'Lato', Arial, sans-serif !important;
+	text-transform:uppercase !important;
+	min-height: 30px !important;
+	padding:10px !important;
+	border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;
+	}
+.EstTabPagto input { margin:0 4px 0 10px !important; border-radius: 3px; -moz-border-radius: 3px;}
+#idCheckoutFC .smText {font-family: Arial, Helvetica, sans-serif !important; font-size:11px !important;}
+#idChkRegisterIntFC .InputText[type="text"] { width:77% !important; border-radius: 3px; -moz-border-radius: 3px;}
+#idCheckoutFC #idTxtLinkContinueFC {background:#0FBC0F !important; text-transform:uppercase; color:#fff; text-align:center; width:190px; font-size:18px;}
+#idDivLinkContinueFC { background:#0FBC0F !important; border:0 !important; margin:0 0 10px 1005px}
+#idTabFreteOptFC tr {border-top: 10px solid #fff;}
+#idTabFreteOptFC td input {margin-right:10px;border-radius: 3px; -moz-border-radius: 3px;}
+.EstTabPagtoExt .EstTabPagtoTit {border-radius: 0 !important; -moz-border-radius: 0 !important; -webkit-border-radius: 0 !important;}
+#idCheckoutFC .EstTabPagtoTit {font-size:12px !important;font-family: 'Lato', Arial, sans-serif !important; font-weight:700 !important;}
+#idCheckoutFC .smSelect {margin-bottom: 5px;}
+#idCheckoutFC #idFichasLocalFC {background:#dddddd !important; border:0 !important; font-size:11px !important; text-transform:uppercase !important; font-family: Arial, Helvetica, sans-serif !important}
+#idCheckoutFC #idChkTopFC{text-align:right !important; height:45px !important;}
+#idCheckoutFC .EstChkOrderConfirmationFC{text-align:right !important}
+#idCheckoutFC #idTxtFreightFC {background:#dddddd;color:#565656;font-size:14px;font-family: 'Lato', Arial, sans-serif;}
+#idCheckoutFC #idTxtFreightFC p {font-weight: 700; font-family: 'Lato', Arial, sans-serif !important;}
+#idCheckoutFC .InputText {height:24px !important; font-size:14px !important; font-family: 'Lato', Arial, sans-serif !important; padding-left:3px;border-radius: 3px; -moz-border-radius: 3px;}
+#idCheckoutFC .smSelect {width:100px; height:22px !important; font-size:12px !important; font-family: 'Lato', Arial, sans-serif !important; padding-left:3px;}
+#idCheckoutFC .EstDivParcels .smSelect {width:150px;}
+#idChkCCIntFC .smSelect {width: 57px !important; height: 22px !important; margin-top: 5px !important; margin-left: 10px !important;}
+
+/* Newsletter */
+#newsletter_bg {margin: 0 auto 0 15px; width:100%; max-width:1230px; overflow:hidden; float:left; background-color:#b9519f;}
+#newsletter {overflow:hidden; padding:20px 0px 15px 20px;}
+#news1 {width: 35%; float:left;font-family: 'Lato', Arial, sans-serif; font-size:24px; font-weight:400; color:#ffffff;margin-top:3px;}
+#news2, #news3 {width: 25.9%; float:left;}
+#news4 {width: 11.8%; float:left;}
+
+/*  RODAPÉ */
+#rodape_base {margin: 30px auto 0 auto; padding:0; float:left; width:100%;}
+#rodape1_bg {margin:0 auto;background:url('https://www.intimici.com.br/lojas/00031045/images/Fundo_Rodape.jpg') scroll repeat-x center top;background-color: #672e90;}
+#rodape1 {margin: 0 auto; max-width:1230px; overflow:hidden; padding-bottom:30px;}
+#rodape2 {margin: 0 auto; max-width:1230px; overflow:hidden; padding:13px 0px; border-top:1px solid #a16dac;}
+#rod1 {width: 23%; margin-top:73px; float: left;}
+#rod2 {width: 13%; margin-top:30px; padding-left:15px; float: left; border-left:1px solid #a16dac; height:132px;}
+#rod3 {width: 11.5%; margin-top:30px; padding-left:15px; float: left; border-left:1px solid #a16dac; height:132px;}
+#rod4 {width: 11.5%; margin-top:30px; padding-left:15px; float: left; border-left:1px solid #a16dac; height:132px;}
+#rod41 {display:none;}
+#rod5 {width: 26%; margin-top:30px; padding-left:15px; float: left; border-left:1px solid #a16dac; height:132px;}
+.rod51 {width:29%; float:left; padding-top:12px;}
+.rod51V {display:none;}
+.rod52 {width:66%; float:left; padding-top:12px;}
+#rod6 {width: 8.3%; margin-top:30px; padding-left:15px; float: left; border-left:1px solid #a16dac; height:132px;}
+#rod8 {width: 98.5%; float: left;}
+#rod9 {width: 1.5%;  float: left;}
+#rod9a {display:none; float: left; }
+.RodapeT {font-size:15px;font-family: 'Lato', Arial, sans-serif;font-weight:700;color:#FFFFFF;text-decoration:none; text-transform:uppercase}
+.RodapeMenu0 {font-size:12px;font-family: 'Lato', Arial, sans-serif;color:#FFFFFF;text-decoration:none; line-height:21px;}
+.RodapeMenu1 {font-size:12px;font-family: 'Lato', Arial, sans-serif;color:#FFFFFF;text-decoration:none; line-height:21px;}
+.RodapeMenu1:visited {color:#FFFFFF;}
+.RodapeMenu1:active {color:#FFFFFF;}
+.RodapeMenu1:hover {color:#b9519f;}
+.RodapeMenu2 {font-size:12px;font-family: 'Lato', Arial, sans-serif;color:#FFFFFF;text-decoration:none; line-height:12px;}
+.RodapeMenu2 a {font-size:12px;font-family: 'Lato', Arial, sans-serif;color:#FFFFFF;text-decoration:none; line-height:12px;}
+.RodapeMenu2 b {font-weight:700;}
+
+#rodape_base0 {margin: 30px auto 0 auto;padding: 0;float: left;width: 100%;}
+#rodape_pagto_central {margin:0 auto; max-width:1230px; width:100%;}
+.rodape_pagto   {width:59.9%; float:left; padding-left:20px;}
+.rodape_pagto1  {width:36%; float:left; text-align:center; margin-top:5px;}
+.rodape_pagto2  {width:32%; float:left; text-align:center; margin-top:5px;}
+.rodape_pagto3  {width:28%; float:left; text-align:center; margin-top:5px;}
+.rodape_central {width:35.2%; float:left; border-left:1px solid #d4d4d4; padding-left:35px;}
+.RodapeTP  {font-size:18px;font-family: 'Lato', Arial, sans-serif;font-weight:700;color:#a83b8d;}
+.RodapeTP1  {font-size:18px;font-family: 'Lato', Arial, sans-serif;font-weight:700;color:#a83b8d; width:34%; float:left;}
+.RodapeTP2  {font-size:14px;font-family: 'Lato', Arial, sans-serif;color:#a83b8d; width:62%; float:left;}
+.RodapeTPx {margin-top:5px; margin-bottom:8px;font-size:13px;font-family: 'Lato', Arial, sans-serif;font-weight:400;color:#5f5f5f; }
+.RodapeTel {width:50%; float:left; margin-top:25px; font-size:20px;font-family: 'Lato', Arial, sans-serif;font-weight:700;color:#b9519f; text-decoration:none;}
+.RodapeTel a {color:#b9519f; text-decoration:none;}
+
+#rodape_menu {display:none;background:#b9519f;padding-top:15px; padding-left:15px; float:left; margin-top:30px;}
+.RodapeLogo {text-align:center}
+.RodapeLogo img {height:61px;}
+.RodapeTM {font-size:21px;font-family: 'Lato', Arial, sans-serif;font-weight:400;font-style:italic;color:#FFFFFF;border-bottom:1px solid #ffffff; line-height:20px; padding-bottom:15px; margin-bottom:15px;}
+.RodapeTM b {font-weight:700;}
+
+/* ESTILOS PARA AS FOTOS DE PRODUTOS */
+#ProdCapaDiv img {max-width:240px;max-height:240px;}/* TAMANHO DAS IMAGENS NA CAPA */
+
+/* MEDIA QUERIES - Tamanhos de Telas dos Dispositivos */
+@media only screen and (min-width: 1265px) {
+/* menutopo */
+#MenuTopResp1 {background-color:#b9519f; height:75px; border-bottom:5px solid #a83b8d;}
+#MenuTopResp2 {display:none}
+/* prods home carousel */
+#ProdDestHomeC {margin-left:0; margin-right:0; width:100%;}
+#ProdDestHomeC .ProdCat {width:79%;}
+#ProdDestHomeC .ProdEspiar {width:21%;}
+#ProdDestHomeC .ProdVejaMais {display:none}
+/* prods home */
+#ProdDestHome {margin-left:15px; margin-right:15px; width:20.87%;}
+#ProdDestHome .ProdCat {width:79%;}
+#ProdDestHome .ProdEspiar {width:21%;}
+#ProdDestHome .ProdVejaMais {display:none}
+/* prods home lançamentos */
+#ProdDestLanc {margin-left:25px; margin-right:0; width:42.3%;}
+#ProdDestLanc .ProdCat {width:79%;}
+#ProdDestLanc .ProdEspiar {width:21%;}
+#ProdDestLanc .ProdVejaMais {display:none}
+/* prods lista categorias */
+#ProdDestLista {margin-left:12px; margin-right:12px; width:28.7%;}
+#ProdDestLista .ProdCat {width:79%;}
+#ProdDestLista .ProdEspiar {width:21%;}
+#ProdDestLista .ProdVejaMais {display:none}
+/* detalhe produto */
+.ProductDet .ajustaLista {width: 97.5%;float: left;position: relative;margin-left: 15px;}
+/* checkout */
+#idCheckoutFC #idChkCol1FC, #idCheckoutFC #idChkCol2FC, #idCheckoutFC #idChkCol3FC { width:49% !important}
+}
+
+
+@media only screen and (max-width: 1260px) {
+/* menutopo */
+#MenuTopResp1 {background-color:#b9519f; height:75px; border-bottom:5px solid #a83b8d;}
+#MenuTopResp2 {display:none}
+/* destaques home */
+#Destaques {width: 100%;max-width: 1222px;}
+#MaisVendidos, #GrandesMarcas, #Ofertas {width: 100%;max-width: 1213px;}
+/* prods home carousel */
+#ProdDestHomeC {margin-left:0; margin-right:0; width:100%;}
+#ProdDestHomeC .ProdCat {width:79%;}
+#ProdDestHomeC .ProdEspiar {width:21%;}
+#ProdDestHomeC .ProdVejaMais {display:none}
+/* prods home */
+#ProdDestHome {margin-left:15px; margin-right:15px; width:20.8%;}
+#ProdDestHome .ProdCat {width:79%;}
+#ProdDestHome .ProdEspiar {width:21%;}
+#ProdDestHome .ProdVejaMais {display:none}
+/* prods home lançamentos */
+#ProdDestLanc {margin-left:25px; margin-right:0; width:42.4%;}
+#ProdDestLanc .ProdCat {width:79%;}
+#ProdDestLanc .ProdEspiar {width:21%;}
+#ProdDestLanc .ProdVejaMais {display:none}
+/* prods lista categorias */
+#ProdDestLista {margin-left:12px; margin-right:12px; width:28.6%;}
+#ProdDestLista .ProdCat {width:79%;}
+#ProdDestLista .ProdEspiar {width:21%;}
+#ProdDestLista .ProdVejaMais {display:none}
+/* grandes marcas */
+.tab_marcas {max-width: 1213px;}
+/* detalhe produto */
+.ProductDet .ajustaLista {width: 97.5%;float: left;position: relative;margin-left: 15px;}
+/* newsletter */
+#newsletter_bg {width: 100%;max-width: 1213px;}
+/* checkout */
+#idCheckoutFC #idChkCol1FC, #idCheckoutFC #idChkCol2FC, #idCheckoutFC #idChkCol3FC { width:49% !important}
+}
+
+@media only screen and (max-width: 1230px) {
+/* ext */	
+#idFCContent {max-width:1200px;}	
+/* menutopo */
+#MenuTopResp1 {display:none}
+#MenuTopResp2 {display:block}
+/* prods home carousel */
+#ProdDestHomeC {margin-left:0; margin-right:0; width:100%;}
+#ProdDestHomeC .ProdCat {width:79%;}
+#ProdDestHomeC .ProdEspiar {width:21%;}
+#ProdDestHomeC .ProdVejaMais {display:none}
+/* prods home */
+#ProdDestHome {margin-left:15px; margin-right:15px; width:20.87%;}
+#ProdDestHome .ProdCat {width:79%;}
+#ProdDestHome .ProdEspiar {width:21%;}
+#ProdDestHome .ProdVejaMais {display:none}
+/* prods home lançamentos */
+#ProdDestLanc {margin-left:25px; margin-right:0; width:42.3%;}
+#ProdDestLanc .ProdCat {width:79%;}
+#ProdDestLanc .ProdEspiar {width:21%;}
+#ProdDestLanc .ProdVejaMais {display:none}
+/* prods lista categorias */
+#ProdDestLista {margin-left:12px; margin-right:12px; width:28.7%;}
+#ProdDestLista .ProdCat {width:79%;}
+#ProdDestLista .ProdEspiar {width:21%;}
+#ProdDestLista .ProdVejaMais {display:none}
+}
+
+@media only screen and (max-width: 1024px){
+/* ext */	
+#idFCContent {max-width:994px;}	
+/* topo */
+#topo  {height:171px;}
+#topo1 {width: 64.1%; margin-left:15px;}
+#topo2 {width: 33.2%; }
+#topo3 {width: 32%; margin-top:25px;}
+#topo41 {width: 21%; margin-top:29px;}
+#topo5 {width: 45.6%; margin-top:29px;}
+#topo6 {width: 49.8%; margin-top:12px;}
+#topo7 {width: 16.8%; margin-top:10px;}
+/* topo menu fixo */
+#topo8  {width: 18%; margin-left:15px;}
+#topo9  {width: 14%;}
+#topo10 {width: 14%;}
+#topo11 {width: 17%;}
+#topo12 {width: 30.6%;}
+#topo13 {width: 3.2%;}
+/* logo */
+.logoSVG {margin-left:15px;}
+/* botoes user */
+#botoes_user {max-width: 296px;}
+#espaco {width: 26px;height: 1px;}
+/* vitrine */
+#vitrine1 {margin-top:0;}
+/* faixas destaques */
+#faixa_home {max-width:994px;height:auto;margin:20px auto 0 15px;}
+.faixa1, .faixa2, .faixa3, .faixa4 {height:81px;}
+.faixa1 img, .faixa2 img, .faixa3 img, .faixa4 img {height:81px;}
+#Destaques, #GrandesMarcas, #MaisVendidos, #Ofertas {max-width:994px;}
+#MaisVendidos .TitulosDest, #Ofertas .TitulosDest {width: 92%;}
+#MaisVendidos .BotMaisDet, #Ofertas .BotMaisDet {width: 8%;}
+/* bloco lancamentos */
+#BlocoLanc1 {width: 47.4%;}
+#Lancamentos .TitulosDest {width: 83.7%;}
+#Lancamentos .BotMaisDet {width: 16.2%;}
+#ProdBigLanc .Limg img {height: 427px;}
+.banner2peq {width:95.1%;margin-left: 21px;}
+.banner2peq img {width:485px;}
+/* prods home carousel */
+#ProdDestHomeC {margin-left:0; margin-right:0; width:100%;}
+#ProdDestHomeC #ProdCapaDiv img {max-width:208px; max-height:208px;}
+#ProdDestHomeC .ProdCat {width:74%;}
+#ProdDestHomeC .ProdEspiar {width:26%;margin-top: 8px;}
+#ProdDestHomeC .ProdVejaMais {display:none}
+/* prods home */
+#ProdDestHome {margin-left: 15px;margin-right: 15px;width: 19.9%;height: 340px;}
+#ProdDestHome #ProdCapaDiv img {max-width:208px; max-height:208px;}
+#ProdDestHome .ProdCat {width:72%;}
+#ProdDestHome .ProdEspiar {width:28%;}
+#ProdDestHome .ProdVejaMais {display:none}
+/* prods home lançamentos */
+#ProdDestLanc {margin-left:21px; margin-right:0; width:41.1%; height: 342px;}
+#ProdDestLanc #ProdCapaDiv img {max-width: 208px;max-height: 208px;}
+#ProdDestLanc .ProdCat {width:72%;}
+#ProdDestLanc .ProdEspiar {width:28%;}
+#ProdDestLanc .ProdVejaMais {display:none}
+/* prods lista categorias */
+.left-bar {width:19.3%;}
+.ajustaLista {width:76.6%;}
+#idImagemTopoCatFC {max-width:772px;}
+.ProductList #idFoundFC {width:76%;}
+#idSelPathCatQtFC, #idSelAdic1QtFC, #idSelAdic2QtFC, #idSelAdic3QtFC, #idSelAdic1DQtFC, #idSelAdic2DQtFC, #idSelAdic3DQtFC, .smSelect2 {background:url('https://www.intimici.com.br/lojas/00031045/images/smSelect_seta.png') no-repeat right center scroll; background-color:#FFF;}
+#ProdDestLista {margin-left: 10px;margin-right: 10px;width: 27.9%;height: 335px;}
+#ProdDestLista #ProdCapaDiv img {max-width:208px; max-height:208px;}
+#ProdDestLista .ProdCat {width:74%;}
+#ProdDestLista .ProdEspiar {width:26%;}
+#ProdDestLista .ProdVejaMais {display:none}
+/* detalhe produto */
+.ProductDet .ajustaLista {width: 97.1%; margin-left:15px;}
+#idListProdCrossFC li {width:23%;}
+/* checkout */
+#idDivLinkContinueFC {margin:0 0 10px 776px}
+#idCheckoutFC #idChkCol1FC, #idCheckoutFC #idChkCol2FC, #idCheckoutFC #idChkCol3FC { width:49% !important}
+.smSelect {background:url('https://www.intimici.com.br/lojas/00031045/images/smSelect_seta.png') no-repeat right center scroll;background-color:#FFF;}
+/* pedidos */
+.FCTrack #idTabOrderDeliveryFC {padding-left:20px; width:47.5%;}
+/* newsletter */
+#newsletter_bg {max-width: 994px;}
+#newsletter {padding: 15px 0px 12px 15px;}
+#news1 {width: 38%;font-size: 21px;margin-top: 5px;}
+#news2, #news3 {width: 23%;}
+#news4 {width: 14.3%;}
+/* rodapé */
+#rodape_pagto_central {max-width:994px;}
+.RodapeTP1 {width: 36%;}
+.RodapeTP2 {font-size: 12px;}
+.rodape_pagto {width:58%;padding-left:0px;}
+.rodape_pagto1 {width: 34%;}
+.rodape_pagto2 {width: 30%;}
+.rodape_pagto3 {width: 35%;}
+.rodape_pagto1 img, .rodape_pagto2 img, .rodape_pagto3 img {height:26px;}
+.rodape_central {width: 38%;}
+#rodape_menu {display:block; width:98.5%;}
+.EstCatLista li {float:left; width:33%; margin-bottom:15px;}
+#rodape_base {margin: 0 auto;}
+#rod1 {width: 40%;margin-top: 73px;}
+#rod2, #rod3, #rod4 {width: 18.3%;}
+#rod5 {width: 38.1%;margin-left:40%;}
+#rod6 {width: 17.3%;}
+#rod8 {width: 95.4%;margin-left:15px;}
+#rod9 {width: 1.6%;}
+}
+
+@media only screen and (max-width: 800px){
+/* ext */	
+#idFCContent {max-width:770px;}
+/* topo */
+#topo  {height:183px;}
+#topo1 {width: 53.9%;}
+#topo2 {width: 42.4%;}
+#topo3 {width: 39%; margin-top: 35px;}
+#topo41 {display:none;}
+#topo42 {display:block; width: 59.2%; float:left; margin-top:20px;}
+#topo5 {width: 59.2%; margin-top:15px;}
+#topo6 {width: 37.8%;}
+#topo7 {width: 21.2%;}
+/* topo menu fixo */
+#topo8  {width: 24%;}
+#topo9  {width: 8%;}
+#topo10 {width: 8%;}
+#topo11 {width: 8%;}
+#topo12 {width: 44%;}
+#topo13 {width: 4%;}
+.MenuTopo3 {display:none;}
+/* logo */
+.logoSVG {margin-left:15px;}
+/* botoes user */
+#botoes_user {max-width: 303px;}
+#espaco {width: 26px;height: 1px;}
+/* busca */
+.busca {width: 88%;}
+/* vitrine */
+#vitrine1 {width:100%; max-width:999px !important; background-color:#FFF}
+/* faixas destaques */
+#faixa_home {max-width:770px;}
+.faixa1, .faixa2, .faixa3, .faixa4 {height:63px;}
+.faixa1 img, .faixa2 img, .faixa3 img, .faixa4 img {height:63px;}
+#Destaques, #GrandesMarcas, #MaisVendidos, #Ofertas {max-width:770px;}
+#MaisVendidos .TitulosDest, #Ofertas .TitulosDest {width: 89.8%;}
+#MaisVendidos .BotMaisDet, #Ofertas .BotMaisDet {width: 10.2%;}
+/* prods lancamentos */
+#BlocoLanc1 {width:50%;}
+#BlocoLanc2 {width: 46.1%;}
+#Lancamentos .TitulosDest {width: 80%;}
+#Lancamentos .BotMaisDet {width: 20%;}
+#ProdBigLanc .Limg img {height: 260px;}
+/* banners peq */
+.banner1peq {display:block}
+.banner1peq img {width:400px;}
+.banner2peq {display:none}
+/* prods home */
+#ProdDestHomeC {margin-left:0; margin-right:0; width:100%;}
+#ProdDestHomeC #ProdCapaDiv img {max-width:208px; max-height:208px;}
+#ProdDestHomeC .ProdCat {width: 88%;}
+#ProdDestHomeC .ProdVejaMais {display:block;width: 12%;margin-top: 7px;}
+#ProdDestHomeC .ProdEspiar {display:none;}
+/* prods home carousel */
+#ProdDestHome {width: 43.5%;height: 320px;}
+#ProdDestHome #ProdCapaDiv img {max-width:208px; max-height:208px;}
+#ProdDestHome .ProdCat {width: 88%;}
+#ProdDestHome .ProdVejaMais {display:block;width: 12%;margin-top: 2px;}
+#ProdDestHome .ProdEspiar {display:none;}
+/* prods lançamento */
+#ProdDestLanc {margin-top: 30px; margin-left:21px; margin-right:0; width:89%; height: 324px;}
+#ProdDestLanc #ProdCapaDiv img {max-width: 208px;max-height: 208px;}
+#ProdDestLanc .ProdCat {width: 87%;}
+#ProdDestLanc .ProdVejaMais {display:block;width: 13%;}
+#ProdDestLanc .ProdEspiar {display:none;}
+/* listagem produtos */
+.left-bar {width:24.7%;}
+.ajustaLista {width:70.2%;}
+#idImagemTopoCatFC {max-width:548px;}
+.ProductList #idFoundFC {width:69%;}
+#ProdDestLista {width: 42.2%;height: 330px;}
+#ProdDestLista .ProdCat {width: 82%;}
+#ProdDestLista .ProdVejaMais {display:block;width: 18%;}
+#ProdDestLista .ProdEspiar {display:none;}
+/* detalhe produto */
+.ProductDet .ajustaLista {width: 96.2%;margin-left:15px;}
+#idListProdCrossFC li {width:30.8%;}
+/* checkout */
+#idDivLinkContinueFC {left: 0 !important; margin:0 0 10px 549px !important}
+#idChkRegisterIntFC, #idChkPaymentIntFC, #idChkFreightIntFC, #idChkCartIntFC {width: 94% !important;}
+#idCheckoutFC #idChkCol1FC, #idCheckoutFC #idChkCol2FC, #idCheckoutFC #idChkCol3FC { width:99% !important}
+/* pedidos */
+.FCTrack #idTabOrderDeliveryFC {padding-left:20px; width:47%;}
+/* newsletter */
+#newsletter_bg {max-width: 770px;}
+#newsletter {padding: 10px 0px 15px 15px;}
+#news1 {width: 98%;font-size: 25px;margin-top: 0px;}
+#news2, #news3 {width:39.6%; margin-top:10px;}
+#news4 {width: 18.5%;margin-top:10px;}
+/* rodapé */
+#rodape_pagto_central {max-width:770px;}
+.RodapeTP1 {width:40.5%;}
+.RodapeTP2 {width:59.5%;font-size: 14px;}
+.rodape_pagto {width:100%;}
+.rodape_pagto1 {width: 36%;}
+.rodape_pagto2 {width: 34%;}
+.rodape_pagto3 {width: 29%;}
+.rodape_pagto1 img, .rodape_pagto2 img, .rodape_pagto3 img {height:31px;}
+.rodape_central {width: 100%; padding-left:0; padding-top:15px; margin-top:20px; border-top: 1px solid #d4d4d4; border-left: none;}
+#rodape_menu {width:98.1%;}
+.EstCatLista li {float:left; width:33%; margin-bottom:15px;}
+#rodape_base {margin: 0 auto;}
+#rod1 {width: 40%;margin-top: 73px;}
+#rod2 {width: 18%;}
+#rod3 {width: 18%;}
+#rod4 {width: 16%;}
+#rod5 {width: 38%;margin-left:40%;}
+#rod6 {width: 16%;}
+#rod8, #rod9 {display:none}
+#rod9a {display: block; width:96%; float: left; margin-left:15px; text-align:center;}
+}
+
+@media only screen and (max-width: 768px){
+/* ext */	
+#idFCContent {max-width:738px;}
+/* topo */
+#topo  {height:180px;}
+#topo1 {width: 52%;}
+#topo2 {width: 44.2%;}
+#topo3 {width: 39%; margin-top: 35px;}
+#topo41 {display:none;}
+#topo42 {display:block; width: 59.1%; float:left; margin-top:15px;}
+#topo5 {width: 59.1%; margin-top:15px;}
+#topo6 {width: 36.9%;}
+#topo7 {width: 22.2%;}
+/* topo menu fixo */
+#topo8  {width: 25%;}
+#topo12 {width: 42.8%;}
+#topo13 {width: 4.2%;}
+/* logo */
+.logoSVG {margin-left:15px;}
+.logoSVG img {height: 80px;}
+/* botoes user */
+#botoes_user {max-width: 283px;}
+#botoes_user img {height:28px;}
+#espaco {width: 25px;height: 1px;}
+/* busca */
+.busca {width: 88%;}
+/* vitrine */
+#vitrine1 {width:100%; max-width:999px !important; background-color:#FFF}
+/* faixas destaques */
+#faixa_home {max-width:738px;}
+.faixa1, .faixa2, .faixa3, .faixa4 {height:60px;}
+.faixa1 img, .faixa2 img, .faixa3 img, .faixa4 img {height:60px;}
+#Destaques, #GrandesMarcas, #MaisVendidos, #Ofertas {max-width:738px;}
+#MaisVendidos .TitulosDest, #Ofertas .TitulosDest {width: 89.2%;}
+#MaisVendidos .BotMaisDet, #Ofertas .BotMaisDet {width: 10.8%;}
+/* prods lancamentos */
+#BlocoLanc1 {width:49.4%;}
+#BlocoLanc2 {width:46.6%;}
+#Lancamentos .TitulosDest {width:79.2%;}
+#Lancamentos .BotMaisDet {width: 20.8%;}
+#ProdBigLanc .Limg img {height: 272px;}
+/* banners peq */
+.banner1peq img {width:380px;}
+/* prods home carousel */
+#ProdDestHomeC {margin-left:0; margin-right:0; width:100%;}
+#ProdDestHomeC #ProdCapaDiv img {max-width:240px; max-height:240px;}
+#ProdDestHomeC .ProdCat {width: 87%;}
+#ProdDestHomeC .ProdVejaMais {width: 13%;}
+/* prods home */
+#ProdDestHome {width: 43.2%;height: 355px;}
+#ProdDestHome #ProdCapaDiv img {max-width:240px; max-height:240px;}
+/* prods lançamento */
+#ProdDestLanc {margin-top: 30px; margin-left:21px; margin-right:0; width:88.4%; height: 324px;}
+#ProdDestLanc #ProdCapaDiv img {max-width: 210px;max-height: 210px;}
+#ProdDestLanc .ProdCat {width: 81%;}
+#ProdDestLanc .ProdVejaMais {width: 19%;}
+/* listagem produtos */
+.left-bar {width:25.8%;}
+.ajustaLista {width:68.8%;}
+#idImagemTopoCatFC {max-width:515px;}
+.ProductList #idFoundFC {width:68%;}
+#ProdDestLista {width: 41.8%;height: 330px;}
+#ProdDestLista .ProdCat {width: 81%;}
+#ProdDestLista .ProdVejaMais {width: 19%;}
+/* detalhe produto */
+#idListProdCrossFC li {width:47.4%;}
+/* checkout */
+#idDivLinkContinueFC {left: 0 !important; margin:0 0 10px 518px !important}
+/* pedidos */
+.FCTrack #idTabOrderDeliveryFC {padding-left:20px; width:47%;}
+/* newsletter */
+#newsletter_bg {max-width: 738px;}
+#newsletter {padding: 10px 0px 15px 15px;}
+#news1 {width: 98%;}
+#news2, #news3 {width:39%;}
+#news4 {width: 19.4%;}
+/* rodapé */
+#rodape_pagto_central {max-width:738px;}
+.RodapeTP1 {width:38%;}
+.RodapeTP2 {width:62%;}
+#rodape_menu {width:98%;}
+.EstCatLista li {width:32.7%;}
+#rod1 {width: 38%;}
+#rod2 {width: 19%;}
+#rod3 {width: 19%;}
+#rod4 {width: 16%;}
+#rod5 {width: 40%;margin-left:38%;}
+#rod6 {width: 16%;}
+#rod9a {width: 96.8%;}
+}
+
+@media only screen and (max-width: 736px){
+/* ext */	
+#idFCContent {max-width:706px;}
+/* topo */
+#topo   {height:158px;}
+#topo1  {width: 50%;}
+#topo2  {width: 46%;}
+#topo3  {width: 38%;margin-top:24px;}
+#topo41 {display:block;width:24%;margin-top:22px;}
+#topo42 {display:none;}
+#topo5  {width: 36%;margin-top:20px;}
+#topo6  {width: 42.2%;}
+#topo7  {display:none;}
+#topo7b {display:block;width: 17.7%; float:left; margin-top:10px;}
+/* topo menu fixo */
+#topo12 {width: 42.4%;}
+#topo13 {width: 4.4%;}
+/* logo */
+.logoSVG img {height: 75px;}
+/* menu topo */
+.MenuTopo1 {font-size: 11px;}
+/* botoes user */
+#botoes_user_peq {display: block;width: 94px;height: 33px;float: left;margin-top: 0px;}
+#botoes_user {display:none;}
+/* faixas destaques */
+#faixa_home {max-width:706px;}
+.faixa1, .faixa2, .faixa3, .faixa4 {height:58px;}
+.faixa1 img, .faixa2 img, .faixa3 img, .faixa4 img {height:58px;}
+#Destaques, #GrandesMarcas, #MaisVendidos, #Ofertas {max-width:706px;}
+#MaisVendidos .TitulosDest, #Ofertas .TitulosDest {width: 88.8%;}
+#MaisVendidos .BotMaisDet, #Ofertas .BotMaisDet {width: 11.2%;}
+/* prods lancamentos */
+#BlocoLanc1 {width:49.4%;}
+#BlocoLanc2 {width:46.6%;}
+#Lancamentos .TitulosDest {width:78%;}
+#Lancamentos .BotMaisDet {width: 22%;}
+#ProdBigLanc .Limg img {height: 240px;}
+/* banners peq */
+.banner1peq img {width:364px;}
+/* prods home carousel */
+#ProdDestHomeC {margin-left:0; margin-right:0; width:100%;}
+#ProdDestHomeC #ProdCapaDiv img {max-width:240px; max-height:240px;}
+#ProdDestHomeC .ProdCat {width: 87%;}
+#ProdDestHomeC .ProdVejaMais {width: 13%;}
+/* prods home */
+#ProdDestHome {width: 42.9%;height: 350px;}
+#ProdDestHome #ProdCapaDiv img {max-width:240px; max-height:240px;}
+#ProdDestHome .ProdCat {width: 87%;}
+#ProdDestHome .ProdVejaMais {width: 13%;}
+/* prods lançamento */
+#ProdDestLanc {margin-top: 30px; margin-left:21px; margin-right:0; width:87.7%; height: 324px;}
+#ProdDestLanc #ProdCapaDiv img {max-width: 210px;max-height: 210px;}
+#ProdDestLanc .ProdCat {width: 81%;}
+#ProdDestLanc .ProdVejaMais {width: 19%;}
+/* listagem produtos */
+.left-bar {width:27%;}
+.ajustaLista {width:67.4%;}
+#idImagemTopoCatFC {max-width:483px;}
+.ProductList #idFoundFC {width:67%;}
+#ProdDestLista {width: 41.3%;height: 345px;}
+#ProdDestLista .ProdCat {width: 80%;}
+#ProdDestLista .ProdVejaMais {width: 20%;}
+/* detalhe produto */
+.ProductDet .ajustaLista {width: 96%;margin-left:15px;}
+#idListProdCrossFC li {width:47.3%;}
+/* checkout */
+#idDivLinkContinueFC {left: 0 !important; margin:0 0 10px 487px !important}
+/* newsletter */
+#newsletter_bg {max-width: 706px;}
+#news2, #news3 {width:38.8%;}
+#news4 {width: 20.3%;}
+/* rodapé */
+#rodape_pagto_central {max-width:706px;}
+.RodapeTP1 {width: 40%;}
+.RodapeTP2 {width: 60%;}
+#rodape_menu {width:97.9%;}
+#rod1 {width: 36%;}
+#rod2 {width: 20%;}
+#rod3 {width: 20%;}
+#rod4 {width: 15%;}
+#rod5 {width: 42.1%;margin-left:36%;}
+#rod6 {width: 15%;}
+#rod9a {width: 96%;}
+}
+
+
+@media only screen and (max-width: 667px){
+/* ext */	
+#idFCContent {max-width:637px;}
+/* topo */
+#topo {height:242px;}
+#topo1, #topo2 {display:none;}
+#topo2b {display:block;width: 100%; float:left; height: 26px;padding-top:10px; text-align:center}
+#topo3  {width: 100%;margin-top:20px;}
+#topo41 {width: 29%;margin-top:10px;margin-left:15px;}
+#topo5  {width: 66.5%;margin-top:10px;}
+#topo6  {width: 70%;margin-left:15px;}
+#topo7  {display:block; width: 25.5%;}
+#topo7b {display:none;}
+/* topo menu fixo */
+#topo8 {width: 27%;}
+#topo12 {width: 39.5%;}
+#topo13 {width: 4.8%;}
+/* logo */
+.logoSVG {text-align: center;margin-left:0px;}
+/* menu topo */
+.MenuTopo1 {font-size: 12px;}
+/* botoes user */
+#botoes_user_peq {display:none;}
+#botoes_user {display:block;max-width: 273px;}
+botoes_user img {height: 27px;}
+#espaco {width: 20px;}
+/* faixas destaques */
+#faixa_home {max-width:637px;margin:10px auto 0 15px;}
+.faixa1, .faixa3 {margin-top:10px; height:auto; width:52%}
+.faixa2, .faixa4 {margin-top:10px; height:auto; width:48%}
+.faixa1 img, .faixa2 img, .faixa3 img, .faixa4 img {height:108px;}
+#Destaques, #GrandesMarcas, #MaisVendidos, #Ofertas {max-width:637px;}
+#MaisVendidos .TitulosDest, #Ofertas .TitulosDest {width: 87.5%;}
+#MaisVendidos .BotMaisDet, #Ofertas .BotMaisDet {width: 12.5%;}
+/* prods lancamentos */
+#BlocoLanc1 {width:49.4%;}
+#BlocoLanc2 {width:46.6%;}
+#Lancamentos .TitulosDest {width:76%;}
+#Lancamentos .BotMaisDet {width: 24%;}
+#ProdBigLanc .Limg img {height: 281px;}
+/* banners peq */
+.banner1peq img {width:329px;}
+/* prods home carousel */
+#ProdDestHomeC {margin-left:0; margin-right:0; width:100%;}
+#ProdDestHomeC #ProdCapaDiv img {max-width:240px; max-height:240px;}
+#ProdDestHomeC .ProdCat {width: 84%;}
+#ProdDestHomeC .ProdVejaMais {width: 16%;}
+/* prods home */
+#ProdDestHome {width: 42.2%;height: 355px;}
+#ProdDestHome #ProdCapaDiv img {max-width:240px; max-height:240px;}
+#ProdDestHome .ProdCat {width: 85%;}
+#ProdDestHome .ProdVejaMais {width: 15%;}
+/* prods lançamento */
+#ProdDestLanc {margin-top: 30px; margin-left:21px; margin-right:0; width:85.5%; height: 324px;}
+#ProdDestLanc #ProdCapaDiv img {max-width: 210px;max-height: 210px;}
+#ProdDestLanc .ProdCat {width: 81%;}
+#ProdDestLanc .ProdVejaMais {width: 19%;}
+/* listagem produtos */
+.left-bar {width:29.8%;margin:0 20px 0 15px;}
+.ajustaLista {width:64.8%;}
+#idImagemTopoCatFC {max-width:420px;}
+.ProductList #idFoundFC {float:left; width:64%;}
+#ProdDestLista {width: 40%;height: 315px;}
+#ProdDestLista #ProdCapaDiv img {max-width: 177px;max-height: 177px;}
+#ProdDestLista .ProdCat {width: 76%;}
+#ProdDestLista .ProdVejaMais {width: 24%;}
+/* detalhe produto */
+.ProductDet .ajustaLista {width: 95.6%;margin-left:15px;}
+#idListProdCrossFC li {width:47%;}
+/* carrinho */
+.FCCartStillShopping button, .FCCartRecalculate button {font-size: 12px;}
+/* checkout */
+#idDivLinkContinueFC {left: 0 !important; margin:0 0 10px 421px !important}
+/* pedidos */
+.FCTrack #idTabOrderDeliveryFC {padding-left:20px; width:46%;}
+/* newsletter */
+#newsletter_bg {max-width: 637px;}
+#news2, #news3 {width:37.5%;}
+#news4 {width: 22.7%;}
+/* rodapé */
+#rodape_pagto_central {max-width:637px;}
+.RodapeTP1 {width: 39%;}
+.RodapeTP2 {width: 61%; font-size:13px;}
+.rodape_pagto1 {width: 35%;}
+.rodape_pagto2 {width: 32%;}
+.rodape_pagto3 {width: 32%;}
+.rodape_pagto1 img, .rodape_pagto2 img, .rodape_pagto3 img {height: 29px;}
+#rodape_menu {width:97.7%;}
+#rod1 {width: 100%;margin-top: 40px;}
+#rod2 {width: 30%; margin-left:15px;}
+#rod3 {width: 30%;}
+#rod4 {width: 28.3%;}
+#rod5 {width: 62.4%;margin-left:15px;}
+#rod6 {width: 28.3%;}
+#rod9a {width: 95.5%;}
+}
+
+
+@media only screen and (max-width: 640px){
+/* ext */	
+#idFCContent {max-width:610px;}
+/* topo */
+#topo41 {width: 29%;margin-top:10px;margin-left:15px;}
+#topo5  {width: 66.5%;margin-top:10px;}
+#topo6  {width: 69%;margin-left:15px;}
+#topo7  {display:none;  width: 25.7%;}
+#topo7b {display:block; width: 20.4%}
+/* topo menu fixo */
+#topo8 {width: 29%;}
+#topo9 {width: 7%;}
+#topo10 {width: 7%;}
+#topo11 {width: 7%;}
+#topo12 {width: 40.5%;}
+#topo13 {width: 4.8%;}
+/* logo */
+.logoSVG {text-align: center;margin-left:0px;}
+/* menu topo */
+.MenuTopo1 {font-size: 11px;}
+/* botoes user */
+#botoes_user {max-width:255px;}
+#botoes_user img {height: 26px;}
+#espaco {width: 20px;}
+/* faixas destaques */
+#faixa_home {max-width:610px;margin:10px auto 0 15px;}
+.faixa1 img, .faixa2 img, .faixa3 img, .faixa4 img {height:103px;}
+#Destaques, #GrandesMarcas, #MaisVendidos, #Ofertas {max-width:610px;}
+#MaisVendidos .TitulosDest, #Ofertas .TitulosDest {width: 87%;}
+#MaisVendidos .BotMaisDet, #Ofertas .BotMaisDet {width: 13%;}
+/* prods lancamentos */
+#BlocoLanc1 {width:49.4%;}
+#BlocoLanc2 {width:46.6%;}
+#Lancamentos .TitulosDest {width:75%;}
+#Lancamentos .BotMaisDet {width: 25%;}
+#ProdBigLanc .Limg img {height: 288px;}
+/* banners peq */
+.banner1peq img {width:316px;}
+/* prods home carousel */
+#ProdDestHomeC {margin-left:0; margin-right:0; width:100%;}
+#ProdDestHomeC #ProdCapaDiv img {max-width:220px; max-height:220px;}
+#ProdDestHomeC .ProdCat {width: 84%;}
+#ProdDestHomeC .ProdVejaMais {width: 16%;}
+/* prods home */
+#ProdDestHome {width: 41.8%;height: 335px;}
+#ProdDestHome #ProdCapaDiv img {max-width:220px; max-height:220px;}
+/* prods lançamento */
+#ProdDestLanc {margin-top: 30px; margin-left:21px; margin-right:0; width:84.6%; height: 324px;}
+#ProdDestLanc #ProdCapaDiv img {max-width: 210px;max-height: 210px;}
+#ProdDestLanc .ProdCat {width: 81%;}
+#ProdDestLanc .ProdVejaMais {width: 19%;}
+/* listagem produtos */
+.left-bar {width:31%;margin:0 2.7% 0 2.7%;}
+.ajustaLista {width:63.5%;}
+#idImagemTopoCatFC {max-width:393px;}
+.ProductList #idFoundFC {width:100%; max-width: 400px;}
+#ProdDestLista {width: 91%;height: auto;padding-bottom: 5px;margin-left: 0px;margin-right: 0px;}
+#ProdDestLista #ProdCapaDiv img {max-width: 210px;max-height: 210px;}
+#ProdDestLista .ProdCat {width: 89%;}
+#ProdDestLista .ProdVejaMais {width: 11%;}
+/* detalhe produto */
+.ProductDet .ajustaLista {width: 95.3%;margin-left:15px;}
+#idListProdCrossFC li {width:47%;}
+/* checkout */
+#idDivLinkContinueFC {left: 0 !important; margin:0 0 10px 395px !important}
+#idCheckoutFC .InputText {margin-left:5px;}
+#idCheckoutFC .smSelect {margin-left:5px;}
+.EstTabQuadro td {padding:3px 0 !important}
+#idOptInFC { float:left}
+/* newsletter */
+#newsletter_bg {max-width: 610px;}
+#news2, #news3 {width:37%;}
+#news4 {width: 23.4%;}
+/* rodapé */
+#rodape_pagto_central {max-width:610px;}
+.RodapeTP1 {width: 36%;}
+.RodapeTP2 {width: 64%;}
+.rodape_pagto1 {width: 35%;}
+.rodape_pagto2 {width: 30%;}
+.rodape_pagto3 {width: 35%;}
+.rodape_pagto1 img, .rodape_pagto2 img, .rodape_pagto3 img {height: 27px;}
+#rodape_menu {width:97.6%;}
+#rod4 {width: 27.8%;}
+#rod5 {width: 62.5%;}
+#rod6 {width: 27.8%;}
+#rod9a {width: 95.2%;}
+}
+
+@media only screen and (max-width: 568px){
+/* ext */	
+#idFCContent {max-width:538px;}
+/* topo */
+#topo41 {width: 46.4%;margin-top:13px;margin-left:15px;}
+#topo5  {width: 48.3%;margin-top:10px;}
+#topo6  {width: 64.9%;margin-left:15px;}
+#topo7  {display:none;  width: 25.7%;}
+#topo7b {display:block; width: 23%}
+/* topo menu fixo */
+#topo8  {width: 31%;}
+#topo12 {width: 36.8%;}
+#topo13 {width: 5.6%;}
+/* menu topo */
+.MenuTopo1 {font-size: 12px;}
+/* botoes user */
+#botoes_user {display:none}
+#botoes_user_peq {display: block;width:104px;height: 33px;float: left;margin-top: 0px;}
+/* busca */
+.busca {width: 91.7%;}
+/* faixas destaques */
+#faixa_home {max-width:538px;margin:10px auto 0 15px;}
+.faixa1 img, .faixa2 img, .faixa3 img, .faixa4 img {height:91px;}
+#Destaques, #GrandesMarcas, #MaisVendidos, #Ofertas {max-width:538px;}
+#MaisVendidos .TitulosDest, #Ofertas .TitulosDest {width: 85%;}
+#MaisVendidos .BotMaisDet, #Ofertas .BotMaisDet {width: 15%;}
+/* prods lancamentos */
+#BlocoLanc1 {width:49.4%;}
+#BlocoLanc2 {width:46.6%;}
+#Lancamentos .TitulosDest {width:72%;}
+#Lancamentos .BotMaisDet {width: 28%;}
+#ProdBigLanc .Limg img {height: 270px;}
+/* banners peq */
+.banner1peq img {width:280px;}
+/* prods home carousel */
+#ProdDestHomeC {margin-left:0; margin-right:0; width:100%;}
+#ProdDestHomeC #ProdCapaDiv img {max-width:220px; max-height:220px;}
+#ProdDestHomeC .ProdCat {width: 82%;}
+#ProdDestHomeC .ProdVejaMais {width: 18%;}
+/* prods home */
+#ProdDestHome {width:40.8%; height: 325px;}
+#ProdDestHome #ProdCapaDiv img {max-width:210px; max-height:210px;}
+#ProdDestHome .ProdCat {width: 82%;}
+#ProdDestHome .ProdVejaMais {width: 18%;}
+/* prods lançamento */
+#ProdDestLanc {margin-top: 30px; margin-left:21px; margin-right:0; width:81%; height: 340px;}
+#ProdDestLanc #ProdCapaDiv img {max-width: 210px;max-height: 210px;}
+#ProdDestLanc .ProdCat {width: 81%;}
+#ProdDestLanc .ProdVejaMais {width: 19%;}
+/* listagem produtos */
+.left-bar {width:35%;margin:0 3% 0 3%;}
+.ajustaLista {width:58.8%;}
+#idImagemTopoCatFC {max-width:320px;}
+.ProductList #idFoundFC {max-width: 330px;}
+#ProdDestLista {width: 90%;}
+#ProdDestLista #ProdCapaDiv img {max-width: 190px;max-height: 190px;}
+#ProdDestLista .ProdCat {width: 86%;}
+#ProdDestLista .ProdVejaMais {width: 14%;}
+/* detalhe produto */
+.ProductDet .ajustaLista {width: 94.8%;margin-left:15px;}
+#idListProdCrossFC li {width:96.5%; height: auto; padding-bottom:30px;}
+/* cadastro */
+.pass2 .EstTabQuadro td {display:block !important;}
+.pass2 #P2Nome, .pass2 #P2Endereco, .pass2 #P2Bairro, .pass2 #P2Cidade, .pass2 #P2Email, .pass2 #P2LembreteSenhaCli {width:270px !important}
+.pass2 #idTxtPhoneFC, .pass2 #idTxtCEP1FC, .pass2 #idTxtCPFFC, .pass2 .smText { font-size:11px !important; padding:1px 0 6px !important}
+.pass2 #idTableSenhaFC td, .pass2 #idTableDataNascFC td, .pass2 #idTablePhoneFC td { float:left !important; font-size:12px !important; margin:3px 0 !important}
+#idTabRegisterFC .EstNomeCampo {width:40%;}
+/* checkout */
+#idDivLinkContinueFC {left: 0 !important; margin:0 0 10px 325px !important}
+/* newsletter */
+#newsletter_bg {max-width: 538px;}
+#news2, #news3 {width:70%;}
+#news4 {width: 26.8%;}
+/* rodapé */
+#rodape_pagto_central {max-width:538px;}
+.RodapeTP1 {width: 100%;}
+.RodapeTP2 {width: 100%; margin:5px 0; text-align:center; font-size: 14px;}
+.rodape_pagto1 {width: 35%;}
+.rodape_pagto2 {width: 28%;}
+.rodape_pagto3 {width: 37%;}
+.rodape_pagto1 img, .rodape_pagto2 img, .rodape_pagto3 img {height: 25px;}
+.RodapeTPx {font-size:12px;}
+#rodape_menu {width:97.3%;}
+.EstCatLista li {width: 32.4%;}
+#rod2 {width: 32%;}
+#rod3 {width: 31%;}
+#rod4 {width: 19%;}
+#rod5 {width: 65.9%;}
+#rod6 {width: 19%;}
+#rod8, #rod9 {display:none}
+#rod9a {width:94.7%;}
+}
+
+@media only screen and (max-width: 414px){
+/* ext */	
+#idFCContent {max-width:384px;}
+/* topo */
+#topo {height: 270px;}
+#topo2b {display:none;}
+#topo2c {display:block;width: 100%; float:left; height: 26px;padding-top:10px; text-align:center}
+#topo41 {display:none;}
+#topo42 {display:block; width:93%;margin-top:10px;margin-left:15px; text-align:center;}
+#topo5  {width: 92.9%; margin-top: 14px; margin-left:15px;}
+#topo6  {width: 86.6%; margin-left: 15px;}
+#topo7  {display:none;  width: 26%;}
+#topo7b {display:none;  width: 23%;}
+#topo7c {display:block; width: 6%; float:left; margin-top:10px;}
+/* topo menu fixo */
+#topoF  {width: 100%;height: 104px;}
+#topo8  {width: 46.3%;}
+#topo9  {width: 11%;}
+#topo10 {width: 11%;}
+#topo11 {width: 16.2%;}
+#topo12 {display:none;}
+#topo13 {width: 8%;}
+#topo14 {display:block; width:92%; margin-left:15px;}
+#topo14 .busca {width:100%; margin-top:5px;}
+/* botoes user */
+#botoes_user {display:block;max-width: 214px; margin-top:4px;}
+#botoes_user img {height: 22px;}
+#botoes_user_peq {display:none;}
+#espaco {width: 15px;}
+/* faixas destaques */
+#faixa_home {max-width:384px;margin:10px auto 0 15px;}
+.faixa1 img, .faixa2 img, .faixa3 img, .faixa4 img {height:65px;}
+#Destaques, #GrandesMarcas, #MaisVendidos, #Ofertas {max-width:384px;}
+#MaisVendidos .TitulosDest, #Ofertas .TitulosDest {width: 79%;}
+#MaisVendidos .BotMaisDet, #Ofertas .BotMaisDet {width: 21%;}
+/* prods lancamentos */
+#BlocoLanc1 {width:100%;max-width:384px;}
+#BlocoLanc2 {width:100%;max-width:384px; margin-top:30px;}
+#Lancamentos .TitulosDest {width:79%;}
+#Lancamentos .BotMaisDet {width: 21%;}
+#ProdBigLanc .Limg img {height: 340px;}
+/* banner peq */
+.banner1peq {display:none;}
+.banner2peq {display:block; width:100%; max-width:384px; margin-left:15px;}
+.banner2peq img {width:384px;}
+/* prods home carousel */
+#ProdDestHomeC {margin-left:0; margin-right:0; width:100%;}
+#ProdDestHomeC #ProdCapaDiv img {max-width:240px; max-height:240px;}
+#ProdDestHomeC .ProdCat {width: 87%;}
+#ProdDestHomeC .ProdVejaMais {width: 13%;}
+/* prods home */
+#ProdDestHome {width:87.5%; height:auto; padding-bottom:10px;}
+#ProdDestHome #ProdCapaDiv img {max-width:240px;max-height:240px;}
+#ProdDestHome .ProdCat {width: 87%;}
+#ProdDestHome .ProdVejaMais {width: 13%;}
+/* prods lançamentos */
+#ProdDestLanc {margin-top: 30px;margin-left: 15px; width: 94.6%; height: auto; padding-bottom: 10px;}
+#ProdDestLanc #ProdCapaDiv img {max-width: 240px;max-height: 240px;}
+#ProdDestLanc .ProdCat {width: 81%;}
+#ProdDestLanc .ProdVejaMais {width: 19%;}
+/* lista produtos */
+.left-bar {display:none}
+.ajustaLista {width:100%; max-width:384px;}
+#idImagemTopoCatFC {max-width:384px;}
+.ProductList #idFoundFC {max-width: 384px;}
+.ProductList #idFoundFC b {font-size: 16px;}
+.ProductList #TabTitProd {margin-left:15px;}
+#ProdDestLista {width: 94%;}
+#ProdDestLista #ProdCapaDiv img {max-width:240px;max-height:240px;}
+/* detalhe produto */
+.ProductDet .ajustaLista {width: 94.8%;margin-left:15px;}
+#idListProdCrossFC li {width:95.5%;}
+.VideoProd {display:none;}
+.VideoProdP {display:block;}
+/* carrinho */
+#TabCesta #FCCartButtons ul li {width: 100% !important;padding: 0px;}
+.FCCartStillShopping button, .FCCartRecalculate button {font-size: 14px;}
+/* checkout */
+#idDivLinkContinueFC {left: 0 !important; margin:0 0 10px 90px !important}
+/* pedidos */
+.FCTrack #idTabOrderDeliveryFC {padding-left:0px; width:100%;}
+/* newsletter */
+#newsletter_bg {max-width: 384px;}
+#news1 {font-size: 21px;}
+#news2, #news3 {width:58%;}
+#news4 {width: 38%;}
+/* rodapé */
+#rodape_pagto_central {max-width:384px;}
+.RodapeTP2 {font-size:14px;}
+.rodape_pagto1 {width:100%;}
+.rodape_pagto2, .rodape_pagto3 {width:100%; margin-top:15px;}
+.rodape_pagto1 img, .rodape_pagto2 img, .rodape_pagto3 img {height: 31px;}
+.RodapeTPx {font-size:14px;}
+#rodape_menu {width:96.3%; padding-bottom:10px;}
+.EstCatLista li {width:96%; border-bottom:1px solid #FFFFFF; padding-bottom:10px; margin-bottom:10px;}
+#rod2 {width: 29.1%; margin-left:15px; padding-left: 0px; border-left: none;}
+#rod3 {width: 23.5%; margin-left:15px;}
+#rod4 {width: 26.3%; margin-left:15px;}
+#rod5 {width: 60%; margin-left:15px; padding-left: 0px; border-left: none; height:180px;}
+.rod51  {display:none}
+.rod51V {display:block;width:56%; float:left; padding-top:12px;}
+.rod52  {width:56%; float:left; padding-top:12px;}
+#rod6 {width: 24%; margin-left:15px; height:180px;}
+#rod9a {width:92.7%;}
+}
+
+@media only screen and (max-width: 375px){
+/* ext */	
+#idFCContent {max-width:345px;}
+/* topo */
+#topo42 {width: 92.2%;}
+#topo5  {width: 92.2%;}
+#topo6  {width: 85%;}
+#topo7c {width: 6.8%;}
+/* topo menu fixo */
+#topo8  {width: 48%;}
+#topo9  {width: 11%;}
+#topo11 {width: 13%;}
+#topo13 {width: 8.4%;}
+#topo14 .busca {width: 99.5%;}
+/* botoes user */
+#botoes_user {display:none;}
+#botoes_user_peq {display:block;width: 175px;}
+/* faixas destaques */
+#faixa_home {max-width:345px;}
+.faixa1 img, .faixa2 img, .faixa3 img, .faixa4 img {height:58px;}
+#Destaques, #GrandesMarcas, #MaisVendidos, #Ofertas {max-width:345px;}
+#MaisVendidos .TitulosDest, #Ofertas .TitulosDest {width: 77%;}
+#MaisVendidos .BotMaisDet, #Ofertas .BotMaisDet {width: 23%;}
+/* prods lancamentos */
+#BlocoLanc1 {width:100%;max-width:345px;}
+#BlocoLanc2 {width:100%;max-width:345px; margin-top:30px;}
+#Lancamentos .TitulosDest {width:77%;}
+#Lancamentos .BotMaisDet {width: 23%;}
+#ProdBigLanc .Limg img {height: 330px;}
+/* banner peq */
+.banner2peq {display:block; width:100%; max-width:345px; margin-left:15px;}
+.banner2peq img {width:345px;}
+/* prods home carousel */
+#ProdDestHomeC {margin-left:0; margin-right:0; width:100%;}
+#ProdDestHomeC .ProdCat {width: 86%;}
+#ProdDestHomeC .ProdVejaMais {width: 14%;}
+/* prods home */
+#ProdDestHome {width:86.3%;}
+#ProdDestHome .ProdCat {width: 86%;}
+#ProdDestHome .ProdVejaMais {width: 14%;}
+/* prods lançamentos */
+#ProdDestLanc {width: 93.8%;}
+/* lista produtos */
+.left-bar {display:none}
+.ajustaLista {width:100%; max-width:345px;}
+#idImagemTopoCatFC {max-width:345px;}
+.ProductList #idFoundFC {max-width: 345px;}
+#ProdDestLista {width: 93.7%;}
+/* detalhe produto */
+.ProductDet .ajustaLista {width: 94.7%;margin-left: 15px;}
+#idListProdCrossFC li {width:95%;}
+/* checkout */
+.FCCheckout .EstChkDiv {padding:8px;}
+#idChkRegisterIntFC, #idChkPaymentIntFC, #idChkFreightIntFC, #idChkCartIntFC {width: 91% !important;}
+#idChkLoginIntFC {width:85% !important}
+#idCheckoutFC {width:365px !important; margin-left:-10px !important;}
+#TabItens td {font-size:12px; color:#5f5f5f; padding:5px 2px}
+#idDivLinkContinueFC {left: 0 !important; margin:0 0 10px 75px !important}
+#idCheckoutFC .EstChkNomeCampo {font-size: 12px !important;width: 35%;margin-right: 5px !important;}
+/* newsletter */
+#newsletter_bg {max-width: 345px;}
+#newsletter {padding: 14px 0px 15px 15px;}
+#news1 {width: 96%; font-size:26px; line-height:24px;}
+#news2, #news3 {width:100%;margin-top: 15px;}
+#news4 {width: 43%;margin-top: 15px;}
+/* rodapé */
+#rodape_pagto_central {max-width:345px;}
+.rodape_pagto1 {width:100%;}
+.rodape_pagto2, .rodape_pagto3 {width:100%; margin-top:15px;}
+.rodape_pagto1 img, .rodape_pagto2 img, .rodape_pagto3 img {height: 31px;}
+.RodapeTel   {width: 55%; margin-left:78px;}
+#rodape_menu {width:95.9%;}
+.EstCatLista li {width:95.8%;}
+.RodapeMenu1 {font-size: 12px; letter-spacing:-0.3px;}
+#rod2 {width: 31%;  padding-left:0px; margin-left:10px; border-left:none; height:132px;}
+#rod3 {width: 25%;  padding-left:10px; margin-left:10px; border-left:1px solid #a16dac; height:132px;}
+#rod4 {width: 28%;padding-left:10px; margin-left:10px; border-left:1px solid #a16dac; height:132px;}
+#rod5 {width: 61.7%;  padding-left:0px; margin-left:10px; border-left:none; height:180px;}
+.rod51  {display:none;}
+.rod51V {display:block;width:100%; float:left; padding-top:12px;}
+.rod52  {width:100%; float:left; padding-top:12px;}
+#rod6  {width: 27%;   padding-left:10px; margin-left:10px; border-left:1px solid #a16dac; height:180px;}
+#rod9a {width:91.9%;}
+}
+
+@media only screen and (max-width: 360px){
+/* ext */	
+#idFCContent {max-width:330px;}
+/* topo */
+#topo42 {width:92%;}
+#topo5  {width:92%;}
+#topo6  {width: 85%;}
+#topo7c {width: 6.9%;}
+/* topo menu fixo */
+#topo8  {width: 51.2%;}
+#topo9  {width: 10%; margin-top: 6px;}
+#topo9 img {height:26px;}
+#topo10  {width: 10%; margin-top: 6px;}
+#topo10 img {height:26px;}
+#topo11 {width: 13%; margin-top: 6px;}
+#topo11 img {height:26px;}
+#topo13 {width: 7.2%; margin-top: 6px;}
+#topo13 img {height:26px;}
+#topo14 .busca {width: 99%;}
+/* botoes user */
+#botoes_user_peq {width: 161px;}
+/* faixas destaques */
+#faixa_home {max-width:330px;}
+.faixa1, .faixa2, .faixa3, .faixa4 {width:100%;}
+.faixa1 img, .faixa2 img, .faixa3 img, .faixa4 img {height:117px;}
+#Destaques, #GrandesMarcas, #MaisVendidos, #Ofertas {max-width:330px;}
+#MaisVendidos .TitulosDest, #Ofertas .TitulosDest {width: 76%;}
+#MaisVendidos .BotMaisDet, #Ofertas .BotMaisDet {width: 24%;}
+/* prods lancamentos */
+#BlocoLanc1 {width:100%;max-width:330px;}
+#BlocoLanc2 {width:100%;max-width:330px; margin-top:30px;}
+#Lancamentos .TitulosDest {width:76%;}
+#Lancamentos .BotMaisDet {width: 24%;}
+#ProdBigLanc .Limg img {height: 320px;}
+/* banner peq */
+.banner2peq {display:block; width:100%; max-width:330px; margin-left:15px;}
+.banner2peq img {width:330px;}
+/* prods home carousel */
+#ProdDestHomeC {margin-left:0; margin-right:0; width:100%;}
+#ProdDestHomeC .ProdCat {width: 85%;}
+#ProdDestHomeC .ProdVejaMais {width: 15%;}
+/* prods home */
+#ProdDestHome {width:85.7%;}
+#ProdDestHome .ProdCat {width: 85%;}
+#ProdDestHome .ProdVejaMais {width: 15%;}
+/* prods lançamentos */
+#ProdDestLanc {width: 93.5%;}
+/* lista produtos */
+.left-bar {display:none}
+.ajustaLista {width:100%; max-width:330px;}
+#idImagemTopoCatFC {max-width:330px;}
+.ProductList #idFoundFC {max-width: 330px;}
+#ProdDestLista {width: 93.3%;}
+#ProdDestLista .ProdCat {width: 85%;}
+#ProdDestLista .ProdVejaMais {width: 15%;}
+/* detalhe produto */
+.ProductDet .ajustaLista {width: 94.7%;margin-left: 15px;}
+#idListProdCrossFC li {width:94.6%;}
+/* checkout */
+.FCCheckout .EstChkDiv {padding:8px;}
+#idChkLoginIntFC {width:85% !important}
+#idCheckoutFC {width:350px !important; margin-left:-10px !important;}
+#TabItens td {font-size:12px; color:#5f5f5f; padding:5px 2px}
+#idDivLinkContinueFC {left: 0 !important; margin:0 0 10px 75px !important}
+#idCheckoutFC .EstChkNomeCampo {font-size: 12px !important;width: 35%;margin-right: 5px !important;}
+/* newsletter */
+#newsletter_bg {max-width: 330px;}
+#newsletter {padding: 14px 0px 15px 15px;}
+#news1 {width: 96%; font-size:25px; line-height:24px;}
+#news4 {width: 45%;margin-top: 15px;}
+/* rodapé */
+#rodape_pagto_central {max-width:330px;}
+.rodape_pagto1 {width:100%;}
+.rodape_pagto2, .rodape_pagto3 {width:100%; margin-top:15px;}
+.rodape_pagto1 img, .rodape_pagto2 img, .rodape_pagto3 img {height: 31px;}
+.RodapeTel   {width: 57%; margin-left:72px;}
+#rodape_menu {width:95.7%}
+.EstCatLista li {width:95.5%;}
+.RodapeMenu1 {font-size: 12px; letter-spacing:normal;}
+#rod2 {width: 42%;  padding-left:15px; margin-left:0; border-left:none; height:132px;}
+#rod3 {width: 37%;  padding-left:15px; margin-left:15px; border-left:1px solid #a16dac; height:132px;}
+#rod4 {width: 42%;  padding-left:15px; margin-left:0; border-left:none; height:132px;}
+#rod41 {display:block; width: 37%; float:left; margin-top: 30px; padding-left:15px; margin-left:15px; border-left:1px solid #a16dac; height:132px;}
+#rod5 {width: 100%;  padding-left:15px; margin-left:0; border-left:none; height:135px;}
+.rod51  {display:block;width:30%; float:left; padding-top:12px;}
+.rod51V {display:none;width:100%; float:left; padding-top:12px;}
+.rod52  {width:70%; float:left; padding-top:12px;}
+#rod6  {display:none;}
+#rod9a {width:91.6%;}
+}
+
+@media only screen and (max-width: 320px) {
+/* ext */	
+#idFCContent {max-width:290px;}
+/* topo */
+#topo {height: 277px;}
+#topo42 {width:91%;}
+#topo5  {width:91%;}
+#topo6  {width: 83%;}
+#topo7c {width: 7.5%;}
+/* topo menu fixo */
+#topo8  {width: 48.9%;}
+#topo8 img {height: 44px;}
+#topo9  {width: 11%;}
+#topo10 {width: 11%;}
+#topo11 {width: 11%;}
+#topo13 {width: 8%;}
+#topo9 img, #topo10 img, #topo11 img, #topo12 img, #topo13 img {height: 24px;}
+#topo14 .busca {width: 97.2%;}
+/* menu topo */
+.MenuTopo0 {font-size: 11px;}
+.MenuTopo1 {font-size: 12px; line-height:12px;}
+/* botoes user */
+#botoes_user_peq {width: 121px;}
+/* carrinho topo */
+.carrinho-topo .sacola {height: 30px;padding-top: 9px;}
+.carrinho-topo .valor_cesta {margin-top: 1px;}
+/* faixas destaques */
+#faixa_home {max-width:290px;}
+.faixa1, .faixa2, .faixa3, .faixa4 {width:100%;}
+.faixa1 img, .faixa2 img, .faixa3 img, .faixa4 img {height:102px;}
+#Destaques, #GrandesMarcas, #MaisVendidos, #Ofertas {max-width:290px;}
+#MaisVendidos .TitulosDest, #Ofertas .TitulosDest {width: 72%;}
+#MaisVendidos .BotMaisDet, #Ofertas .BotMaisDet {width: 28%;}
+/* prods lancamentos */
+#BlocoLanc1 {width:100%;max-width:290px;}
+#BlocoLanc2 {width:100%;max-width:290px; margin-top:30px;}
+#Lancamentos .TitulosDest {width:73%;}
+#Lancamentos .BotMaisDet {width: 27%;}
+#ProdBigLanc .Limg img {height: 280px;}
+/* banner peq */
+.banner2peq {display:block; width:100%; max-width:290px; margin-left:15px;}
+.banner2peq img {width:290px;}
+/* prods home carousel */
+#ProdDestHomeC {margin-left:0; margin-right:0; width:100%;}
+#ProdDestHomeC .ProdCat {width: 84%;}
+#ProdDestHomeC .ProdVejaMais {width: 16%;}
+/* prods home */
+#ProdDestHome {width:84.2%;}
+#ProdDestHome .ProdCat {width: 84%;}
+#ProdDestHome .ProdVejaMais {width: 16%;}
+/* prods lançamentos */
+#ProdDestLanc {width: 92.8%;}
+/* listagem produtos */
+.left-bar {display:none}
+.ajustaLista {width:100%; max-width:290px;}
+#idImagemTopoCatFC {max-width:290px;}
+.ProductList #idFoundFC {max-width: 290px;}
+#ProdDestLista {width: 92.4%;}
+#ProdDestLista .ProdCat {width: 84%;}
+#ProdDestLista .ProdVejaMais {width: 16%;}
+/* detalhe produto */
+.ProductDet .ajustaLista {width: 94.7%;margin-left: 15px;}
+#idListProdCrossFC li {width:94%;}
+/* checkout */
+#idCheckoutFC #idChkCol1FC, #idCheckoutFC #idChkCol2FC, #idCheckoutFC #idChkCol3FC {width:100% !important}
+#idCheckoutFC {width:300px !important; margin-left:-8px !important;}
+#idCheckoutFC #P2Pais {width:110px !important;}
+#idCheckoutFC #P2SexoFeminino {width:110px !important;}
+#idCheckoutFC #P2CEP {width:78px !important}
+#idCheckoutFC #P2PCEP {width:78px !important}
+#idCheckoutFC #P2Mensagem {width:94% !important}
+#idTxtCPFFC, #idTxtCEP1FC, #idTxtPhoneFC, #idTxtNascFC, #idTableLembreteFC, #idTxtLembreteFC .smtext {font-size:10px !important}
+#idDivLinkContinueFC {left: 0 !important; margin:0 0 10px 55px !important}
+.EstChkDiv {padding:5px 15px 10px 10px !important;}
+/* pedidos */
+.FCTrack .EstNomeCampo {font-size: 13px;}
+.FCTrack .EstCampo {font-size: 13px;font-weight: normal;}
+.FCTrack .FCPrice {font-size:13px;}
+/* newsletter */
+#newsletter_bg {max-width: 290px;}
+#news1 {width: 95%;font-size: 27px;line-height: 24px;}
+#news4 {width: 51%;}
+/* rodapé */
+#rodape_pagto_central {max-width:290px;}
+.RodapeTel   {width: 65%; margin-left:52px;}
+#rodape_menu {width:95.2%;}
+.EstCatLista li {width:94.6%;}
+#rod2 {width: 42%; }
+#rod3 {width: 38.8%;}
+#rod4 {width: 42%; }
+#rod41 {width: 38.8%;}
+#rod5 {width: 100%;}
+.rod51  {width:28%;}
+.rod52  {width:63%;}
+#rod9a {width:90.6%;}
+}
+
+@media only screen and (max-width: 320px) and (orientation: landscape) {
+/* ext */	
+#idFCContent {max-width:290px;}
+/* topo */
+#topo {height: 277px;}
+#topo42 {width:91%;}
+#topo5  {width:91%;}
+#topo6  {width: 83%;}
+#topo7c {width: 7.5%;}
+/* topo menu fixo */
+#MostraBarra {display:none !important;}
+/* menu topo */
+.MenuTopo0 {font-size: 11px;}
+.MenuTopo1 {font-size: 12px; line-height:12px;}
+/* botoes user */
+#botoes_user_peq {width: 121px;}
+/* carrinho topo */
+.carrinho-topo .sacola {height: 30px;padding-top: 9px;}
+.carrinho-topo .valor_cesta {margin-top: 1px;}
+/* faixas destaques */
+#faixa_home {max-width:290px;}
+.faixa1, .faixa2, .faixa3, .faixa4 {width:100%;}
+.faixa1 img, .faixa2 img, .faixa3 img, .faixa4 img {height:102px;}
+#Destaques, #GrandesMarcas, #MaisVendidos, #Ofertas {max-width:290px;}
+#MaisVendidos .TitulosDest, #Ofertas .TitulosDest {width: 72%;}
+#MaisVendidos .BotMaisDet, #Ofertas .BotMaisDet {width: 28%;}
+/* prods lancamentos */
+#BlocoLanc1 {width:100%;max-width:290px;}
+#BlocoLanc2 {width:100%;max-width:290px; margin-top:30px;}
+#Lancamentos .TitulosDest {width:73%;}
+#Lancamentos .BotMaisDet {width: 27%;}
+#ProdBigLanc .Limg img {height: 240px;}
+/* banner peq */
+.banner2peq {display:block; width:100%; max-width:290px; margin-left:15px;}
+.banner2peq img {width:290px;}
+/* prods home carousel */
+#ProdDestHomeC {margin-left:0; margin-right:0; width:100%;}
+#ProdDestHomeC .ProdCat {width: 84%;}
+#ProdDestHomeC .ProdVejaMais {width: 16%;}
+/* prods home */
+#ProdDestHome {width:84.2%;}
+#ProdDestHome #ProdCapaDiv img {max-width:140px; max-height:140px;}
+#ProdDestHome .ProdCat {width: 84%;}
+#ProdDestHome .ProdVejaMais {width: 16%;}
+/* prods lançamentos */
+#ProdDestLanc {width: 92.8%;}
+#ProdDestLanc #ProdCapaDiv img {max-width:140px; max-height:140px;}
+/* listagem produtos */
+.left-bar {display:none}
+.ajustaLista {width:100%; max-width:290px;}
+#idImagemTopoCatFC {max-width:290px;}
+.ProductList #idFoundFC {max-width: 290px;}
+#ProdDestLista {width: 92.4%;}
+#ProdDestLista #ProdCapaDiv img {max-width:140px; max-height:140px;}
+#ProdDestLista .ProdCat {width: 84%;}
+#ProdDestLista .ProdVejaMais {width: 16%;}
+/* detalhe produto */
+.ProductDet .ajustaLista {width: 94.7%;margin-left: 15px;}
+#idListProdCrossFC li {width:94%;}
+/* checkout */
+#idCheckoutFC #idChkCol1FC, #idCheckoutFC #idChkCol2FC, #idCheckoutFC #idChkCol3FC {width:100% !important}
+#idCheckoutFC {width:300px !important; margin-left:-8px !important;}
+#idCheckoutFC #P2Pais {width:110px !important;}
+#idCheckoutFC #P2SexoFeminino {width:110px !important;}
+#idCheckoutFC #P2CEP {width:78px !important}
+#idCheckoutFC #P2PCEP {width:78px !important}
+#idCheckoutFC #P2Mensagem {width:94% !important}
+#idTxtCPFFC, #idTxtCEP1FC, #idTxtPhoneFC, #idTxtNascFC, #idTableLembreteFC, #idTxtLembreteFC .smtext {font-size:10px !important}
+#idDivLinkContinueFC {left: 0 !important; margin:0 0 10px 55px !important}
+.EstChkDiv {padding:5px 15px 10px 10px !important;}
+/* newsletter */
+#newsletter_bg {max-width: 290px;}
+#news1 {width: 95%;font-size: 27px;line-height: 24px;}
+#news4 {width: 51%;}
+/* rodapé */
+#rodape_pagto_central {max-width:290px;}
+.RodapeTel   {width: 65%; margin-left:52px;}
+#rodape_menu {width:95.2%;}
+.EstCatLista li {width:94.6%;}
+#rod2 {width: 42%; }
+#rod3 {width: 38.8%;}
+#rod4 {width: 42%; }
+#rod41 {width: 38.8%;}
+#rod5 {width: 100%;}
+.rod51  {width:28%;}
+.rod52  {width:63%;}
+#rod9a {width:90.6%;}
+}
+
