@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px"
+	 height="26px" viewBox="-1 -1 26 26" enable-background="new -1 -1 26 26" xml:space="preserve">
+<g id="Layer_3">
+</g>
+<g id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+	<title></title>
+	<desc></desc>
+	<g id="slice" transform="translate(215.000000, 119.000000)">
+	</g>
+</g>
+<g id="Layer_2">
+	<path fill="#B9519F" d="M-1,21.291c0,2.045,1.657,3.699,3.7,3.699c2.043,0,3.7-1.654,3.7-3.699v-1.908h-1.38v1.908
+		c0,1.32-1.069,2.387-2.388,2.387c-1.319,0-2.388-1.066-2.388-2.387v-4.025H-1V21.291z"/>
+	<path id="business-telephone-office-glyph" fill="#B9519F" d="M3.774-1c0,0-2.125,0-2.125,1.774v18.388
+		c0,1.775,2.125,1.775,2.125,1.775h3.492c0,0,2.125,0,2.125-1.775V0.774C9.392-1,7.267-1,7.267-1H3.774z"/>
+	<path id="business-telephone-office-glyph_1_" fill="#B9519F" d="M12.983-1c0,0-2.127,0-2.127,1.774v18.388
+		c0,1.775,2.127,1.775,2.127,1.775h9.892c0,0,2.125,0,2.125-1.775V0.774C25-1,22.875-1,22.875-1H12.983z"/>
+	<g>
+		<circle fill="#FFFFFF" cx="21.799" cy="16.562" r="1.291"/>
+		<circle fill="#FFFFFF" cx="17.927" cy="16.562" r="1.291"/>
+		<circle fill="#FFFFFF" cx="14.056" cy="16.562" r="1.291"/>
+		<circle fill="#FFFFFF" cx="21.799" cy="12.691" r="1.29"/>
+		<circle fill="#FFFFFF" cx="17.927" cy="12.691" r="1.29"/>
+		<circle fill="#FFFFFF" cx="14.056" cy="12.691" r="1.29"/>
+		<circle fill="#FFFFFF" cx="21.798" cy="8.821" r="1.291"/>
+		<circle fill="#FFFFFF" cx="17.927" cy="8.821" r="1.29"/>
+		<circle fill="#FFFFFF" cx="14.056" cy="8.821" r="1.29"/>
+		<path fill="#FFFFFF" d="M12.981,2.082c-0.12,0-0.216,0.09-0.216,0.2v3.759c0,0.109,0.096,0.199,0.216,0.199h9.893
+			c0.118,0,0.215-0.09,0.215-0.199V2.282c0-0.11-0.097-0.2-0.215-0.2H12.981z"/>
+	</g>
+</g>
+</svg>
