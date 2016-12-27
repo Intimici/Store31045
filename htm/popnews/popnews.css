@@ -1,0 +1,27 @@
+/* PopNews*/
+#FullBackground{position: absolute; min-width: 100%; min-height: 100%; background: #000; z-index: 99999999; top: 0; bottom: 0; left: 0; right: 0; overflow: hidden; opacity: 0.60; display: none;}
+#popupNews{
+	position: absolute;
+	z-index: 999999991;
+	width: 480px;
+	min-height: 280px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px 0 black;
+	text-align: center;
+	display: none;
+	background-attachment: scroll;
+	background-color: #b9519f;
+	background-image: url('https://www.intimici.com.br/lojas/00031045/images/cupom_inaugura2.png');
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+#popupNews .cupom {font-family:'Lato', Arial, sans-serif;font-size:20px;font-weight: 400; color:#3e3e3e; width:100%; max-width:260px;padding-top: 158px;padding-left: 200px;}
+#popupNews span{font-size:25px;font-family:'Lato', Arial, sans-serif;font-weight: 400; color:#ffffff;}
+#popupNews span b{font-size:25px;font-family:'Lato', Arial, sans-serif;font-weight: 700; color:#ffffff;}
+#popupNews .faixapqtext {font-size:12px;font-family:'Lato', Arial, sans-serif;font-weight: 400; color:#ffffff;}
+.btnClose{width: auto; height:auto; display: block; padding:2px 2px 0 0; float: right; }
+
+@media only screen and (max-width: 475px){
+#popupNews{width: 300px;}
+#popupNews .cupom {padding-left: 20px;}
+}
