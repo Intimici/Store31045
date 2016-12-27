@@ -1,0 +1,136 @@
+<script>
+var sPag=document.location.href.toUpperCase();
+IDLojaNum='<IDLojaNum>';
+sCaminhoImages='<baseloja>images/';
+</script>
+<script src="<baseloja>htm/JurosParcelas.js"></script>
+<script type="text/javascript" src="<baseloja>htm/LojaLib.js"></script>
+
+<script>
+jQuery(document).ready(function() {	
+if(FC$.Page=="Register" && FC$.Step=="Registration") {	
+jQuery('#idRegisterFC tr:eq(1)').hide();
+jQuery('#idRegisterFC').addClass('pass2');
+}	
+});
+</script>
+
+<!-- Google Fonts -->
+<link href='//fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+<!-- BARRA TOPO NORMAL -->
+<div id="topobg">
+<div id="topo">
+
+<div id="topo1" class="MenuTopo0"><a href="/Home.asp?IDLoja=<IDLoja>" class="MenuTopo02">Home</a> &nbsp;|&nbsp; <a href="/Custom.asp?IDLoja=<IDLoja>&arq=QuemSomos.htm" class="MenuTopo02">Quem Somos</a> &nbsp;|&nbsp; <a href="/Custom.asp?IDLoja=<IDLoja>&arq=Seguranca.htm" class="MenuTopo02">Seguran&ccedil;a</a> &nbsp;|&nbsp; <a href="/Ajuda.asp?IDLoja=<IDLoja>" class="MenuTopo02">D&uacute;vidas</a> &nbsp;|&nbsp; <a href="/FaleConosco.asp?IDLoja=<IDLoja>" class="MenuTopo02">Fale Conosco</a></div>
+
+<div id="topo2" class="MenuTopo0">Central de Atendimento:&nbsp; (19) 4115-0555 &nbsp;&nbsp;<img src="<baseloja>images/Ic_WhatsAppP.svg" alt="WhatsApp" align="absmiddle" />&nbsp; (19) 99666-7101</div>
+
+<div id="topo2b" class="MenuTopo0"><a href="/Home.asp?IDLoja=<IDLoja>" class="MenuTopo02">Home</a> | <a href="/Custom.asp?IDLoja=<IDLoja>&arq=QuemSomos.htm" class="MenuTopo02">Quem Somos</a> | <a href="/Custom.asp?IDLoja=<IDLoja>&arq=Seguranca.htm" class="MenuTopo02">Seguran&ccedil;a</a> | <a href="/Ajuda.asp?IDLoja=<IDLoja>" class="MenuTopo02">D&uacute;vidas</a> | <a href="/FaleConosco.asp?IDLoja=<IDLoja>" class="MenuTopo02">Fale Conosco</a> | Tel.: (19) 4115-0555 &nbsp;<img src="<baseloja>images/Ic_WhatsAppP.svg" alt="WhatsApp" align="absmiddle" />&nbsp; (19) 99666-7101</div>
+
+<div id="topo2c" class="MenuTopo0"><a href="/Ajuda.asp?IDLoja=<IDLoja>" class="MenuTopo02">D&uacute;vidas</a> | <a href="/FaleConosco.asp?IDLoja=<IDLoja>" class="MenuTopo02">Email</a> | Tel.: (19) 4115-0555 &nbsp;<img src="<baseloja>images/Ic_WhatsAppP.svg" alt="WhatsApp" align="absmiddle" />&nbsp; (19) 99666-7101</div>
+
+<div id="topo3"><div class="logoSVG"><a href="/Home.asp?IDLoja=<IDLoja>"><img src="<baseloja>images/Intimici.svg" border="0" alt="Intimici" title="Intimici" /></a></div></div>
+
+<div id="topo41" class="MenuTopo1">
+<script>
+      if(''!='<NomeCliente>')
+        {document.write('Ol&aacute; <b><NomeCliente></b>. Bem-vindo.<br><a href=/Cadastro.asp?IDLoja=<IDLoja>&logoff=1 target=_top class=MenuTopo2>Sair</a>.')}
+      else 
+        {document.write('Ol&aacute; <b>Visitante</b>. Bem-vindo.<br><a href=/Cadastro.asp?IDLoja=<IDLoja> target=_top class=MenuTopo2>Clique aqui</a> e fa&ccedil;a seu cadastro.')}
+</script>
+</div>
+
+<div id="topo42" class="MenuTopo1">
+<script>
+      if(''!='<NomeCliente>')
+        {document.write('Ol&aacute; <b><NomeCliente></b>. Bem-vindo. <a href=/Cadastro.asp?IDLoja=<IDLoja>&logoff=1 target=_top class=MenuTopo2>Sair</a>.')}
+      else 
+        {document.write('Ol&aacute; <b>Visitante</b>. Bem-vindo. <a href=/Cadastro.asp?IDLoja=<IDLoja> target=_top class=MenuTopo2>Clique aqui</a> e fa&ccedil;a seu cadastro.')}
+</script>
+</div>
+
+<div id="topo5" class="MenuTopo1">
+<!-- botoes cadastro / pedidos -->
+<div id="botoes_user_peq"><img src="<baseloja>images/botoes_peq.svg" border="0" usemap="#botoes_peq" /></div>
+<div id="botoes_user"><a href="/Cadastro.asp?IDLoja=<IDLoja>"><img src="<baseloja>images/Cadastro.svg" alt="Meu Cadastro" border="0"/></a><img src="<baseloja>images/x.gif" id="espaco"><a href="/Track.asp?IDLoja=<IDLoja>"><img src="<baseloja>images/Pedidos.svg" alt="Meus Pedidos" border="0"/></a></div>
+<!-- fim botoes cadastro / pedidos -->
+<!-- carrinho -->
+<div class="carrinho-topo">
+<a href="/AddProduto.asp?IDLoja=<IDLoja>">
+<div class="icon"></div>
+<div class="sacola">Meu Carrinho
+<script>
+var IDLoja="<IDLojaNum>";
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.open("GET","XMLCart.asp?IDLoja="+IDLoja+"",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responseXML; 
+
+var x=xmlDoc.getElementsByTagName("item");
+var z=xmlDoc.getElementsByTagName("cart");
+
+try{currencyProdCart=(z[0].getElementsByTagName("currency")[0].childNodes[0].nodeValue);}
+catch(e){currencyProdCart=""}
+try{TotalQtyProdCart=(z[0].getElementsByTagName("TotalQty")[0].childNodes[0].nodeValue);}
+catch(e){TotalQtyProdCart="0"}
+try{subtotalProdCart=(z[0].getElementsByTagName("subtotal")[0].childNodes[0].nodeValue);}
+catch(e){subtotalProdCart="0"}
+
+var QtdCesta=TotalQtyProdCart;
+if (QtdCesta>0){
+document.write("<scr"+"ipt type='text/javascript' src='<baseloja>htm/MenuTopo/MenuTopoAparecer.js'></scr"+"ipt>");
+document.write("<scr"+"ipt type='text/javascript' src='<baseloja>htm/MenuTopo/MenuTopo.js'></scr"+"ipt>");
+document.write("          <div class='valor_cesta'>"+ TotalQtyProdCart +" itens");
+document.write("    	  </div>");
+}
+else {
+document.write("<div class='valor_cesta'>0 itens</div>");
+}
+</script>
+</div>
+</a>
+</div>
+<!-- fim carrinho -->
+</div>
+
+<div id="topo6">
+<div class="busca">
+<!-- Busca -->
+   <form name="fBusca" method="GET" action="ListaProdutos.asp?IDLoja=<IDLojaNum>" id="autocomplete-form">
+     <fieldset>
+       <input type="hidden" name="IDLoja" value="<IDLojaNum>">
+       <input type="hidden" name="Digitada" value="True">
+       <input name="Texto" class="campo-busca" type="text" value="Busca" accesskey="0" onfocus="if (this.value == 'Busca') {this.value='';}" onblur="if (this.value == '') {this.value='Busca';}" id="autocomplete" />
+       <input type="submit" name="ok" value="buscar" class="bt-buscar">
+     </fieldset>
+   </form>
+<!-- Busca -->
+</div>
+</div>
+
+<div id="topo7"><a href="/Custom.asp?IDLoja=<IDLoja>&arq=Privacidade.htm"><img src="<baseloja>images/Privacidade.png" alt="100% Privacidade Garantida - Discrição Total" border="0" /></a></div>
+
+<div id="topo7b"><a href="/Custom.asp?IDLoja=<IDLoja>&arq=Privacidade.htm"><img src="<baseloja>images/PrivacidadeP.png" alt="100% Privacidade Garantida - Discrição Total" border="0" /></a></div>
+
+<div id="topo7c"><a href="/Custom.asp?IDLoja=<IDLoja>&arq=Privacidade.htm"><img src="<baseloja>images/PrivacidadeXP.png" alt="100% Privacidade Garantida - Discrição Total" border="0" /></a></div>
+
+</div>
+
+<div style="background-color:#b9519f; width:100%; height:41px; text-align:center;"><div class="TitulosFinalizar">FINALIZA&Ccedil;&Atilde;O DA COMPRA</div></div>
+</div>
+<!-- FIM BARRA TOPO NORMAL -->
+
+<map name="botoes_peq" id="botoes_peq">
+  <area shape="rect" coords="0,0,80,17" href="/Cadastro.asp?IDLoja=<IDLoja>" />
+  <area shape="rect" coords="0,22,80,33" href="/Track.asp?IDLoja=<IDLoja>" />
+</map>
