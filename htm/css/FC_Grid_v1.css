@@ -1,0 +1,208 @@
+/* CSS Grid v1 - 08.07.2015 */
+
+/*MagicZoom*/
+.MagicThumb-caption{padding: 2px 8px!important;}
+
+/* classes geradas dinamicamente:being */
+.FCCorGrid{} 
+.FCAdicional1Grid{}
+.FCAdicional2Grid{}
+.FCAdicional3Grid{}
+.FCAdicionalD1Grid{}
+.FCAdicionalD2Grid{}
+.FCAdicionalD3Grid{}
+/* classes geradas dinamicamente:end */
+
+.FCNameProductGrid {font-size:28px; line-height:28px; margin:10px 0; color:#404041;}
+.FCPriceGrid {width:100%; height:auto;}
+.FCPriceGrid .EstParc {font-size:18px; color:#b9519f;}
+.FCPriceGrid .Economize {color:#23a123; font-size:16px; margin-top:5px;}
+.FCCodProdGrid {font-weight:normal; display:block; margin: 0;}
+
+.FCGridMain {font-family: 'Lato', Arial, sans-serif !important;}
+.FCGridMain #idDivGridImg {min-height:400px; padding:0px; float:left;}
+.FCGridMain #idDivGridImg img {max-width:400px; max-height:400px;}
+img.ZoomIMG2 {border:1px solid #dadada !important; margin-right:6px;}
+
+.FCContentGrid {width:65.5%; height:auto; position:relative; float:left; text-align: left !important; margin-left:1.8%;}
+.FCGridMain .FCDescritorGrid {min-width: 30px; min-height:22px; display: block; text-align: center; border: 1px solid #dadada; background-color:#ffffff; padding: 5px; margin: 0; line-height:17px;}
+
+.FCBoxGrid {position: relative; width:98%; height:auto !important; display: table; text-align:left; border: 1px solid #dadada; background-color:#ffffff; font-size:14px; padding: 8px 0 10px 10px; margin-bottom:10px;}
+.FCDescritorGridDisabled .FCDescritorGrid {background:#d4d4d4; color:#686868; cursor:not-allowed;}
+.FCSelectedGrid {border-color:#6f6f6f;background:#6f6f6f;}
+.FCSelectedGrid span {background:#dadada;}
+.FCStepGrid {min-height:30px; display: block; text-align: left; border: 0; padding: 0; }
+.FCStepGridNumber {width: 24px; height: 22px; display: inline-block; float:left; padding-top:2px; border-radius:12px; background:#b9519f; color:#ffffff; text-align:center;}
+.FCOptionSelected {display: inline-block;font-weight:bold;padding:6px 0;}
+.FCStepGridTitle  {display: inline-block; padding:6px 0; float:left; margin:0 5px;}
+.FCStepGridTitle.FCTitQtyInc {margin-left:5px;}
+
+.FCSoldOutLabel span {background:#eee; color:#dadada;}
+.FCSoldOutLabel .FCFlagEsgotadoGrid {width: 18px; position: absolute; margin: 0; bottom:-8px; right: -8px; background: #e17600; font-size: 11px; color: #fff; line-height: 12px; padding: 0px; border: 2px solid #dadada; border-radius: 8px; height: 18px; text-align: center !important; z-index:1;}
+.FCSoldOutLabel:hover {border-color:#f56217 !important;}
+
+.FCBoxGrid.FCResumeProduct {padding:0 0 0 10px !important; border:none;}
+.FCDescritorGridActivated  {cursor: pointer;}
+.FCDescritorGridActivated:hover {border-color:#CCCCCC;}
+
+.FCCheckedGrid {width:16px; height:16px; position:absolute; background:url('https://www.intimici.com.br/lojas/00031045/images/CheckedGrid.svg') no-repeat; z-index:1; top:-5px; right:-3px; display:none;}
+.FCSelectedGrid .FCCheckedGrid {display:block;}
+.FCGridBtnZoom {width:82px; display:block; text-align:center; margin: 5px auto;}
+
+.FCBtnEsgotadoGrid, .FCBtnConsultenos, .FCBtnComprarGrid, .FCBtnSelecioneGrid {
+	max-width:300px;
+	height:auto;
+	position: relative;
+	text-align:center;
+	font-size:14px;
+	font-weight:normal;
+	cursor:pointer;
+	margin:5px 0;
+	padding: 5px 0 0 5px;
+	float: left;
+	text-align: center;
+	min-width: 150px;
+	margin: 0px;
+	}
+.FCBtnEsgotadoGrid span {color:#ee4c1a;}
+.FCBtnEsgotadoGrid span:hover {color:#ff0000;}
+.FCBtnConsultenos {}
+.FCBtnComprarGrid {}
+.FCBtnSelecioneGrid {}
+
+/* Calculo do Frete */
+#idShippingValues table {width:70%;}
+#idDivTitCEP {width:5.5%; float:left; margin-top:8px;}
+#idDivCalcule {width:24%; float:left; font-size:15px; font-weight:700; margin-top:8px;}
+#idDivContentCEP {width:100%; float:left; margin-top:6px;}
+.FieldCEPQty {width:9%; float:left;}
+.FieldCEPNum {width:12%; float:left;}
+[id*='idShippingValues'] {width:100%; float:left;}
+[id*='idQtdZip'] {width:25px;}
+[id*='idZip'] {width:80px;}
+.ZipOption {width:100%; float:left; margin-top:6px;}
+.ZipName   {font-family: Arial, Helvetica, sans-serif;}
+.ZipName   b {font-size: 12px;font-family: Arial, Helvetica, sans-serif;font-weight: bold;}
+.ZipValue  {font-size: 12px;font-family: Arial, Helvetica, sans-serif;font-weight: bold;padding-top:4px;}
+.ZipObsVal {font-size: 11px !important;}
+
+.FCDescritorContent {width:100%; height:auto; display: table; float:left; list-style: none;}
+.FCDescritorContent li{height: 34px; position: relative; float:left;border: 2px solid transparent; margin:2px;}
+.FCDescritorContent li:hover{}
+
+/* Steps */
+.FCFCBoxGridIncMult .FCStepGridNumber {margin-top: 4px;}
+.FCFCBoxGridIncMult .FCStepGridTitle {padding: 9px 0;}
+.FCBoxGrid .FCBoxGridBuy .FCBoxGridOnly {border:none; padding:0;}
+.FCBoxGridBuy .FCStepGridNumber {margin-top: 15px;}
+
+/*Tooltip*/
+.FCTooltipGrid { position: absolute; width: 275px; top: 55px; left: 0px; font-size: 14px; padding: 10px 5px; background: #f53421; color: #ffffff; margin: 0px auto !important; z-index:1; -webkit-transition:visibility 0s linear 0.3s,opacity 0.5s linear; transition:visibility 0s linear 0.3s,opacity 0.5s linear;}
+.FCTooltipGrid.On { visibility:visible; opacity:1;}
+.FCTooltipGrid.Off {visibility:hidden; opacity:0;}
+
+/*incMult*/
+.QTIncMultGrid {min-width:40px;}
+
+/*descritores*/
+.FCTxtGrid {width:100%; height:auto; position:relative; margin-bottom:10px;padding:5px 0px;font-weight:700;}
+.FCGridAdicContent span {display:inline-block; padding:5px;}
+.EstPathCat .pad {background: url('/images/PathCat.gif') no-repeat center center;padding: 0;}
+.AdicNome {font-weight:400}
+.AdicItem {font-weight:700}
+.AdicItemCor {min-width:20px; display:inline-block; margin:0 3px; border:1px solid #dadada;}
+.FCGridAdicContent.FCGridAdicProductList {float:left;}
+
+@media only screen and (max-width: 1260px) {
+.FCContentGrid {width: 65.2%;}
+}
+
+@media only screen and (max-width: 1024px) {
+.FCContentGrid {width: 57.6%;margin-left: 2%;}
+#idDivTitCEP   {width: 7%;}
+#idDivCalcule  {width: 28%;}
+.FieldCEPQty   {width: 12%;}
+.FieldCEPNum   {width: 16.3%;}
+}
+
+@media only screen and (max-width: 800px) {
+.FCContentGrid {width: 46%;}
+.FCBoxGrid     {width: 96.8%;}
+#idDivTitCEP   {width: 10%;}
+#idDivCalcule  {width: 46%;}
+.FieldCEPQty   {width: 20%;}
+.FieldCEPNum   {width: 27%;}
+}
+
+@media only screen and (max-width: 768px) {
+.FCContentGrid {width: 43.7%;}
+.FCBoxGrid     {width: 96.5%;}
+.FCNameProductGrid {font-size: 26px;line-height: 28px;}
+#idDivTitCEP   {width: 11%;}
+#idDivCalcule  {width: 51%;}
+.FieldCEPQty   {width: 22%;}
+.FieldCEPNum   {width: 30%;}
+}
+
+@media only screen and (max-width: 736px) {
+.FCContentGrid {width: 41.2%;}
+.FCBoxGrid     {width: 96%;}
+#idDivTitCEP   {width: 13%;}
+#idDivCalcule  {width: 56%;}
+.FieldCEPQty   {width: 24%;}
+.FieldCEPNum   {width: 32%;}
+}
+
+@media only screen and (max-width: 667px) {
+.FCContentGrid {width: 100%; margin-left:0;margin-top: 15px;}
+.FCBoxGrid     {width: 98%;}
+#idDivTitCEP   {width: 6%;}
+#idDivCalcule  {width: 25%;}
+.FieldCEPQty   {width: 11%;}
+.FieldCEPNum   {width: 15%;}
+}
+
+@media only screen and (max-width: 640px) {
+#idDivTitCEP   {width: 6%;}
+#idDivCalcule  {width: 26%;}
+.FieldCEPQty   {width: 11%;}
+.FieldCEPNum   {width: 15.5%;}
+}
+
+@media only screen and (max-width: 568px) {
+.FCBoxGrid     {width: 97%;}
+#idDivTitCEP   {width: 7%;}
+#idDivCalcule  {width: 30%;}
+.FieldCEPQty   {width: 13%;}
+.FieldCEPNum   {width: 17.5%;}
+}
+
+@media only screen and (max-width: 414px) {
+#idDivTitCEP   {width: 10%;}
+#idDivCalcule  {width: 42%;}
+.FieldCEPQty   {width: 18.5%;}
+.FieldCEPNum   {width: 25%;}
+}
+
+@media only screen and (max-width: 375px) {
+.FCBoxGrid     {width: 96.5%;}
+#idDivTitCEP   {width: 11%;}
+#idDivCalcule  {width: 47%;}
+.FieldCEPQty   {width: 20%;}
+.FieldCEPNum   {width: 27%;}
+}
+
+@media only screen and (max-width: 360px) {
+#idDivTitCEP   {width: 12%;}
+#idDivCalcule  {width: 49%;}
+.FieldCEPQty   {width: 21%;}
+.FieldCEPNum   {width: 29%;}
+}
+
+@media only screen and (max-width: 320px) {
+.FCBoxGrid     {width: 96%;}	
+#idDivTitCEP   {width: 13%;}
+#idDivCalcule  {width: 56%;}
+.FieldCEPQty   {width: 24%;}
+.FieldCEPNum   {width: 33%;}
+}
