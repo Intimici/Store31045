@@ -127,6 +127,12 @@ h4 {font-size:16px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;line-
 .banner1peq {display:none; width:100%; float:left; margin-top:15px;}
 .banner2peq {width:96%; float:left; margin-left:25px;}
 
+/* Banner 9 - Blog */
+#Banner9 {width:100%;max-width:1230px;overflow:hidden;margin:30px auto 20px auto;}
+#Banner9M {display:none; width:100%; text-align:left;font-family: 'Lato', Arial, sans-serif;color:#FFFFFF;font-weight:400;font-size:14px; background:url('https://www.intimici.com.br/lojas/00031045/images/Fundo_Banner9M.jpg') no-repeat right top scroll; background-color:#000000; }
+#Banner9M b {font-weight:700;font-size:40px;color:#ff2515; text-transform:uppercase;}
+#Banner9M a {text-decoration:none; color:#FFFFFF;}
+
 /* Botoes User */
 #botoes_user {width:100%; max-width:395px; height:30px; float:left}
 #botoes_user_peq {display:none; width:93px; height:33px; float:left; margin-top:-2px;}
@@ -272,9 +278,10 @@ h4 {font-size:16px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;line-
 #ProdDestLista .BotLancProd { position:absolute; width:74px; height:24px; right:6px;top:6px;}
 #ProdDestLista .BotLancProd img { margin:0 !important}
 
+.promocao {font-family: 'Lato', Arial, sans-serif; font-size:14px; color:#cc0000; font-weight:700; text-align:center; text-transform:uppercase; border:1px solid #cc0000; border-top-left-radius: 3px; border-top-right-radius: 3px; -moz-border-top-left-radius: 3px; -moz-border-top-right-radius: 3px; padding:3px;}
 .iten-prod-menu {width:100%; float:left;}
-.iten-prod-menu a {display:block; text-decoration:none;text-align:center;background:#ffffff;border:1px solid #d4d4d4; border-radius: 3px; -moz-border-radius: 3px; padding:5px;}
-.iten-prod-menu a.ativo, .iten-prod-menu a:hover {border: 1px solid #b9519f;}
+.iten-prod-menu a {display:block; text-decoration:none;text-align:center;background:#ffffff;border:1px solid #d4d4d4; border-top:none; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; -moz-border-bottom-left-radius: 3px; -moz-border-bottom-right-radius: 3px; padding:5px;}
+.iten-prod-menu a.ativo, .iten-prod-menu a:hover {border: 1px solid #b9519f; border-top:none;}
 .iten-prod-menu span {display:block;}
 .iten-prod-menu img.EstImgFC {width:150px; height:auto;}
 .iten-prod-menu .name {font-family: 'Lato', Arial, sans-serif; font-size:13px; color:#5f5f5f; font-weight:400; text-align:center; margin-top:3px;}
@@ -380,6 +387,19 @@ h4 {font-size:16px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;line-
 #idPathSearchTextEmptyFC, #idPathSearchTextInputFC, #idPathSearchOKFC {display:none}
 #idUlPathSearchCatFC a {color:#000000; font-weight:700;}
 
+/* Estilos Filtros Barra Esquerda */
+#ContentFil {border:1px solid #dddddd !important;width:99% !important;border-radius:0 !important; -moz-border-radius:0 !important;background:#FFFFFF !important;margin:20px 0 20px 0;padding-bottom:15px;}
+#ContentFil .DivFiltrandoPor .Label {font-family: 'Lato', Arial, sans-serif !important;font-weight: 700 !important; font-size:14px !important;background: #404041 !important;width: 100%;display: block;padding: 5px 0 5px 5px;color: #FFFFFF !important;border-radius:0 !important; -moz-border-radius:0 !important;}
+#ContentFil .DivFiltrarPor .Label {font-family: 'Lato', Arial, sans-serif !important;font-weight: 700 !important; font-size:14px !important;background: #404041 !important;width: 100%;display: block;padding: 5px 0 5px 5px;color: #FFFFFF !important;border-radius:0 !important; -moz-border-radius:0 !important;}
+#ContentFil .FilSearch .FilName {margin: 10px 0 5px 0 !important;font-family: 'Lato', Arial, sans-serif !important;font-weight: 700 !important; font-size:13px !important; cursor: pointer;}
+#ContentFil .FiltrandoPor li {margin-top: 10px;font-size: 12px !important;}
+#ContentFil .FilItems .FilItemsList label {font-size: 12px !important;cursor: pointer;}
+#ContentFil .SearchItem {font-weight: 700 !important; color:#a83b8d !important;}
+#ContentFil #idFilSearchTextInputFC {border: 1px solid #dddddd !important;width: 120px;height: 22px;font-size: 13px !important; color: #6f6f6f !important; padding-left:3px;}
+#ContentFil .FilRemoveFilters a:hover{background-color:#a83b8d !important;color:#ffffff !important;}
+#ContentFil .FilMoreOptionsSearch a:hover{background-color:#a83b8d !important;color:#ffffff !important;}
+#ContentFil .FiltrandoPor img {width: 11px !important;cursor: pointer;margin-left: 3px;}
+
 /* Lista de Produto - Julho/2016 */
 #idImagemTopoCatFC {width:100%; max-width:916px; float:left; margin-bottom:10px;}
 .ProductList #idTxtIntroFoundProdsFC {margin:8px 0;width: 100%;min-height:20px;}
@@ -444,7 +464,7 @@ h4 {font-size:16px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;line-
 #idRegisterExtFC #idTabBotPreviousNextFC {margin-top:10px !important;}
 #idTxtCPFFC, #idTxtCEP1FC, #idTxtPhoneFC, #idTxtNascFC, #idTableLembreteFC, #idTxtLembreteFC .smtext {font-family:Arial, Helvetica, sans-serif !important; font-size:11px !important}
 td.smtext label {font-size:12px; font-family: 'Lato', Arial, sans-serif;color:#5f5f5f}
-.FCLabelForm {font-weight:bold; font-family: 'Lato', Arial, sans-serif; padding:0 0 10px 0; margin-top:0px;}
+.FCLabelForm {font-weight:bold; font-family: 'Lato', Arial, sans-serif; padding:5px 0 5px 0; margin-top:0px;}
 .BotVerMais {display:none} 
 #idRegisterFC {width:100%}
 #idRegisterFC .InputText {height:26px !important; font-size:14px !important; font-family: 'Lato', Arial, sans-serif !important; padding-left:3px; border-radius: 3px; -moz-border-radius: 3px;}
@@ -602,14 +622,10 @@ span.Titulos {display:block; color:#404041;font-size:22px;font-family: 'Lato', A
 #rodape1 {margin: 0 auto; max-width:1230px; overflow:hidden; padding-bottom:30px;}
 #rodape2 {margin: 0 auto; max-width:1230px; overflow:hidden; padding:13px 0px; border-top:1px solid #a16dac;}
 #rod1 {width: 23%; margin-top:73px; float: left;}
-#rod2 {width: 13%; margin-top:30px; padding-left:15px; float: left; border-left:1px solid #a16dac; height:132px;}
-#rod3 {width: 11.5%; margin-top:30px; padding-left:15px; float: left; border-left:1px solid #a16dac; height:132px;}
-#rod4 {width: 11.5%; margin-top:30px; padding-left:15px; float: left; border-left:1px solid #a16dac; height:132px;}
+#rod2, #rod3, #rod4, #rod5 {width: 15.5%; margin-top:30px; padding-left:15px; float: left; border-left:1px solid #a16dac; height:132px;}
 #rod41 {display:none;}
-#rod5 {width: 26%; margin-top:30px; padding-left:15px; float: left; border-left:1px solid #a16dac; height:132px;}
-.rod51 {width:29%; float:left; padding-top:12px;}
-.rod51V {display:none;}
-.rod52 {width:66%; float:left; padding-top:12px;}
+.rod51 {width:100%; float:left; padding-top:12px;}
+.rod52 {width:100%; float:left; padding-top:10px;}
 #rod6 {width: 8.3%; margin-top:30px; padding-left:15px; float: left; border-left:1px solid #a16dac; height:132px;}
 #rod8 {width: 98.5%; float: left;}
 #rod9 {width: 1.5%;  float: left;}
@@ -716,7 +732,7 @@ span.Titulos {display:block; color:#404041;font-size:22px;font-family: 'Lato', A
 #idCheckoutFC #idChkCol1FC, #idCheckoutFC #idChkCol2FC, #idCheckoutFC #idChkCol3FC { width:49% !important}
 }
 
-@media only screen and (max-width: 1230px) {
+@media only screen and (max-width: 1235px) {
 /* ext */	
 #idFCContent {max-width:1200px;}	
 /* menutopo */
@@ -784,6 +800,9 @@ span.Titulos {display:block; color:#404041;font-size:22px;font-family: 'Lato', A
 #ProdBigLanc .Limg img {height: 427px;}
 .banner2peq {width:95.1%;margin-left: 21px;}
 .banner2peq img {width:485px;}
+/* Banner 9 - Blog */
+#Banner9 {max-width:994px;}
+#Banner9 img {width:994px;}
 /* prods home carousel */
 #ProdDestHomeC {margin-left:0; margin-right:0; width:100%;}
 #ProdDestHomeC #ProdCapaDiv img {max-width:208px; max-height:208px;}
@@ -822,6 +841,8 @@ span.Titulos {display:block; color:#404041;font-size:22px;font-family: 'Lato', A
 .smSelect {background:url('https://www.intimici.com.br/lojas/00031045/images/smSelect_seta.png') no-repeat right center scroll;background-color:#FFF;}
 /* pedidos */
 .FCTrack #idTabOrderDeliveryFC {padding-left:20px; width:47.5%;}
+/* parceiros */
+#Parc_Bloco1 {width: 77%;}
 /* newsletter */
 #newsletter_bg {max-width: 994px;}
 #newsletter {padding: 15px 0px 12px 15px;}
@@ -841,10 +862,10 @@ span.Titulos {display:block; color:#404041;font-size:22px;font-family: 'Lato', A
 #rodape_menu {display:block; width:98.5%;}
 .EstCatLista li {float:left; width:33%; margin-bottom:15px;}
 #rodape_base {margin: 0 auto;}
-#rod1 {width: 40%;margin-top: 73px;}
-#rod2, #rod3, #rod4 {width: 18.3%;}
-#rod5 {width: 38.1%;margin-left:40%;}
-#rod6 {width: 17.3%;}
+#rod1 {width: 24%;margin-top: 73px;}
+#rod2, #rod3, #rod4 {width: 13.5%;}
+#rod5 {width: 16%;}
+#rod6 {width: 10%;}
 #rod8 {width: 95.4%;margin-left:15px;}
 #rod9 {width: 1.6%;}
 }
@@ -892,6 +913,9 @@ span.Titulos {display:block; color:#404041;font-size:22px;font-family: 'Lato', A
 #Lancamentos .TitulosDest {width: 80%;}
 #Lancamentos .BotMaisDet {width: 20%;}
 #ProdBigLanc .Limg img {height: 260px;}
+/* Banner 9 - Blog */
+#Banner9 {max-width:770px;}
+#Banner9 img {width:770px;}
 /* banners peq */
 .banner1peq {display:block}
 .banner1peq img {width:400px;}
@@ -932,6 +956,9 @@ span.Titulos {display:block; color:#404041;font-size:22px;font-family: 'Lato', A
 #idCheckoutFC #idChkCol1FC, #idCheckoutFC #idChkCol2FC, #idCheckoutFC #idChkCol3FC { width:99% !important}
 /* pedidos */
 .FCTrack #idTabOrderDeliveryFC {padding-left:20px; width:47%;}
+/* parceiros */
+#Parc_Bloco1 {width: 74.5%;}
+#Parc_Bloco2 {width: 20%;}
 /* newsletter */
 #newsletter_bg {max-width: 770px;}
 #newsletter {padding: 10px 0px 15px 15px;}
@@ -1002,6 +1029,9 @@ span.Titulos {display:block; color:#404041;font-size:22px;font-family: 'Lato', A
 #Lancamentos .TitulosDest {width:79.2%;}
 #Lancamentos .BotMaisDet {width: 20.8%;}
 #ProdBigLanc .Limg img {height: 272px;}
+/* Banner 9 - Blog */
+#Banner9 {max-width:738px;}
+#Banner9 img {width:738px;}
 /* banners peq */
 .banner1peq img {width:380px;}
 /* prods home carousel */
@@ -1031,6 +1061,8 @@ span.Titulos {display:block; color:#404041;font-size:22px;font-family: 'Lato', A
 #idDivLinkContinueFC {left: 0 !important; margin:0 0 10px 518px !important}
 /* pedidos */
 .FCTrack #idTabOrderDeliveryFC {padding-left:20px; width:47%;}
+/* parceiros */
+#Parc_Bloco1 {width: 74%;}
 /* newsletter */
 #newsletter_bg {max-width: 738px;}
 #newsletter {padding: 10px 0px 15px 15px;}
@@ -1089,6 +1121,9 @@ span.Titulos {display:block; color:#404041;font-size:22px;font-family: 'Lato', A
 #Lancamentos .TitulosDest {width:78%;}
 #Lancamentos .BotMaisDet {width: 22%;}
 #ProdBigLanc .Limg img {height: 240px;}
+/* Banner 9 - Blog */
+#Banner9 {max-width:706px;}
+#Banner9 img {width:706px;}
 /* banners peq */
 .banner1peq img {width:364px;}
 /* prods home carousel */
@@ -1119,6 +1154,9 @@ span.Titulos {display:block; color:#404041;font-size:22px;font-family: 'Lato', A
 #idListProdCrossFC li {width:47.3%;}
 /* checkout */
 #idDivLinkContinueFC {left: 0 !important; margin:0 0 10px 487px !important}
+/* parceiros */
+#Parc_Bloco1 {width: 73%;}
+#Parc_Bloco2 {width: 21%;}
 /* newsletter */
 #newsletter_bg {max-width: 706px;}
 #news2, #news3 {width:38.8%;}
@@ -1178,6 +1216,9 @@ botoes_user img {height: 27px;}
 #Lancamentos .TitulosDest {width:76%;}
 #Lancamentos .BotMaisDet {width: 24%;}
 #ProdBigLanc .Limg img {height: 281px;}
+/* Banner 9 - Blog */
+#Banner9 {max-width:637px;}
+#Banner9 img {width:637px;}
 /* banners peq */
 .banner1peq img {width:329px;}
 /* prods home carousel */
@@ -1213,6 +1254,9 @@ botoes_user img {height: 27px;}
 #idDivLinkContinueFC {left: 0 !important; margin:0 0 10px 421px !important}
 /* pedidos */
 .FCTrack #idTabOrderDeliveryFC {padding-left:20px; width:46%;}
+/* parceiros */
+#Parc_Bloco1 {width: 69%;}
+#Parc_Bloco2 {width: 24%;}
 /* newsletter */
 #newsletter_bg {max-width: 637px;}
 #news2, #news3 {width:37.5%;}
@@ -1272,6 +1316,9 @@ botoes_user img {height: 27px;}
 #Lancamentos .TitulosDest {width:75%;}
 #Lancamentos .BotMaisDet {width: 25%;}
 #ProdBigLanc .Limg img {height: 288px;}
+/* Banner 9 - Blog */
+#Banner9 {max-width:610px;}
+#Banner9 img {width:610px;}
 /* banners peq */
 .banner1peq img {width:316px;}
 /* prods home carousel */
@@ -1356,6 +1403,9 @@ botoes_user img {height: 27px;}
 #Lancamentos .TitulosDest {width:72%;}
 #Lancamentos .BotMaisDet {width: 28%;}
 #ProdBigLanc .Limg img {height: 270px;}
+/* Banner 9 - Blog */
+#Banner9 {display:none}
+#Banner9M {display:block;max-width:522px;padding: 1px 6px 10px 10px;overflow:hidden;margin:30px auto 20px auto;}
 /* banners peq */
 .banner1peq img {width:280px;}
 /* prods home carousel */
@@ -1393,6 +1443,9 @@ botoes_user img {height: 27px;}
 #idTabRegisterFC .EstNomeCampo {width:40%;}
 /* checkout */
 #idDivLinkContinueFC {left: 0 !important; margin:0 0 10px 325px !important}
+/* parceiros */
+#Parc_Bloco1 {width: 64%;}
+#Parc_Bloco2 {width: 28%;}
 /* newsletter */
 #newsletter_bg {max-width: 538px;}
 #news2, #news3 {width:70%;}
@@ -1458,6 +1511,8 @@ botoes_user img {height: 27px;}
 #Lancamentos .TitulosDest {width:79%;}
 #Lancamentos .BotMaisDet {width: 21%;}
 #ProdBigLanc .Limg img {height: 340px;}
+/* Banner 9 - Blog */
+#Banner9M {max-width:368px;padding: 1px 6px 10px 10px;}
 /* banner peq */
 .banner1peq {display:none;}
 .banner2peq {display:block; width:100%; max-width:384px; margin-left:15px;}
@@ -1498,6 +1553,9 @@ botoes_user img {height: 27px;}
 #idDivLinkContinueFC {left: 0 !important; margin:0 0 10px 90px !important}
 /* pedidos */
 .FCTrack #idTabOrderDeliveryFC {padding-left:0px; width:100%;}
+/* parceiros */
+#Parc_Bloco1 {width: 100%;}
+#Parc_Bloco2 {width: 95%; margin-left: 0;}
 /* newsletter */
 #newsletter_bg {max-width: 384px;}
 #news1 {font-size: 21px;}
@@ -1509,17 +1567,14 @@ botoes_user img {height: 27px;}
 .rodape_pagto1 {width:100%;}
 .rodape_pagto2, .rodape_pagto3 {width:100%; margin-top:15px;}
 .rodape_pagto1 img, .rodape_pagto2 img, .rodape_pagto3 img {height: 31px;}
-.RodapeTPx {font-size:14px;}
+.RodapeTPx {font-size:13px;}
 #rodape_menu {width:96.3%; padding-bottom:10px;}
 .EstCatLista li {width:96%; border-bottom:1px solid #FFFFFF; padding-bottom:10px; margin-bottom:10px;}
-#rod2 {width: 29.1%; margin-left:15px; padding-left: 0px; border-left: none;}
-#rod3 {width: 23.5%; margin-left:15px;}
-#rod4 {width: 26.3%; margin-left:15px;}
-#rod5 {width: 60%; margin-left:15px; padding-left: 0px; border-left: none; height:180px;}
-.rod51  {display:none}
-.rod51V {display:block;width:56%; float:left; padding-top:12px;}
-.rod52  {width:56%; float:left; padding-top:12px;}
-#rod6 {width: 24%; margin-left:15px; height:180px;}
+#rod2 {width: 45%;  padding-left:0px; margin-left:10px; border-left:none; height:132px;}
+#rod3 {width: 44%;  padding-left:10px; margin-left:10px; border-left:1px solid #a16dac; height:132px;}
+#rod4 {width: 45%;  padding-left:0px; margin-left:10px; border-left:none; height:132px;}
+#rod5 {width: 44%;  padding-left:10px; margin-left:10px; border-left:1px solid #a16dac; height:132px;}
+#rod6 {width: 100%; padding-left:0px; margin-left:10px; border-left:none; height:132px;}
 #rod9a {width:92.7%;}
 }
 
@@ -1552,6 +1607,8 @@ botoes_user img {height: 27px;}
 #Lancamentos .TitulosDest {width:77%;}
 #Lancamentos .BotMaisDet {width: 23%;}
 #ProdBigLanc .Limg img {height: 330px;}
+/* Banner 9 - Blog */
+#Banner9M {max-width:329px;padding: 1px 6px 10px 10px;}
 /* banner peq */
 .banner2peq {display:block; width:100%; max-width:345px; margin-left:15px;}
 .banner2peq img {width:345px;}
@@ -1582,6 +1639,8 @@ botoes_user img {height: 27px;}
 #TabItens td {font-size:12px; color:#5f5f5f; padding:5px 2px}
 #idDivLinkContinueFC {left: 0 !important; margin:0 0 10px 75px !important}
 #idCheckoutFC .EstChkNomeCampo {font-size: 12px !important;width: 35%;margin-right: 5px !important;}
+/* parceiros */
+#Parc_Bloco2 {width: 94%;}
 /* newsletter */
 #newsletter_bg {max-width: 345px;}
 #newsletter {padding: 14px 0px 15px 15px;}
@@ -1597,14 +1656,6 @@ botoes_user img {height: 27px;}
 #rodape_menu {width:95.9%;}
 .EstCatLista li {width:95.8%;}
 .RodapeMenu1 {font-size: 12px; letter-spacing:-0.3px;}
-#rod2 {width: 31%;  padding-left:0px; margin-left:10px; border-left:none; height:132px;}
-#rod3 {width: 25%;  padding-left:10px; margin-left:10px; border-left:1px solid #a16dac; height:132px;}
-#rod4 {width: 28%;padding-left:10px; margin-left:10px; border-left:1px solid #a16dac; height:132px;}
-#rod5 {width: 61.7%;  padding-left:0px; margin-left:10px; border-left:none; height:180px;}
-.rod51  {display:none;}
-.rod51V {display:block;width:100%; float:left; padding-top:12px;}
-.rod52  {width:100%; float:left; padding-top:12px;}
-#rod6  {width: 27%;   padding-left:10px; margin-left:10px; border-left:1px solid #a16dac; height:180px;}
 #rod9a {width:91.9%;}
 }
 
@@ -1642,6 +1693,8 @@ botoes_user img {height: 27px;}
 #Lancamentos .TitulosDest {width:76%;}
 #Lancamentos .BotMaisDet {width: 24%;}
 #ProdBigLanc .Limg img {height: 320px;}
+/* Banner 9 - Blog */
+#Banner9M {max-width:314px;padding: 1px 6px 10px 10px;}
 /* banner peq */
 .banner2peq {display:block; width:100%; max-width:330px; margin-left:15px;}
 .banner2peq img {width:330px;}
@@ -1687,15 +1740,6 @@ botoes_user img {height: 27px;}
 #rodape_menu {width:95.7%}
 .EstCatLista li {width:95.5%;}
 .RodapeMenu1 {font-size: 12px; letter-spacing:normal;}
-#rod2 {width: 42%;  padding-left:15px; margin-left:0; border-left:none; height:132px;}
-#rod3 {width: 37%;  padding-left:15px; margin-left:15px; border-left:1px solid #a16dac; height:132px;}
-#rod4 {width: 42%;  padding-left:15px; margin-left:0; border-left:none; height:132px;}
-#rod41 {display:block; width: 37%; float:left; margin-top: 30px; padding-left:15px; margin-left:15px; border-left:1px solid #a16dac; height:132px;}
-#rod5 {width: 100%;  padding-left:15px; margin-left:0; border-left:none; height:135px;}
-.rod51  {display:block;width:30%; float:left; padding-top:12px;}
-.rod51V {display:none;width:100%; float:left; padding-top:12px;}
-.rod52  {width:70%; float:left; padding-top:12px;}
-#rod6  {display:none;}
 #rod9a {width:91.6%;}
 }
 
@@ -1738,6 +1782,9 @@ botoes_user img {height: 27px;}
 #Lancamentos .TitulosDest {width:73%;}
 #Lancamentos .BotMaisDet {width: 27%;}
 #ProdBigLanc .Limg img {height: 280px;}
+/* Banner 9 - Blog */
+#Banner9M {max-width:274px;padding: 1px 6px 10px 10px;font-size: 13px;}
+#Banner9M b {font-size: 38px;}
 /* banner peq */
 .banner2peq {display:block; width:100%; max-width:290px; margin-left:15px;}
 .banner2peq img {width:290px;}
@@ -1777,6 +1824,8 @@ botoes_user img {height: 27px;}
 .FCTrack .EstNomeCampo {font-size: 13px;}
 .FCTrack .EstCampo {font-size: 13px;font-weight: normal;}
 .FCTrack .FCPrice {font-size:13px;}
+/* parceiros */
+#Parc_Bloco2 {width: 93%;}
 /* newsletter */
 #newsletter_bg {max-width: 290px;}
 #news1 {width: 95%;font-size: 27px;line-height: 24px;}
@@ -1786,13 +1835,9 @@ botoes_user img {height: 27px;}
 .RodapeTel   {width: 65%; margin-left:52px;}
 #rodape_menu {width:95.2%;}
 .EstCatLista li {width:94.6%;}
-#rod2 {width: 42%; }
-#rod3 {width: 38.8%;}
-#rod4 {width: 42%; }
-#rod41 {width: 38.8%;}
-#rod5 {width: 100%;}
-.rod51  {width:28%;}
-.rod52  {width:63%;}
+#rod41 {display:block; width: 45%;  padding-left:10px; margin-left:10px; border-left:1px solid #a16dac; height:132px; float: left; margin-top:30px;}
+#rod5  {padding-left:0px; margin-left:10px; border-left:none; height:132px;}
+#rod6  {display:none;}
 #rod9a {width:90.6%;}
 }
 
@@ -1828,6 +1873,9 @@ botoes_user img {height: 27px;}
 #Lancamentos .TitulosDest {width:73%;}
 #Lancamentos .BotMaisDet {width: 27%;}
 #ProdBigLanc .Limg img {height: 240px;}
+/* Banner 9 - Blog */
+#Banner9M {max-width:274px;padding: 1px 6px 10px 10px;font-size: 13px;}
+#Banner9M b {font-size: 38px;}
 /* banner peq */
 .banner2peq {display:block; width:100%; max-width:290px; margin-left:15px;}
 .banner2peq img {width:290px;}
@@ -1866,6 +1914,8 @@ botoes_user img {height: 27px;}
 #idTxtCPFFC, #idTxtCEP1FC, #idTxtPhoneFC, #idTxtNascFC, #idTableLembreteFC, #idTxtLembreteFC .smtext {font-size:10px !important}
 #idDivLinkContinueFC {left: 0 !important; margin:0 0 10px 55px !important}
 .EstChkDiv {padding:5px 15px 10px 10px !important;}
+/* parceiros */
+#Parc_Bloco2 {width: 93%;}
 /* newsletter */
 #newsletter_bg {max-width: 290px;}
 #news1 {width: 95%;font-size: 27px;line-height: 24px;}
@@ -1875,13 +1925,6 @@ botoes_user img {height: 27px;}
 .RodapeTel   {width: 65%; margin-left:52px;}
 #rodape_menu {width:95.2%;}
 .EstCatLista li {width:94.6%;}
-#rod2 {width: 42%; }
-#rod3 {width: 38.8%;}
-#rod4 {width: 42%; }
-#rod41 {width: 38.8%;}
-#rod5 {width: 100%;}
-.rod51  {width:28%;}
-.rod52  {width:63%;}
 #rod9a {width:90.6%;}
 }
 
