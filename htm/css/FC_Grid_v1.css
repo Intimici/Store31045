@@ -24,7 +24,7 @@
 .FCGridMain #idDivGridImg img {max-width:400px; max-height:400px;}
 img.ZoomIMG2 {border:1px solid #dadada !important; margin-right:6px;}
 
-.FCContentGrid {width:65.5%; height:auto; position:relative; float:left; text-align: left !important; margin-left:1.8%;}
+.FCContentGrid {width:64.4%; height:auto; position:relative; float:left; text-align: left !important; margin-left:1.8%;}
 .FCGridMain .FCDescritorGrid {min-width: 30px; min-height:22px; display: block; text-align: center; border: 1px solid #dadada; background-color:#ffffff; padding: 5px; margin: 0; line-height:17px;}
 
 .FCBoxGrid {position: relative; width:98%; height:auto !important; display: table; text-align:left; border: 1px solid #dadada; background-color:#ffffff; font-size:14px; padding: 8px 0 10px 10px; margin-bottom:10px;}
