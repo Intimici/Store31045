@@ -160,7 +160,7 @@ document.write("<div class='valor_cesta'>0 itens</div>");
 <div id="topo6">
 <div class="busca">
 <!-- Busca -->
-   <form name="fBusca" method="GET" action="ListaProdutos.asp?IDLoja=<IDLojaNum>" id="autocomplete-form">
+   <form name="fBusca" method="GET" action="/ListaProdutos.asp?IDLoja=<IDLojaNum>" id="autocomplete-form">
      <fieldset>
        <input type="hidden" name="IDLoja" value="<IDLojaNum>">
        <input type="hidden" name="Digitada" value="True">
@@ -206,7 +206,7 @@ document.write("<div class='valor_cesta'>0 itens</div>");
   </ul>
                     </div>
                     <div class="col_half">
-                    <div style="padding-top:10px;"><prod out="p19" em="rand" cat="Acessórios"></div>  
+                    <div style="padding-top:10px;"><prod out="p19" em="prom,rand" cat="Acessórios"></div>  
                     </div>
                 </div><!-- End fullwidth container -->
             </li><!-- End Acessorios Item -->
@@ -220,10 +220,11 @@ document.write("<div class='valor_cesta'>0 itens</div>");
   <li><a class="SubMenu" href='/c/baralhos'>Baralhos</a></li>
   <li><a class="SubMenu" href='/c/dados'>Dados</a></li>
   <li><a class="SubMenu" href='/c/jogos'>Jogos</a></li>
+  <li><a class="SubMenu" href='/c/outras-brincadeiras'>Outros</a></li>
   </ul>
                     </div>
                     <div class="col_half">
-                    <div style="padding-top:10px;"><prod out="p19" em="rand" cat="Brincadeiras"></div>  
+                    <div style="padding-top:10px;"><prod out="p19" em="prom,rand" cat="Brincadeiras"></div>  
                     </div>
                 </div><!-- End fullwidth container -->
             </li><!-- End Brincadeiras Item -->
@@ -234,20 +235,20 @@ document.write("<div class='valor_cesta'>0 itens</div>");
                     <div class="col_half firstcolumn">
                     <h3><a href='/c/cosmeticos'>Cosméticos</a></h3>
   <ul>
-  <li><a class="SubMenu" href='/c/banho'>Banho</a></li>
-  <li><a class="SubMenu" href='/c/bolinhas-eroticas'>Bolinhas Eróticas</a></li>
+  <li><a class="SubMenu" href='/c/bolinhas-sensuais'>Bolinhas Sensuais</a></li>
   <li><a class="SubMenu" href='/c/comestiveis-e-beijaveis'>Comestíveis e Beijáveis</a></li>
-  <li><a class="SubMenu" href='/c/desodorantes-e-aerosois'>Desodorantes e Aerosóis</a></li>
-  <li><a class="SubMenu" href='/c/energeticos'>Energéticos</a></li>
   <li><a class="SubMenu" href='/c/excitantes'>Excitantes</a></li>
   <li><a class="SubMenu" href='/c/funcionais'>Funcionais</a></li>
   <li><a class="SubMenu" href='/c/lubrificantes'>Lubrificantes</a></li>
   <li><a class="SubMenu" href='/c/massagem'>Massagem</a></li>
   <li><a class="SubMenu" href='/c/perfumes'>Perfumes</a></li>
+  <li><a class="SubMenu" href='/c/velas'>Velas</a></li>
+  <li><a class="SubMenu" href='/c/vibrador-liquido'>Vibrador Líquido</a></li>
+  <li><a class="SubMenu" href='/c/outros-cosmeticos'>Outros</a></li>
   </ul>
                 </div>
                     <div class="col_half">
-                    <div style="padding-top:10px;"><prod out="p19" em="rand" cat="Cosméticos"></div>  
+                    <div style="padding-top:10px;"><prod out="p19" em="prom,rand" cat="Cosméticos"></div>  
                     </div>
                 </div><!-- End fullwidth container -->
             </li><!-- End Cosméticos Item -->
@@ -263,10 +264,30 @@ document.write("<div class='valor_cesta'>0 itens</div>");
   </ul>
                 </div>
                     <div class="col_half">
-                    <div style="padding-top:10px;"><prod out="p19" em="rand" cat="Fantasias"></div>  
+                    <div style="padding-top:10px;"><prod out="p19" em="prom,rand" cat="Fantasias"></div>  
                     </div>
                 </div><!-- End fullwidth container -->
             </li><!-- End Fantasias Item -->
+            
+            <li class="menuitem_fullwidth"><a href='/c/higiene-saude'><img src="<baseloja>images/Higiene.png" alt="Higiene e Saúde" border="0"></a>
+            <!-- Begin Higiene e Saúde Item -->
+                <div class="dropdown_3columns" style="float:left;"><!-- Begin fullwidth container -->
+                    <div class="col_half firstcolumn">
+                    <h3><a href='/c/higiene-saude'>Higiene e Sa&uacute;de</a></h3>
+  <ul>
+  <li><a class="SubMenu" href='/c/banho'>Banho</a></li>
+  <li><a class="SubMenu" href='/c/desodorantes-e-aerosois'>Desodorantes e Aeros&oacute;is</a></li>
+  <li><a class="SubMenu" href='/c/energeticos'>Energ&eacute;ticos</a></li>
+  <li><a class="SubMenu" href='/c/suplementos'>Suplementos</a></li>
+  <li><a class="SubMenu" href='/c/higiene-diversos'>Diversos</a></li>
+  <!--li><a class="SubMenu" href='/c/preservativos'>Preservativos</a></li-->
+  </ul>
+                </div>
+                    <div class="col_half">
+                    <div style="padding-top:10px;"><prod out="p19" em="prom,rand" cat="Higiene / Saúde"></div>  
+                    </div>
+                </div><!-- End fullwidth container -->
+            </li><!-- End Higiene e Saúde Item -->
 
             <li class="menuitem_fullwidth"><a href='/c/masturbadores'><img src="<baseloja>images/Masturbadores.png" alt="Masturbadores" border="0"></a>
             <!-- Begin Masturbadores Item -->
@@ -279,7 +300,7 @@ document.write("<div class='valor_cesta'>0 itens</div>");
   </ul>
                 </div>
                     <div class="col_half">
-                    <div style="padding-top:10px;"><prod out="p19" em="rand" cat="Masturbadores"></div>  
+                    <div style="padding-top:10px;"><prod out="p19" em="prom,rand" cat="Masturbadores"></div>  
                     </div>
                 </div><!-- End fullwidth container -->
             </li><!-- End Masturbadores Item -->
@@ -294,18 +315,19 @@ document.write("<div class='valor_cesta'>0 itens</div>");
   <li><a class="SubMenu" href='/c/espartilhos'>Espartilhos</a></li>
   <li><a class="SubMenu" href='/c/lingerie-outros'>Outros</a></li>
   <li><a class="SubMenu" href='/c/plus-size'>Plus Size</a></li>
+  <li><a class="SubMenu" href='/c/sungas'>Sungas</a></li>
   <li><a class="SubMenu" href='/c/tangas'>Tangas</a></li>
   </ul>
                 </div>
                     <div class="col_half">
-                    <div style="padding-top:10px;"><prod out="p19" em="rand" cat="Moda Sensual"></div>  
+                    <div style="padding-top:10px;"><prod out="p19" em="prom,rand" cat="Moda Sensual"></div>  
                     </div>
                 </div><!-- End fullwidth container -->
             </li><!-- End Moda Sensual Item -->
 
             <li class="menuitem_fullwidth"><a href='/c/penis'><img src="<baseloja>images/Penis.png" alt="Pênis" border="0"></a>
             <!-- Begin Pênis Item -->
-                <div class="dropdown_3columns" style="float:left; margin-left:-57px;"><!-- Begin fullwidth container -->
+                <div class="dropdown_3columns" style="float:left; margin-left:-93px;"><!-- Begin fullwidth container -->
                     <div class="col_half firstcolumn">
                     <h3><a href='/c/penis'>Pênis</a></h3>
   <ul>
@@ -315,19 +337,18 @@ document.write("<div class='valor_cesta'>0 itens</div>");
   <li><a class="SubMenu" href='/c/de-16-a-18-cm-vibro'>De 16 a 18 cm com Vibro</a></li>
   <li><a class="SubMenu" href='/c/de-19-a-21-cm-vibro'>De 19 a 21 cm com Vibro</a></li>
   <li><a class="SubMenu" href='/c/penis-de-19cm-a-21cm'>De 19 cm a 21 cm</a></li>
-  <li><a class="SubMenu" href='/c/penis-diversos'>Diversos</a></li>
   <li><a class="SubMenu" href='/c/duplos'>Duplos</a></li>
   </ul>
                 </div>
                     <div class="col_half">
-                    <div style="padding-top:10px;"><prod out="p19" em="rand" cat="Pênis"></div>  
+                    <div style="padding-top:10px;"><prod out="p19" em="prom,rand" cat="Pênis"></div>  
                     </div>
                 </div><!-- End fullwidth container -->
             </li><!-- End Pênis Item -->
 
             <li class="menuitem_fullwidth"><a href='/c/sado-fetiche'><img src="<baseloja>images/SadoFetiche.png" alt="Sado e Fetiche" border="0"></a>
             <!-- Begin Sado/Fetiche Item -->
-                <div class="dropdown_3columns" style="float:left; margin-left:-151px;"><!-- Begin fullwidth container -->
+                <div class="dropdown_3columns" style="float:left; margin-left:-169px;"><!-- Begin fullwidth container -->
                     <div class="col_half firstcolumn">
                     <h3><a href='/c/sado-fetiche'>Sado/Fetiche</a></h3>
   <ul>
@@ -338,26 +359,28 @@ document.write("<div class='valor_cesta'>0 itens</div>");
   </ul>
                 </div>
                     <div class="col_half">
-                    <div style="padding-top:10px;"><prod out="p19" em="rand" cat="Sado/Fetiche"></div>  
+                    <div style="padding-top:10px;"><prod out="p19" em="prom,rand" cat="Sado/Fetiche"></div>  
                     </div>
                 </div><!-- End fullwidth container -->
             </li><!-- End Sado/Fetiche Item -->
 
             <li class="menuitem_fullwidth"><a href='/c/vibradores'><img src="<baseloja>images/Vibradores.png" alt="Vibradores" border="0"></a>
             <!-- Begin Vibradores Item -->
-                <div class="dropdown_3columns" style="float:left; margin-left:-302px;"><!-- Begin fullwidth container -->
+                <div class="dropdown_3columns" style="float:left; margin-left:-303px;"><!-- Begin fullwidth container -->
                     <div class="col_half firstcolumn">
                     <h3><a href='/c/vibradores'>Vibradores</a></h3>
   <ul>
-  <li><a class="SubMenu" href='/c/controle-remoto'>Controle Remoto</a></li>
-  <li><a class="SubMenu" href='/c/estimulador-fem'>Estimulador Feminino</a></li>
-  <li><a class="SubMenu" href='/c/ponto-g'>Ponto G</a></li>
+  <li><a class="SubMenu" href='/c/bullet'>Bullet</a></li>
+  <li><a class="SubMenu" href='/c/butterflies-cintas'>Cintas / Borboleta</a></li>
+  <li><a class="SubMenu" href='/c/personais-classicos'>Clássicos / Personal</a></li>
   <li><a class="SubMenu" href='/c/rotativos'>Rotativos</a></li>
-  <li><a class="SubMenu" href='/c/tradicionais'>Tradicionais</a></li>
+  <li><a class="SubMenu" href='/c/ponto-g'>Ponto G</a></li>
+  <li><a class="SubMenu" href='/c/estimuladores'>Estimuladores</a></li>
+  <li><a class="SubMenu" href='/c/vibradores-diversos'>Diversos</a></li>
   </ul>
                 </div>
                     <div class="col_half">
-                    <div style="padding-top:10px;"><prod out="p19" em="rand" cat="Vibradores"></div>  
+                    <div style="padding-top:10px;"><prod out="p19" em="prom,rand" cat="Vibradores"></div>  
                     </div>
                 </div><!-- End fullwidth container -->
             </li><!-- End Vibradores Item -->
@@ -390,26 +413,36 @@ document.write("<div class='valor_cesta'>0 itens</div>");
   <li><a href='/c/baralhos'>Baralhos</a></li>
   <li><a href='/c/dados'>Dados</a></li>
   <li><a href='/c/jogos'>Jogos</a></li>
+  <li><a href='/c/outras-brincadeiras'>Outros</a></li>
   </ul>
 </li>
 <li><a href='#'>Cosméticos</a>
   <ul class="dropdown">
-  <li><a href='/c/banho'>Banho</a></li>
-  <li><a href='/c/bolinhas-eroticas'>Bolinhas Eróticas</a></li>
+  <li><a href='/c/bolinhas-sensuais'>Bolinhas Sensuais</a></li>
   <li><a href='/c/comestiveis-e-beijaveis'>Comestíveis e Beijáveis</a></li>
-  <li><a href='/c/desodorantes-e-aerosois'>Desodorantes e Aerosóis</a></li>
-  <li><a href='/c/energeticos'>Energéticos</a></li>
   <li><a href='/c/excitantes'>Excitantes</a></li>
   <li><a href='/c/funcionais'>Funcionais</a></li>
   <li><a href='/c/lubrificantes'>Lubrificantes</a></li>
   <li><a href='/c/massagem'>Massagem</a></li>
   <li><a href='/c/perfumes'>Perfumes</a></li>
+  <li><a href='/c/velas'>Velas</a></li>
+  <li><a href='/c/vibrador-liquido'>Vibrador Líquido</a></li>
+  <li><a href='/c/outros-cosmeticos'>Outros</a></li>
   </ul>
 </li>
 <li><a href='#'>Fantasias</a>
   <ul class="dropdown">
   <li><a href='/c/femininas'>Femininas</a></li>
   <li><a href='/c/fantasias-plus-size'>Plus Size</a></li>
+  </ul>
+</li>
+<li><a href='#'>Higiene e Sa&uacute;de</a>
+  <ul class="dropdown">
+  <li><a href='/c/banho'>Banho</a></li>
+  <li><a href='/c/desodorantes-e-aerosois'>Desodorantes e Aeros&oacute;is</a></li>
+  <li><a href='/c/energeticos'>Energ&eacute;ticos</a></li>
+  <li><a href='/c/suplementos'>Suplementos</a></li>
+  <li><a href='/c/higiene-diversos'>Diversos</a></li>
   </ul>
 </li>
 <li><a href='#'>Masturbadores</a>
@@ -424,6 +457,7 @@ document.write("<div class='valor_cesta'>0 itens</div>");
   <li><a href='/c/espartilhos'>Espartilhos</a></li>
   <li><a href='/c/lingerie-outros'>Outros</a></li>
   <li><a href='/c/plus-size'>Plus Size</a></li>
+  <li><a href='/c/sungas'>Sungas</a></li>
   <li><a href='/c/tangas'>Tangas</a></li>
   </ul>
 </li>
@@ -435,7 +469,6 @@ document.write("<div class='valor_cesta'>0 itens</div>");
   <li><a href='/c/de-16-a-18-cm-vibro'>De 16 a 18 cm com Vibro</a></li>
   <li><a href='/c/de-19-a-21-cm-vibro'>De 19 a 21 cm com Vibro</a></li>
   <li><a href='/c/penis-de-19cm-a-21cm'>De 19 cm a 21 cm</a></li>
-  <li><a href='/c/penis-diversos'>Diversos</a></li>
   <li><a href='/c/duplos'>Duplos</a></li>
   </ul>
 </li>
@@ -449,11 +482,13 @@ document.write("<div class='valor_cesta'>0 itens</div>");
 </li>
 <li><a href='#'>Vibradores</a>
   <ul class="dropdown">
-  <li><a href='/c/controle-remoto'>Controle Remoto</a></li>
-  <li><a href='/c/estimulador-fem'>Estimulador Feminino</a></li>
-  <li><a href='/c/ponto-g'>Ponto G</a></li>
+  <li><a href='/c/bullet'>Bullet</a></li>
+  <li><a href='/c/butterflies-cintas'>Cintas / Borboleta</a></li>
+  <li><a href='/c/personais-classicos'>Clássicos / Personal</a></li>
   <li><a href='/c/rotativos'>Rotativos</a></li>
-  <li><a href='/c/tradicionais'>Tradicionais</a></li>
+  <li><a href='/c/ponto-g'>Ponto G</a></li>
+  <li><a href='/c/estimuladores'>Estimuladores</a></li>
+  <li><a href='/c/vibradores-diversos'>Diversos</a></li>
   </ul>
 </li>
 </ul>
@@ -482,7 +517,7 @@ document.write("<div class='valor_cesta'>0 itens</div>");
 <div id="topo12">
 <div class="busca">
 <!-- Busca -->
-   <form name="fBusca" method="GET" action="ListaProdutos.asp?IDLoja=<IDLojaNum>" id="autocomplete-form">
+   <form name="fBusca" method="GET" action="/ListaProdutos.asp?IDLoja=<IDLojaNum>" id="autocomplete-form">
      <fieldset>
        <input type="hidden" name="IDLoja" value="<IDLojaNum>">
        <input type="hidden" name="Digitada" value="True">
@@ -499,7 +534,7 @@ document.write("<div class='valor_cesta'>0 itens</div>");
 <div id="topo14">
 <div class="busca">
 <!-- Busca -->
-   <form name="fBusca" method="GET" action="ListaProdutos.asp?IDLoja=<IDLojaNum>" id="autocomplete-form">
+   <form name="fBusca" method="GET" action="/ListaProdutos.asp?IDLoja=<IDLojaNum>" id="autocomplete-form">
      <fieldset>
        <input type="hidden" name="IDLoja" value="<IDLojaNum>">
        <input type="hidden" name="Digitada" value="True">
@@ -542,4 +577,3 @@ $(document).ready(function(){
    });
 });
 </script>
-
