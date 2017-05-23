@@ -1,0 +1,222 @@
+<ProdTop>
+<style>
+#idTitTextoFC {display:none;}
+#idFCContent {max-width: 1260px; padding:11px 0px 0px 0px;}
+#idFCLeftContentRight {margin: 0px auto;max-width: 1260px;padding: 0px;overflow: hidden;clear: both;float: none;}
+#idPageCountFC {display:none;}
+</style>
+
+<script>
+iQtdProds=<QtProd>;
+</script>
+
+<div id="idFiltrosBusca" style="display:none">
+  <table class="EstTabFiltros" width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><div class="EstTitFiltroFC"><b>Ordenar por</b></div></td>
+    </tr>
+    <tr>
+      <td><div id="idPagProdTop"></div></td>
+    </tr>
+    <tr>
+      <td><div class="EstTitFiltroFC"><b>Filtrando por</b></div></td>
+    </tr>
+    <tr id="idFiltroResultadoFC">
+      <td><div id="idBuscaFiltro" class="EstListaFiltroFC"><ListPathSearch><a href="/prod,idloja,<IDLoja>"><img src="<baseloja>images/os_limpar.png" alt="Remover Filtros" border="0" /></a></div></td>
+    </tr>
+    <tr id="idFiltroCatFC">
+      <td><div class="EstTitFiltroFC"><b><LegendaCats></b></div><div class=EstListaFiltroFC><ListPathCatQt></div></td>
+    </tr>
+    <tr id="idFiltroAdic1FC">
+      <td><div class="EstTitFiltroFC"><b><NomeAdicional1></b></div><div class=EstListaFiltroFC><ListAdic1Qt></div></tr>
+    <tr id="idFiltroAdic2FC">
+      <td><div class="EstTitFiltroFC"><b><NomeAdicional2></b></div><div class=EstListaFiltroFC><ListAdic2Qt></div></td>
+    </tr>
+    <tr id="idFiltroAdic3FC">
+      <td><div class="EstTitFiltroFC"><b><NomeAdicional3></b></div><div class=EstListaFiltroFC><ListAdic3Qt></div></td>
+    </tr>
+    <tr>
+      <td><div id="idDivLinkAdvancedSearchFC"><LinkAdvancedSearch></div></td>
+    </tr>
+  </table>
+</div>
+
+<script type="text/javascript">
+if(iQtdProds>0)exibeRefinamentoBusca();
+</script>
+
+<!-- Click "Ver Mais" Scroll to description -->
+<script>
+jQuery(document).ready(function (){
+  jQuery(".link-descr").click(function (){
+    jQuery('html, body').animate({
+      scrollTop: jQuery(".descr-prod").offset().top-90
+    }, 1000);
+  });
+});
+</script>
+
+<!-- fancybox -->
+<script src="<baseloja>htm/fancybox/fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" href="<baseloja>htm/fancybox/fancybox.css?v=2.1.5" media="screen" />
+<script type="text/javascript">
+jQuery(document).ready(function() {
+jQuery('.fancybox').fancybox({maxWidth:700,maxHeight: 500});
+});
+</script>
+
+<div class="ajustaLista">
+</ProdTop>
+
+<ProdLista>
+<div id="ProdDestLista">
+<div style="margin-top:10px;"><a href='/ListaProdutos.asp?IDLoja=<IDLoja>&IDProduto=<IDProduto>'><div id="ProdCapaDiv"><ImagemProd></div></a></div>
+<div style="margin-top:5px;"><a href='/ListaProdutos.asp?IDLoja=<IDLoja>&IDProduto=<IDProduto>' class="EstNomeProdCapa"><NomeProd></a></div>
+<div style="margin-top:5px;"><script>MostraPreco(<PrecoNum>,<PrecoOri>,'<CodProd>');</script></div>
+<div><script>MostraMaxParcela(<PrecoNum>,<MaxParcelasProdNum>);</script></div>
+<div class="ProdCat"><NomeCat></div>
+<div class="ProdEspiar"><a class="fancybox fancybox.iframe" href="/ListaProdutos.asp?IDLoja=<IDLoja>&Sty=9&Int=1&IDProduto=<IDProduto>"><img src="<baseloja>images/BotEspiar.svg" border="0" title="Espiar"></a></div>
+<div class="ProdVejaMais"><a href='/ListaProdutos.asp?IDLoja=<IDLoja>&IDProduto=<IDProduto>'><img src="<baseloja>images/BotVejaMais.svg" alt="Veja Mais" title="Veja Mais" border="0" ></a></div>
+<div><Lancamento></div>
+</div>
+</ProdLista>
+
+<ProdDet>
+<style>
+.EstTabTopo {display:none;}
+a {text-decoration:none;}
+</style>
+<!-- Begin: HTML structure -->
+<link rel="stylesheet" type="text/css" href="<baseloja>htm/css/FC_Grid_v1.css">
+<link rel="stylesheet" href="/js/MagicToolbox/MagicZoomPlusV1/magiczoomplus.css">
+<div class="FCGridMain">
+<div class="FCCodProdGrid" style="padding-bottom:10px;"><PathCat></div>
+<div id="idDivGridImg"><img src="<ImagemProdDet>"></div>
+<div class="FCContentGrid">
+<Lancamento>
+<h1 id="idNameProductGridFC" class="FCNameProductGrid"><NomeProd></h1>
+<div class="FCCodProdGrid">Ref.: <CodProd></div>
+<div style="padding-top:15px;" class="EstDescricaoProd"><DescricaoCurta> &nbsp;<a href="#Descricao"><b>veja mais</b></a></div>
+<br>
+<div id="idPriceGridFC" class="FCPriceGrid"><script>MostraPrecoDet(<PrecoNum>,<PrecoOri>,'<CodProd>');</script></div>
+<script>
+(function(){ var e=document.getElementById("idPriceGridFC"); if(e)e.innerHTML+= fnMaxInstallmentsGrid(<PrecoNum>,<MaxParcelasProdNum>) + fnShowEconomyGrid(<PrecoNum>,<PrecoOri>); })();
+</script>
+<br>
+<div id="idMainGridFC_<IDProduto>"></div>
+
+<!-- ZipCode: Begin -->
+<div class="ProductStyleBoxFC"><div id="ShowCEP<IDProduto>"></div></div>
+<!-- ZipCode: End -->
+
+<div style="background-color:#dadada; height:1px; width:100%; margin-top:20px; float:left;"><img src="images/shim.gif" width=10 height=1></div>
+<div style="padding-top:10px; float:left;">
+<!-- Compartilhe -->
+<table border="0" cellpadding="0" cellspacing="0" id="IconesRedesSociais">
+<tr>
+ <td align="left" class="mntext">Compartilhe:</td>
+ <td align="left" style="padding-left:10px;"><span class="ShareWhatsApp"><a href="whatsapp://send?text=Veja o produto '<NomeProd>'. Segue o link: http://lvfc.co/l<IDLojaNum>/p<IDProduto>" target="_blank"><img src="<baseloja>images/Ic_WhatsApp.svg" border="0" alt="Recomende este produto pelo WhatsApp" title="Recomende este produto pelo WhatsApp"></a></span></td>
+ <td align="left" style="padding-left:10px;"><ShareFacebook></td>
+ <td align="left" style="padding-left:10px;"><ShareTwitter></td>
+ <td align="left" style="padding-left:10px;"><ShareGooglePlus></td>
+ <td align="left" style="padding-left:10px;"><SharePinterest></td>
+</tr>
+</table>
+<!-- Fim Compartilhe -->
+</div>
+
+</div>
+
+<a name=Descricao></a>
+<div id="produto3">
+<!-- parte 3 do produto -->
+<div class="TitulosProd">Descri&ccedil;&atilde;o:</div>
+<div style="background-color:#dadada; height:1px; width:100%; float:left"><img src="images/shim.gif" width=10 height=1></div>
+<div style="margin-top:15px;float:left;width:100%"><Descricao><DescrHTM></div>
+<div class="VideoProd"><VideoProd></div><div class="VideoProdP"><a href="https://www.youtube.com/watch?v=<CodVideoProd>" target="_blank"><img src="<baseloja>images/BotVideo.svg" alt="Assista a um Video do Produto" border="0" /></a></div>
+<div style="margin-top:10px;float:left;width:100%"><DescrURL></div>
+
+<div class="TitulosProd">Quem viu, Viu Tamb&eacute;m:</div>
+<div style="background-color:#dadada; height:1px; width:100%; float:left"><img src="images/shim.gif" width=10 height=1></div>
+<div style="margin-top:15px; float:left;"><CrossSelling></div>
+
+<!--BuyTogether--> <!-- Retirado dia 19/09/2016 -->
+
+<div class="TitulosProd">Opini&atilde;o dos Clientes:</div>
+<div style="background-color:#dadada; height:1px; width:100%; float:left;"><img src="images/shim.gif" width=10 height=1></div>
+<div style="margin:15px auto 20px auto; float:left"><Comments></div>
+<!-- parte 3 do produto -->
+</div>
+
+</div>
+<!-- End: HTML structure -->
+<!-- Begin: JS scripts -->
+<script src="/js/MagicToolbox/MagicZoomPlusV1/magiczoomplus.js"></script>
+<script src="<baseloja>htm/js/FC_Grid_v1.js"></script>
+<script>
+fnShowCEPGrid(<IDProduto>); /*FC simulação de frete */
+FCGrid$.fnMultipleZoom("<ImagemProdDet>","<ImagemProdAmp>", false);
+</script>
+<script>
+var aProductOnlyOneGrid=[], aProductListGrid=[];
+/* Begin: Produto principal */
+var sCor = ("<CorVal>" !="") ? "<CorVal>|<CorRGB>":"";
+aProductOnlyOneGrid.push(JSON.stringify({IDProduto: <IDProduto>,codProd: "<CodProd>", cor: sCor, estoque: <Estoque>, peso: "<PesoNum>", priceOri: "<PrecoOri>", priceNum: "<PrecoNum>", maxInstallmentsNum: <MaxParcelasProdNum>, adicional1: "<Adicional1Val>", adicional2: "<Adicional2Val>", adicional3: "<Adicional3Val>", adicionalD1: "<AdicionalD1Val>", adicionalD2:"<AdicionalD2Val>", adicionalD3:"<AdicionalD3Val>", imgDet:"<ImagemProdDet>", imgAmp:"<ImagemProdAmp>"}));
+/* End: Produto principal */
+/* Begin: Lista subprodutos */
+<sub>
+var sCor = ("<CorVal>" !="") ? "<CorVal>|<CorRGB>":"";
+aProductListGrid.push(JSON.stringify({IDProduto: <IDProduto>, codProd: "<CodProd>", cor: sCor, estoque: <Estoque>, peso: "<PesoNum>", priceOri: "<PrecoOri>", priceNum: "<PrecoNum>", maxInstallmentsNum: <MaxParcelasProdNum>, adicional1: "<Adicional1Val>", adicional2: "<Adicional2Val>", adicional3: "<Adicional3Val>", adicionalD1: "<AdicionalD1Val>", adicionalD2:"<AdicionalD2Val>", adicionalD3:"<AdicionalD3Val>", imgDet:"<ImagemProdDet>", imgAmp:"<ImagemProdAmp>"}));
+</sub>
+/* End: Lista subprodutos */
+/* Begin: Código opcional para alterar as configurações da grade */
+FCGrid$.myOptions = {
+autoSelect : false,
+cartOnPage : true,
+shippingUpdate : true,
+incMultGrid : false,
+separadorRGBCor : '|',
+qtyDescriptors : 7,
+htmlFlagChecked : '<i class="FCCheckedGrid"></i>',
+imageProduct : 'cor',
+colorName : false,
+colorImg : true,
+colorImgFormat : '.png',
+stock: false,
+btnSelectImg : 'BotSelecioneGrid.svg',
+btnBuyImg : 'BotCarrinho.svg',
+btnContactUSImg : 'BotConsulteGrid.svg',
+btnSoldOut : 'BotCarrinhoEsgotado.svg',
+textGrid : 'Selecione as opções abaixo',
+order : ['cor', 'adicional1', 'adicional2', 'adicional3', 'adicionalD1', 'adicionalD2', 'adicionalD3'],
+nameDescriptor : {
+cor : 'Cor',
+adicional1 : 'Tamanho',
+adicional2 : 'Descritor 2',
+adicional3 : 'Descritor 3',
+adicionalD1 : 'Descritor 4',
+adicionalD2 : 'Descritor 5',
+adicionalD3 : 'Descritor 6'
+},
+textDescriptor : {
+cor : 'Selecione a Cor',
+adicional1 : 'Selecione o Tamanho',
+adicional2 : 'Selecione',
+adicional3 : 'Selecione',
+adicionalD1 : 'Selecione',
+adicionalD2 : 'Selecione',
+adicionalD3 : 'Selecione'
+}
+};
+/* End: Código opcional para alterar as configurações da grade */
+FCGrid$.init("idMainGridFC_<IDProduto>", aProductListGrid, aProductOnlyOneGrid); /* Inicia a grade */
+</script>
+<!-- End: JS scripts -->
+</ProdDet>
+
+<ProdAmp>
+</ProdAmp>
+
+<ProdBottom>
+</div>
+</ProdBottom>
