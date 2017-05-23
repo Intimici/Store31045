@@ -3,7 +3,7 @@ var baseLoja = '../lojas/00031045/';
 var baseId = '31045';
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-  mobile = 'sim'
+	mobile = 'sim'
 }
 
 function MostraEstoque(Cod)
@@ -17,10 +17,10 @@ function MostraEstoque(Cod)
 function MostraPrecoMenu(PrecoProd,PrecoOri,IDProd){
 if(PrecoProd==0 && PrecoOri==0){document.write("&nbsp;");return void(0);}
 if(PrecoProd!=PrecoOri){
- document.write("<font style='font-size:12px; color:#a6a6a6;'>de <strike>"+FormatPrice(PrecoOri,'R$')+"</strike></font>&nbsp;|&nbsp;<font style='font-size:14px; color:#b9519f;'>por <b>"+FormatPrice(PrecoProd,'R$')+"</b></font>");
+ document.write("<font style='font-size:12px; color:#a6a6a6;'>de <strike>"+FormatPrice(PrecoOri,'R$')+"</strike></font>&nbsp;|&nbsp;<font style='font-size:14px; color:#CC0000;'>por <b>"+FormatPrice(PrecoProd,'R$')+"</b></font>");
  }
  else{
- document.write("<div style='font-size:14px; color:#b9519f;'>por <b>"+FormatPrice(PrecoProd,'R$')+"</b></div>");
+ document.write("<div style='font-size:14px; color:#CC0000;'>por <b>"+FormatPrice(PrecoProd,'R$')+"</b></div>");
  }
 }
 
@@ -29,7 +29,7 @@ function MostraParcelaMenu(PrecoProd,MaxParcelas){
   if(PrecoProd==0||MaxParcelas==1||Juros.length==0)return;
   if(MaxParcelas==0||MaxParcelas>Juros.length)MaxParcelas=Juros.length;
   if(Juros[MaxParcelas-1]>0)ComSem=""; else ComSem="sem juros";
-  document.write("<div style='font-size:12px; color:#b9519f;'><b>"+MaxParcelas+"X</b> de <b>"+FormatPrecoReais(CalculaParcelaJurosCompostos(PrecoProd,MaxParcelas))+"</b> "+ComSem+"</div>");
+  document.write("<div style='font-size:12px; color:#CC0000;'><b>"+MaxParcelas+"X</b> de <b>"+FormatPrecoReais(CalculaParcelaJurosCompostos(PrecoProd,MaxParcelas))+"</b> "+ComSem+"</div>");
 }
 /* Fim Produto Menu Topo */ 
 
@@ -153,17 +153,17 @@ if(FC$.TypeFrt==3){
 var sNumCEP=fnGetCookie('CEP'+FC$.IDLoja);
 if(sNumCEP==null)sNumCEP="";
 sCEP="<div id='idDivCEPFC'>";
-sCEP+=" <div id='idDivTitCEP'><img src='"+ FC$.PathImg +"icon_frete.svg' width='30px' alt='Calcule o Frete' /></div>";
+sCEP+=" <div id='idDivTitCEP'><img src='"+ FC$.PathImg +"Icon_Frete.svg' width='30px' alt='Calcule o Frete' /></div>";
 sCEP+=" <div id='idDivCalcule'>Calcule o Valor do Frete</div>";
 sCEP+=" <div id='idDivContentCEP'>";
 sCEP+=" <div id='idDivContentFieldsCEP'>";
 sCEP+=" <div id='idDivCEPCalc'>";
 sCEP+=" <div class='FieldCEP FieldCEPQty'><label>Qtd.</label> <input type='number' id='idQtdZip"+ IDProd +"' value='1'></div>";
 sCEP+=" <div class='FieldCEP FieldCEPNum'><input type='text' placeholder='CEP' id='idZip"+ IDProd +"' value='"+ sNumCEP +"'></div>";
-sCEP+=" <img src='"+ FC$.PathImg +"iconnewsletter.svg' height='20px' id='idCEPButton' class='FieldCEPBtn' onclick='fnGetShippingValuesProdGrid("+ IDProd +")'>";
+sCEP+=" <img src='"+ FC$.PathImg +"IconNewsletter.svg' height='20px' id='idCEPButton' class='FieldCEPBtn' onclick='fnGetShippingValuesProdGrid("+ IDProd +")'>";
 sCEP+=" </div>";
 sCEP+=" </div>";
-sCEP+=" <div id='idDivImgLoadingCEPFC'><img src='"+ FC$.PathImg +"loadingcep.gif' vspace=3 style='display:none;' id=ImgLoadingCEP></div>";
+sCEP+=" <div id='idDivImgLoadingCEPFC'><img src='"+ FC$.PathImg +"loadingCEP.gif' vspace=3 style='display:none;' id=ImgLoadingCEP></div>";
 sCEP+=" <div id='idShippingValues"+ IDProd +"'></div></div>";
 sCEP+=" </div>";
 sCEP+="</div>";
@@ -222,16 +222,16 @@ document.getElementById("ImgLoadingCEP").style.display='none';
 
 // Select - Ordenação de Produtos - 29/04/2016
 function fnFooter() {
-  if(FC$.Page=="Products"){
-      if(iQtdProds>2){
-        var oScript=document.createElement('script');
-        oScript.type='text/javascript';
-        oScript.async=true;
-        oScript.src=FC$.PathHtm+'IncPaginacaoOrder.js';
-        var sAddScript=document.getElementsByTagName('script')[0];
-        sAddScript.parentNode.insertBefore(oScript,sAddScript);
-      }
-  }
+	if(FC$.Page=="Products"){
+	    if(iQtdProds>2){
+	      var oScript=document.createElement('script');
+	      oScript.type='text/javascript';
+	      oScript.async=true;
+	      oScript.src=FC$.PathHtm+'IncPaginacaoOrder.js';
+	      var sAddScript=document.getElementsByTagName('script')[0];
+	      sAddScript.parentNode.insertBefore(oScript,sAddScript);
+	    }
+	}
 }
 
 // Refinamento da Busca - Menu Esquerdo - 29/04/2016
