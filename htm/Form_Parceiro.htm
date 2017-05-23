@@ -53,30 +53,6 @@ function ValidaForm(){
     return false;
  }
 
- //Nome do site
- if(isEmpty(document.form.NomeSite.value)){
-    AvisoErroCampo(document.form.NomeSite,'Informe o nome do seu site.');
-    return false;
- }
-
- //URL
- if(isEmpty(document.form.URLSite.value)){
-    AvisoErroCampo(document.form.URLSite,'Informe o endereço do seu site.');
-    return false;
- }
-
- //Ramo de atividade
- if(isEmpty(document.form.RamoAtividade.value)){
-    AvisoErroCampo(document.form.RamoAtividade,'Informe o ramo de atividade do site.');
-    return false;
- }
-
- //Descrição
- if(isEmpty(document.form.DescricaoSite.value)){
-    AvisoErroCampo(document.form.DescricaoSite,'Informe a descrição sucinta do site.');
-    return false;
- }
-
  //Banco
  if(isEmpty(document.form.NumeroBanco.value)){
     AvisoErroCampo(document.form.NumeroBanco,'Informe o número do banco.');
@@ -160,7 +136,7 @@ function AvisoErroCampo_SelectBox(theField,s){
 <input type=hidden name=EmailPara value='contato@mundonovopro.com.br'>
 <input type=hidden name=Assunto value='Intimici: Cadastro de Parceiro'>
 <input type=hidden name=URLRetorno value='Custom.asp?IDLoja=31045&arq=EnvioParceria.htm'>
-<input type=hidden name=OrdemCampos value='NomeDe,EmailDe,RazaoSocial,CNPJ,IE,Endereco,Bairro,Cidade,Estado,CEP,Telefone,NomeSite,URLSite,RamoAtividade,DescricaoSite,NumeroBanco,Agencia,ContaCorrente,NomeTitular'>
+<input type=hidden name=OrdemCampos value='NomeDe,EmailDe,RazaoSocial,CNPJ,IE,Endereco,Bairro,Cidade,Estado,CEP,Telefone,NomeSite,URLSite,DescricaoSite,Facebook,Instagram,Twitter,NumeroBanco,Agencia,ContaCorrente,NomeTitular'>
 
 <div id="FCFormContainer" style="margin:20px auto 20px auto;">
 
@@ -263,13 +239,25 @@ function AvisoErroCampo_SelectBox(theField,s){
 </div>
 
 <div class="inputsContainer">
-<label class="FCLabelForm EstRequiredField">Ramo de Atividade:</label>
-<input type="text" name="RamoAtividade" id="RamoAtividade" maxlength="50" value="" required>
+<label class="FCLabelForm EstRequiredField">Descri&ccedil;&atilde;o do Site:</label>
+<input type="text" name="DescricaoSite" id="DescricaoSite" maxlength="50" value="" required>
+</div>
+
+<div class="EstTabTopo" style="margin-top:30px; margin-bottom:10px; float:left; width:98%;">Redes Sociais</div>
+
+<div class="inputsContainer">
+<label class="FCLabelForm EstRequiredField">Facebook:</label>
+<input type="text" name="Facebook" id="Facebook" maxlength="50" value="http://" required>
 </div>
 
 <div class="inputsContainer">
-<label class="FCLabelForm EstRequiredField">Descri&ccedil;&atilde;o do Site:</label>
-<input type="text" name="DescricaoSite" id="DescricaoSite" maxlength="50" value="" required>
+<label class="FCLabelForm EstRequiredField">Instagram:</label>
+<input type="text" name="Instagram" id="Instagram" maxlength="50" value="http://" required>
+</div>
+
+<div class="inputsContainer">
+<label class="FCLabelForm EstRequiredField">Twitter:</label>
+<input type="text" name="Twitter" id="Twitter" maxlength="50" value="http://" required>
 </div>
 
 
